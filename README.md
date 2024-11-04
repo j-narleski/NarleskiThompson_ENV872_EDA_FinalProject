@@ -7,7 +7,8 @@ More resources found here:
 ## Summary
 <describe the purpose of this repository, the information it contains, and any
 relevant analysis goals. What, why, where, when, how?>  
-The Environmental Protection Agency has conducted multiple studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. The purpose of these National Coastal Condition Assessments (NCCA) is to observe and determine what environmental or anthropogenic changes may affect the water quality of these water bodies.  
+The Environmental Protection Agency has conducted multiple studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. The purpose of these National Coastal Condition Assessments (NCCA) is to observe and determine what environmental or anthropogenic changes may affect the water quality of these water bodies. The NCCA is conducted every 5 years, with studies starting from 2010. 
+A key part of the NCCA is the fish tissue contamination study the EPA conducts of fish species that recreational fishers catch in the Great Lakes. Samples are taken and analyzed for mercury, PFAs (per- & polyfluoroalkl substances), PCB (polychlorinated biphenyls) Congeners & Aroclors, and Omega-3 & Omega-6 fatty acids. The EPA uses the results from these studies to evaluate the water quality of the Great Lakes and more specifically, determine the health impacts humans may have from consuming fish caught in the Great Lakes.  
 
 
 ## Investigators
