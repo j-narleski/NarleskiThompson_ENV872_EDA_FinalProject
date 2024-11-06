@@ -1,0 +1,162 @@
+﻿EPA Region,State,Lake Name,Site ID,EPA Sample ID,Species ID,Scientific Name,Common Name,Family,Niche,Analyte,CAS Number,Amount,EPA HH Screening Value,Over EPA HH SV?,"GL HH
+1 Meal/Mo Screening Value","Over GL HH
+1 Meal/Mo SV?","GL HH
+1 Meal/Wk Screening Value","Over GL HH
+1 Meal/Wk SV?",Unit 1,Unit 2,MDL,QL
+5,IL,Lake Michigan,NCCAGL10-QLM-10-01,560171,560171.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,74.9,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,IL,Lake Michigan,NCCAGL10-QLM-10-05,560173,560173.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,52.6,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,IL,Lake Michigan,NCCAGL10-QLM-10-20,560212,560212.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,103.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,IN,Lake Michigan,NCCAGL10-1069,560204,560204.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,263.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,IN,Lake Michigan,NCCAGL10-1088,560205,560205.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,43.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1003,560013,560013.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,58.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1006,560045,560045.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,124.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1007,560226,560226.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,518.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1008,560065,560065.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,161.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1010,560066,560066.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,76.6,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1012,560303,560303.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,300.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1014,560225,560225.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,300.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1015,560001,560001.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,226.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1018,560019,560019.1,Salvelinus fontinalis X Salvelinus namaycush,Splake,Salmonidae,P,Mercury,7439-97-6,77.5,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1021,560305,560305.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,71.6,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1022,560229,560229.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,187.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1023,560227,560227.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,325.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1024,560083,560083.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,201.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1025,560215,560215.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,158.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1026,560214,560214.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,487.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1030,560179,560179.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,218.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1032,563109,563109.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,60.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1034,560221,560221.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,279.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1035,560309,560309.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,86.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1036,560230,560230.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,478.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1037,560304,560304.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,92.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1040,560042,560042.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,94.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Superior,NCCAGL10-1043,560010,560010.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,270.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1046,560243,560243.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,88.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1051,560002,560002.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,61.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1054,560338,560338.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,86.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1055,560122,560122.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,146.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1056,560247,560247.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,39.6,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1058,560242,560242.1,Esox lucius,Northern pike,Esocidae,P,Mercury,7439-97-6,89.7,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1062,562419,562419.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,48.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1064,560257,560257.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,178.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1065,560120,560120.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,273.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1067,560245,560245.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,48.3,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1068,560339,560339.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,38.7,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1072,560241,560241.1,Oncorhynchus kisutch,Coho salmon,Salmonidae,P,Mercury,7439-97-6,92.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1073,560246,560246.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,155.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1074,560086,560086.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,201.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1077,560015,560015.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,386.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1078,560240,560240.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,780.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1083,560151,560151.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,160.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1084,560244,560244.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,37.9,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1085,560157,560157.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,140.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Michigan,NCCAGL10-1090,560152,560152.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,140.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1091,564989,564989.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,203.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1093,560060,560060.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,130.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1094,560321,560321.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,295.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1096,560067,560067.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,132.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1097,560330,560330.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,250.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1099,560012,560012.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,74.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1100,560081,560081.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,126.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1101,560327,560327.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,246.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1102,561929,561929.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,185.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1103,560123,560123.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,222.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1104,560072,560072.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,101.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1105,560324,560324.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,130.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1106,560023,560023.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,93.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1107,560328,560328.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,245.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1108,560043,560043.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,262.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1110,560326,560326.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,77.7,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1113,560069,560069.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,154.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1115,560047,560047.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,285.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1116,560070,560070.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,259.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1120,560014,560014.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,103.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1121,560094,560094.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,599.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1122,560301,560301.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,105.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1124,560061,560061.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,123.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1125,560325,560325.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,89.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1126,560068,560068.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,100.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1127,560082,560082.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,114.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1130,560331,560331.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,188.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-1131,560320,560320.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,280.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Erie,NCCAGL10-1140,560003,560003.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,140.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Erie,NCCAGL10-1148,560017,560017.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,128.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Erie,NCCAGL10-1168,560022,560022.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,142.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MI,Lake Huron,NCCAGL10-2093,560329,560329.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,149.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-1001,560194,560194.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,65.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-1002,560188,560188.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,113.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-1011,560191,560191.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,216.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-1029,560196,560196.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,73.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-1031,560195,560195.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,57.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-1039,560197,560197.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,22.8,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,MN,Lake Superior,NCCAGL10-2005,560184,560184.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,104.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1138,560132,560132.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,98.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1139,560147,560147.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,111.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1142,560130,560130.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,151.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1152,560138,560138.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,121.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1155,560140,560140.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,128.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1170,560133,560133.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,96.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Erie,NCCAGL10-1175,560129,560129.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,263.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1181,560044,560044.1,Esox niger,Chain pickerel,Esocidae,P,Mercury,7439-97-6,607.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1182,560033,560033.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,150.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1183,560223,560223.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,166.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1185,560222,560222.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,139.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1188,560109,560109.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,505.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1189,560154,560154.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,156.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1190,560260,560260.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,338.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1191,560161,560161.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,403.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1192,560113,560113.2,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,133.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1193,560259,560259.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,188.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1195,560218,560218.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,356.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1196,560216,560216.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,248.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1200,560155,560155.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,48.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1201,560107,560107.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,204.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1202,560099,560099.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,219.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1204,560217,560217.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,344.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1205,560106,560106.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,416.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1206,560037,560037.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,260.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1207,560165,560165.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,164.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1209,560100,560100.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,410.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1210,560167,560167.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,308.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1211,560159,560159.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,87.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1213,560063,560063.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,389.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1214,560062,560062.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,169.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1216,560156,560156.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,452.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1217,560219,560219.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,376.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1218,560108,560108.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,79.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1221,560158,560158.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,109.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1222,560166,560166.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,169.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1223,560258,560258.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,956.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1224,560101,560101.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,343.0,300,Exceeds SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+2,NY,Lake Ontario,NCCAGL10-1225,560038,560038.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,299.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1136,560096,560096.2,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,140.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1137,560035,560035.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,143.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1141,560030,560030.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,206.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1144,560040,560040.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,111.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1149,560095,560095.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,58.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1157,560036,560036.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,58.5,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1161,560027,560027.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,34.2,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1163,560026,560026.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,53.8,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1165,560137,560137.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,236.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1169,560025,560025.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,30.9,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1174,560031,560031.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,137.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1178,560135,560135.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,238.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-1179,560097,560097.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,286.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,OH,Lake Erie,NCCAGL10-2140,560029,560029.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,253.0,300,Does not exceed SV,220,Exceeds SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+3,PA,Lake Erie,NCCAGL10-1146,560041,560041.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,139.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+3,PA,Lake Erie,NCCAGL10-1173,560028,560028.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,143.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+3,PA,Lake Erie,NCCAGL10-1176,560098,560098.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,181.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1005,560183,560183.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,39.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1009,560236,560236.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,48.5,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1013,560251,560251.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,145.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1019,560189,560189.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,39.5,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1028,560079,560079.1,Prosopium cylindraceum,Round whitefish,Salmonidae,BD,Mercury,7439-97-6,51.1,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1033,560250,560250.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,51.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1041,560182,560182.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,149.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Superior,NCCAGL10-1044,560248,560248.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,115.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Michigan,NCCAGL10-1048,560169,560169.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,197.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Michigan,NCCAGL10-1059,560150,560150.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,89.4,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Michigan,NCCAGL10-1071,560211,560211.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,91.6,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Michigan,NCCAGL10-1075,560208,560208.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,77.9,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Michigan,NCCAGL10-1081,560180,560180.1,Oncorhynchus kisutch,Coho salmon,Salmonidae,P,Mercury,7439-97-6,88.5,300,Does not exceed SV,220,Does Not Exceed SV,110,Does Not Exceed SV,ng/g,ppb,0.20,0.80
+5,WI,Lake Michigan,NCCAGL10-1082,560177,560177.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,207.0,300,Does not exceed SV,220,Does Not Exceed SV,110,Exceeds SV,ng/g,ppb,0.20,0.80
