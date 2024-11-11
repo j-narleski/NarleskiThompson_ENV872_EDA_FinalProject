@@ -8,14 +8,21 @@
 
 ```{r setup, include=FALSE}
 # Set your working directory
-
+getwd()
 # Load your packages
+library(here)
 
 # Set your ggplot theme
 
 # Load your datasets
+fattyacids_2010_raw <- read.csv("RawData/2010_FattyAcids_Raw.csv")
+mercury_2010_raw <- read.csv("RawData/2010_Mercury_Raw.csv")
+PBDE_2010_raw <- read.csv("RawData/2010_PBDEs_Raw.csv")
+PCB_2010_raw <- read.csv("RawData/2010_PCBs_Raw.csv")
+PFA_2010_raw <- read.csv("RawData/2010_PFAs_Raw.csv")
 
 ```
+
 
 
 # Rationale and Research Questions
@@ -25,8 +32,41 @@
 \newpage
 
 # Dataset Information
+The datasets used in this analysis were sourced from the Environmental Protection Agency (EPA) website. They were selected from available National Coastal Condition Assessments (NCCA), which are surveys designed to assess long-term conditions of nearshore waters along the coasts of the Great Lakes. Our data specifically involves the data collected from Fish Fillet Tissue studies, where samples of fish muscle from commonly caught recreational fish species are taken and analyzed for mercury, PFAs (per- & polyfluoroalkl substances), PCB (polychlorinated biphenyls) Congeners & Aroclors, and Omega-3 & Omega-6 fatty acids. The EPA uses the results from these studies to evaluate the water quality of the Great Lakes and more specifically, determine the health impacts humans may have from consuming fish caught in the Great Lakes.
+
+Fish contaminant data is collected using the following procedures, per the 2020 NCCA Field Operations Manual:
+- Sites are randomly selected along U.S. coasts of the Great Lakes
+- Crews collect fish at all NCCA sites, yielding a minimum total of 300g total mass per target species
+- Fish are identified, measured, labelled, frozen, and brough to a lab
+- Specimens are cleaned to prevent contamination with non-marine chemicals
+- Fish are filleted (scales are removed, but skin and belly are left intact)
+- A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish
+
+The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table 3.1). 
+#add caption/title: adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023
+
+| Column Name | Description |
+|:----|:------|
+| EPA Region | The EPA Region in which the sample was collected | 
+| State |  2-letter abbreviation for the state in which the sample was collected | 
+| Lake | The Great Lake the sample is from |
+| Site ID | "NGL" + site selection year + state + 4-digit site location |
+| EPA Sample ID | 6-digit code assigned by the EPA |
+| Tissue Type | The type of fish tissue used for analysis; we use only fillet data |
+| % Lipids | The lipid content of the sample, measured independently of the chemical analysis |
+| Method | EPA-standardized method of chemical analysis |
+| Analyte | The chemical of interest in each dataset |
+| Amount | Amount of chemcial detected in the sample |
 
 
+
+```{r}
+#provide information on how the dataset for this analysis were collected, the data contained in the dataset, and any important pieces of information that are relevant to your analyses. This section should contain much of same information as the metadata file for the dataset but formatted in a way that is more narrative.
+
+#Describe how you wrangled your dataset in a format similar to a methods section of a journal article.
+
+#Add a table that summarizes your data structure (variables, units, ranges and/or central tendencies, data source if multiple are used, etc.). This table can be made in markdown text or inserted as a kable function in an R chunk. If the latter, do not include the code used to generate your table.
+```
 
 \newpage
 
