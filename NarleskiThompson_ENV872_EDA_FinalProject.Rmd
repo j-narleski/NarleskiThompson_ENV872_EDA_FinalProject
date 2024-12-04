@@ -45,18 +45,17 @@ theme_set(laketheme)
 # 2010 data
 fattyacids_2010_raw <- read.csv("RawData/2010_FattyAcids_Raw.csv")
 mercury_2010_raw <- read.csv("RawData/2010_Mercury_Raw.csv")
-PBDE_2010_raw <- read.csv("RawData/2010_PBDEs_Raw.csv")
 PCB_2010_raw <- read.csv("RawData/2010_PCBs_Raw.csv")
 PFA_2010_raw <- read.csv("RawData/2010_PFAs_Raw.csv")
 
 # 2015 data
 fattyacids_2015_raw <- read.csv("RawData/2015_FattyAcids_Raw.csv")
 mercury_2015_raw <- read.csv("RawData/2015_Mercury_Raw.csv")
-PBDE_2015_raw <- read.csv("RawData/2015_PBDEs_Raw.csv")
 PCB_2015_raw <- read.csv("RawData/2015_PCBs_Raw.csv")
 PFA_2015_raw <- read.csv("RawData/2015_PFAs_Raw.csv")
 
 # 2020 data
+mercury_2020_raw <- read.csv("RawData/2020_Mercury_Raw.csv")
 ```
 
 
