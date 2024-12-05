@@ -56,6 +56,8 @@ PFA_2015_raw <- read.csv("RawData/2015_PFAs_Raw.csv")
 
 # 2020 data
 mercury_2020_raw <- read.csv("RawData/2020_Mercury_Raw.csv")
+PCB_2020_raw <- read.csv("RawData/2020_PCBs_Raw.csv")
+PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
 
@@ -118,6 +120,11 @@ mercury_2010_processed <- mercury_2010_raw %>%
 mercury_2015_processed <- mercury_2015_raw %>%
   select(Lake.Name, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2)
+
+mercury_2020_processed <- mercury_2020_raw %>%
+  select(Lake.Name, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2)
+
 ```
 
 
