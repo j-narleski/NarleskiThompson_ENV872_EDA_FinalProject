@@ -1,786 +1,786 @@
-"","State","Lake.Name","Scientific.Name","Common.Name","Family","Niche","Analyte","Abbreviation","Amount","Units"
-"1","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"2","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.2,"mg/g"
-"3","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"4","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.228,"mg/g"
-"5","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"6","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.429,"mg/g"
-"7","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.68,"mg/g"
-"8","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.545,"mg/g"
-"9","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.844,"mg/g"
-"10","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"11","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.943,"mg/g"
-"12","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.89,"mg/g"
-"13","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.69,"mg/g"
-"14","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.63,"mg/g"
-"15","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.358,"mg/g"
-"16","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.83,"mg/g"
-"17","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",1.91,"mg/g"
-"18","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",1.45,"mg/g"
-"19","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",1.39,"mg/g"
-"20","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"21","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",1.04,"mg/g"
-"22","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",4.75,"mg/g"
-"23","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.77,"mg/g"
-"24","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",2.14,"mg/g"
-"25","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.195,"mg/g"
-"26","MI","Lake Erie","Morone americana","White perch","Moronidae","P","alpha-Linolenic acid","ALA",1.44,"mg/g"
-"27","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosahexaenoic acid","DHA",1.91,"mg/g"
-"28","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosapentaenoic acid","DPA",0.828,"mg/g"
-"29","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosapentaenoic acid","EPA",2.76,"mg/g"
-"30","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosatrienoic acid","ETE",0.18,"mg/g"
-"31","MI","Lake Erie","Morone americana","White perch","Moronidae","P","alpha-Linolenic acid","ALA",1.41,"mg/g"
-"32","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosahexaenoic acid","DHA",1.83,"mg/g"
-"33","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosapentaenoic acid","DPA",0.776,"mg/g"
-"34","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosapentaenoic acid","EPA",2.63,"mg/g"
-"35","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosatrienoic acid","ETE",0.184,"mg/g"
-"36","MI","Lake Erie","Morone americana","White perch","Moronidae","P","alpha-Linolenic acid","ALA",2,"mg/g"
-"37","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosahexaenoic acid","DHA",2.61,"mg/g"
-"38","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosapentaenoic acid","DPA",1.08,"mg/g"
-"39","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosapentaenoic acid","EPA",3.73,"mg/g"
-"40","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosatrienoic acid","ETE",0.211,"mg/g"
-"41","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"42","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",0.652,"mg/g"
-"43","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"44","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.241,"mg/g"
-"45","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"46","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.42,"mg/g"
-"47","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",10.9,"mg/g"
-"48","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.88,"mg/g"
-"49","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.75,"mg/g"
-"50","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.02,"mg/g"
-"51","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.19,"mg/g"
-"52","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.09,"mg/g"
-"53","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.65,"mg/g"
-"54","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.57,"mg/g"
-"55","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.402,"mg/g"
-"56","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.19,"mg/g"
-"57","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.88,"mg/g"
-"58","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.9,"mg/g"
-"59","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.85,"mg/g"
-"60","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.493,"mg/g"
-"61","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.47,"mg/g"
-"62","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.34,"mg/g"
-"63","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.14,"mg/g"
-"64","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.6,"mg/g"
-"65","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.558,"mg/g"
-"66","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.613,"mg/g"
-"67","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.985,"mg/g"
-"68","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.968,"mg/g"
-"69","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",1.43,"mg/g"
-"70","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"71","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.45,"mg/g"
-"72","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.53,"mg/g"
-"73","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.08,"mg/g"
-"74","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.09,"mg/g"
-"75","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.725,"mg/g"
-"76","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.06,"mg/g"
-"77","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.23,"mg/g"
-"78","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.87,"mg/g"
-"79","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.16,"mg/g"
-"80","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.338,"mg/g"
-"81","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",1.29,"mg/g"
-"82","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",1.5,"mg/g"
-"83","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",2.37,"mg/g"
-"84","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",2.75,"mg/g"
-"85","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.145,"mg/g"
-"86","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"87","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.31,"mg/g"
-"88","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.576,"mg/g"
-"89","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.363,"mg/g"
-"90","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"91","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.72,"mg/g"
-"92","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.21,"mg/g"
-"93","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.74,"mg/g"
-"94","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.11,"mg/g"
-"95","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.833,"mg/g"
-"96","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.29,"mg/g"
-"97","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.47,"mg/g"
-"98","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.19,"mg/g"
-"99","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.6,"mg/g"
-"100","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.409,"mg/g"
-"101","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.312,"mg/g"
-"102","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",2.33,"mg/g"
-"103","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.827,"mg/g"
-"104","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",2.17,"mg/g"
-"105","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"106","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.778,"mg/g"
-"107","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.21,"mg/g"
-"108","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.95,"mg/g"
-"109","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.82,"mg/g"
-"110","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.299,"mg/g"
-"111","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.357,"mg/g"
-"112","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",1.13,"mg/g"
-"113","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",1.31,"mg/g"
-"114","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.963,"mg/g"
-"115","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",0.122,"mg/g"
-"116","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.823,"mg/g"
-"117","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.96,"mg/g"
-"118","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.14,"mg/g"
-"119","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.47,"mg/g"
-"120","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.163,"mg/g"
-"121","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.65,"mg/g"
-"122","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.99,"mg/g"
-"123","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.06,"mg/g"
-"124","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.39,"mg/g"
-"125","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.766,"mg/g"
-"126","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.725,"mg/g"
-"127","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.53,"mg/g"
-"128","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.06,"mg/g"
-"129","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.83,"mg/g"
-"130","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.278,"mg/g"
-"131","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.74,"mg/g"
-"132","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.14,"mg/g"
-"133","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.34,"mg/g"
-"134","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.77,"mg/g"
-"135","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.751,"mg/g"
-"136","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.519,"mg/g"
-"137","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.55,"mg/g"
-"138","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.995,"mg/g"
-"139","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.49,"mg/g"
-"140","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"141","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"142","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.304,"mg/g"
-"143","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.222,"mg/g"
-"144","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.377,"mg/g"
-"145","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"146","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.709,"mg/g"
-"147","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.46,"mg/g"
-"148","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.33,"mg/g"
-"149","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.934,"mg/g"
-"150","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.242,"mg/g"
-"151","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.948,"mg/g"
-"152","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.46,"mg/g"
-"153","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.95,"mg/g"
-"154","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.71,"mg/g"
-"155","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.425,"mg/g"
-"156","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.244,"mg/g"
-"157","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.88,"mg/g"
-"158","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.326,"mg/g"
-"159","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.567,"mg/g"
-"160","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"161","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.12,"mg/g"
-"162","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.44,"mg/g"
-"163","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.65,"mg/g"
-"164","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.45,"mg/g"
-"165","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.522,"mg/g"
-"166","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.737,"mg/g"
-"167","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.57,"mg/g"
-"168","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.866,"mg/g"
-"169","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.29,"mg/g"
-"170","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.226,"mg/g"
-"171","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.04,"mg/g"
-"172","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.21,"mg/g"
-"173","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.01,"mg/g"
-"174","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.7,"mg/g"
-"175","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.703,"mg/g"
-"176","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.35,"mg/g"
-"177","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.39,"mg/g"
-"178","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.5,"mg/g"
-"179","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.08,"mg/g"
-"180","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.417,"mg/g"
-"181","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.78,"mg/g"
-"182","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.53,"mg/g"
-"183","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.49,"mg/g"
-"184","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.87,"mg/g"
-"185","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.706,"mg/g"
-"186","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.814,"mg/g"
-"187","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.23,"mg/g"
-"188","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.55,"mg/g"
-"189","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.84,"mg/g"
-"190","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.195,"mg/g"
-"191","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.174,"mg/g"
-"192","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.68,"mg/g"
-"193","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.526,"mg/g"
-"194","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",1.61,"mg/g"
-"195","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"196","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.793,"mg/g"
-"197","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.57,"mg/g"
-"198","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.11,"mg/g"
-"199","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.6,"mg/g"
-"200","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.166,"mg/g"
-"201","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.57,"mg/g"
-"202","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",12.9,"mg/g"
-"203","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.29,"mg/g"
-"204","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.09,"mg/g"
-"205","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.58,"mg/g"
-"206","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",4.99,"mg/g"
-"207","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",7.79,"mg/g"
-"208","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",2.55,"mg/g"
-"209","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",4.53,"mg/g"
-"210","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",1.19,"mg/g"
-"211","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","alpha-Linolenic acid","ALA",0.157,"mg/g"
-"212","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Docosahexaenoic acid","DHA",1.73,"mg/g"
-"213","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Docosapentaenoic acid","DPA",0.355,"mg/g"
-"214","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Eicosapentaenoic acid","EPA",0.657,"mg/g"
-"215","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"216","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.374,"mg/g"
-"217","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.83,"mg/g"
-"218","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.404,"mg/g"
-"219","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.48,"mg/g"
-"220","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"221","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.705,"mg/g"
-"222","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.74,"mg/g"
-"223","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.3,"mg/g"
-"224","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.12,"mg/g"
-"225","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.278,"mg/g"
-"226","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.279,"mg/g"
-"227","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.4,"mg/g"
-"228","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.172,"mg/g"
-"229","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.518,"mg/g"
-"230","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"231","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.776,"mg/g"
-"232","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",4.35,"mg/g"
-"233","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.996,"mg/g"
-"234","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",2.03,"mg/g"
-"235","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.245,"mg/g"
-"236","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.5,"mg/g"
-"237","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",5,"mg/g"
-"238","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.34,"mg/g"
-"239","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.81,"mg/g"
-"240","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.404,"mg/g"
-"241","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","alpha-Linolenic acid","ALA",2.72,"mg/g"
-"242","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosahexaenoic acid","DHA",6.3,"mg/g"
-"243","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosapentaenoic acid","DPA",2.85,"mg/g"
-"244","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",3.07,"mg/g"
-"245","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.585,"mg/g"
-"246","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.625,"mg/g"
-"247","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.19,"mg/g"
-"248","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.676,"mg/g"
-"249","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.43,"mg/g"
-"250","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.261,"mg/g"
-"251","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.257,"mg/g"
-"252","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.18,"mg/g"
-"253","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.856,"mg/g"
-"254","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.565,"mg/g"
-"255","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.103,"mg/g"
-"256","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.339,"mg/g"
-"257","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",2.24,"mg/g"
-"258","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.431,"mg/g"
-"259","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.735,"mg/g"
-"260","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"261","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.212,"mg/g"
-"262","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.5,"mg/g"
-"263","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.222,"mg/g"
-"264","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.538,"mg/g"
-"265","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"266","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.992,"mg/g"
-"267","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",2.2,"mg/g"
-"268","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.401,"mg/g"
-"269","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.759,"mg/g"
-"270","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.161,"mg/g"
-"271","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",1.98,"mg/g"
-"272","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",6.04,"mg/g"
-"273","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.26,"mg/g"
-"274","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",2.52,"mg/g"
-"275","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.397,"mg/g"
-"276","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.84,"mg/g"
-"277","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",2.21,"mg/g"
-"278","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.436,"mg/g"
-"279","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.648,"mg/g"
-"280","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.136,"mg/g"
-"281","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.501,"mg/g"
-"282","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",1.65,"mg/g"
-"283","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.271,"mg/g"
-"284","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.397,"mg/g"
-"285","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"286","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.29,"mg/g"
-"287","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.95,"mg/g"
-"288","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.552,"mg/g"
-"289","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.42,"mg/g"
-"290","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"291","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.87,"mg/g"
-"292","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.13,"mg/g"
-"293","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.21,"mg/g"
-"294","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.02,"mg/g"
-"295","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.342,"mg/g"
-"296","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.26,"mg/g"
-"297","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.51,"mg/g"
-"298","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.73,"mg/g"
-"299","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.73,"mg/g"
-"300","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.945,"mg/g"
-"301","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.793,"mg/g"
-"302","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.92,"mg/g"
-"303","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.45,"mg/g"
-"304","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.02,"mg/g"
-"305","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.284,"mg/g"
-"306","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.815,"mg/g"
-"307","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.67,"mg/g"
-"308","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.24,"mg/g"
-"309","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.83,"mg/g"
-"310","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.311,"mg/g"
-"311","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.38,"mg/g"
-"312","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.97,"mg/g"
-"313","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.04,"mg/g"
-"314","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.07,"mg/g"
-"315","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.392,"mg/g"
-"316","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.942,"mg/g"
-"317","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.21,"mg/g"
-"318","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.34,"mg/g"
-"319","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.55,"mg/g"
-"320","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.344,"mg/g"
-"321","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",NA,"mg/g"
-"322","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.17,"mg/g"
-"323","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.135,"mg/g"
-"324","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",0.446,"mg/g"
-"325","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"326","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","alpha-Linolenic acid","ALA",0.18,"mg/g"
-"327","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Docosahexaenoic acid","DHA",1.37,"mg/g"
-"328","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Docosapentaenoic acid","DPA",0.318,"mg/g"
-"329","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Eicosapentaenoic acid","EPA",0.43,"mg/g"
-"330","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"331","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.851,"mg/g"
-"332","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.78,"mg/g"
-"333","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.967,"mg/g"
-"334","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.83,"mg/g"
-"335","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.218,"mg/g"
-"336","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.17,"mg/g"
-"337","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.74,"mg/g"
-"338","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.52,"mg/g"
-"339","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.03,"mg/g"
-"340","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.649,"mg/g"
-"341","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.39,"mg/g"
-"342","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.95,"mg/g"
-"343","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.43,"mg/g"
-"344","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.4,"mg/g"
-"345","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.789,"mg/g"
-"346","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.44,"mg/g"
-"347","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",10.6,"mg/g"
-"348","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.52,"mg/g"
-"349","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.28,"mg/g"
-"350","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.84,"mg/g"
-"351","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.14,"mg/g"
-"352","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.01,"mg/g"
-"353","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.05,"mg/g"
-"354","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.89,"mg/g"
-"355","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.551,"mg/g"
-"356","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.99,"mg/g"
-"357","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.03,"mg/g"
-"358","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.31,"mg/g"
-"359","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4,"mg/g"
-"360","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.709,"mg/g"
-"361","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.88,"mg/g"
-"362","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.13,"mg/g"
-"363","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.74,"mg/g"
-"364","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.63,"mg/g"
-"365","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.606,"mg/g"
-"366","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.407,"mg/g"
-"367","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",2.33,"mg/g"
-"368","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.588,"mg/g"
-"369","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",1.76,"mg/g"
-"370","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"371","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.82,"mg/g"
-"372","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",10.6,"mg/g"
-"373","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.58,"mg/g"
-"374","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",6.56,"mg/g"
-"375","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.841,"mg/g"
-"376","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.614,"mg/g"
-"377","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.64,"mg/g"
-"378","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.779,"mg/g"
-"379","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.46,"mg/g"
-"380","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.144,"mg/g"
-"381","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.05,"mg/g"
-"382","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",11,"mg/g"
-"383","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.7,"mg/g"
-"384","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.84,"mg/g"
-"385","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.05,"mg/g"
-"386","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.07,"mg/g"
-"387","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.87,"mg/g"
-"388","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.42,"mg/g"
-"389","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.26,"mg/g"
-"390","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.341,"mg/g"
-"391","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.79,"mg/g"
-"392","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.07,"mg/g"
-"393","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.28,"mg/g"
-"394","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.78,"mg/g"
-"395","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.209,"mg/g"
-"396","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.73,"mg/g"
-"397","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",16.3,"mg/g"
-"398","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",5.5,"mg/g"
-"399","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",8.82,"mg/g"
-"400","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.23,"mg/g"
-"401","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.1,"mg/g"
-"402","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.34,"mg/g"
-"403","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.935,"mg/g"
-"404","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.86,"mg/g"
-"405","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.327,"mg/g"
-"406","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.02,"mg/g"
-"407","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.99,"mg/g"
-"408","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.2,"mg/g"
-"409","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.81,"mg/g"
-"410","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.702,"mg/g"
-"411","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.485,"mg/g"
-"412","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",2.53,"mg/g"
-"413","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.581,"mg/g"
-"414","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.27,"mg/g"
-"415","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"416","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.87,"mg/g"
-"417","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.28,"mg/g"
-"418","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.69,"mg/g"
-"419","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.5,"mg/g"
-"420","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.631,"mg/g"
-"421","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.79,"mg/g"
-"422","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.06,"mg/g"
-"423","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.7,"mg/g"
-"424","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.13,"mg/g"
-"425","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.68,"mg/g"
-"426","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.279,"mg/g"
-"427","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.36,"mg/g"
-"428","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.277,"mg/g"
-"429","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.916,"mg/g"
-"430","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"431","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.652,"mg/g"
-"432","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.81,"mg/g"
-"433","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.581,"mg/g"
-"434","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.11,"mg/g"
-"435","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.161,"mg/g"
-"436","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"437","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.48,"mg/g"
-"438","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.47,"mg/g"
-"439","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.24,"mg/g"
-"440","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"441","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.173,"mg/g"
-"442","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.61,"mg/g"
-"443","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.117,"mg/g"
-"444","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.583,"mg/g"
-"445","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"446","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.553,"mg/g"
-"447","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",2.36,"mg/g"
-"448","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.457,"mg/g"
-"449","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.07,"mg/g"
-"450","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"451","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.1,"mg/g"
-"452","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.28,"mg/g"
-"453","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.409,"mg/g"
-"454","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.275,"mg/g"
-"455","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"456","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"457","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.808,"mg/g"
-"458","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"459","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.164,"mg/g"
-"460","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"461","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.143,"mg/g"
-"462","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.1,"mg/g"
-"463","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.757,"mg/g"
-"464","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.401,"mg/g"
-"465","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"466","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.787,"mg/g"
-"467","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.22,"mg/g"
-"468","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.526,"mg/g"
-"469","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.61,"mg/g"
-"470","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"471","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"472","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Docosahexaenoic acid","DHA",0.542,"mg/g"
-"473","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"474","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Eicosapentaenoic acid","EPA",NA,"mg/g"
-"475","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"476","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.128,"mg/g"
-"477","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.27,"mg/g"
-"478","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.393,"mg/g"
-"479","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.228,"mg/g"
-"480","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"481","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",8.04,"mg/g"
-"482","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",17.7,"mg/g"
-"483","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",8.99,"mg/g"
-"484","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",10.5,"mg/g"
-"485","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",2.3,"mg/g"
-"486","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.257,"mg/g"
-"487","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.67,"mg/g"
-"488","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.562,"mg/g"
-"489","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.362,"mg/g"
-"490","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"491","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",3.53,"mg/g"
-"492","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",9.81,"mg/g"
-"493","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",2.01,"mg/g"
-"494","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",5.07,"mg/g"
-"495","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.481,"mg/g"
-"496","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.492,"mg/g"
-"497","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.36,"mg/g"
-"498","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.848,"mg/g"
-"499","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.663,"mg/g"
-"500","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.117,"mg/g"
-"501","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.408,"mg/g"
-"502","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.33,"mg/g"
-"503","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.11,"mg/g"
-"504","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.576,"mg/g"
-"505","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"506","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.37,"mg/g"
-"507","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.07,"mg/g"
-"508","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.694,"mg/g"
-"509","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.479,"mg/g"
-"510","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"511","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.73,"mg/g"
-"512","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.85,"mg/g"
-"513","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.83,"mg/g"
-"514","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.64,"mg/g"
-"515","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.09,"mg/g"
-"516","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.5,"mg/g"
-"517","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.7,"mg/g"
-"518","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.97,"mg/g"
-"519","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.687,"mg/g"
-"520","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"521","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.71,"mg/g"
-"522","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.77,"mg/g"
-"523","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.17,"mg/g"
-"524","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.853,"mg/g"
-"525","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.139,"mg/g"
-"526","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.909,"mg/g"
-"527","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",4.23,"mg/g"
-"528","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.58,"mg/g"
-"529","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.15,"mg/g"
-"530","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.201,"mg/g"
-"531","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",3.09,"mg/g"
-"532","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",4.25,"mg/g"
-"533","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.52,"mg/g"
-"534","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",3.32,"mg/g"
-"535","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.488,"mg/g"
-"536","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.24,"mg/g"
-"537","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.36,"mg/g"
-"538","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.43,"mg/g"
-"539","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.52,"mg/g"
-"540","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.877,"mg/g"
-"541","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.585,"mg/g"
-"542","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.72,"mg/g"
-"543","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.12,"mg/g"
-"544","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.715,"mg/g"
-"545","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.149,"mg/g"
-"546","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.831,"mg/g"
-"547","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",4.14,"mg/g"
-"548","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.48,"mg/g"
-"549","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.04,"mg/g"
-"550","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.175,"mg/g"
-"551","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.786,"mg/g"
-"552","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.45,"mg/g"
-"553","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.649,"mg/g"
-"554","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.4,"mg/g"
-"555","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.174,"mg/g"
-"556","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.105,"mg/g"
-"557","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.18,"mg/g"
-"558","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.497,"mg/g"
-"559","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.216,"mg/g"
-"560","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"561","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",2.51,"mg/g"
-"562","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.48,"mg/g"
-"563","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.5,"mg/g"
-"564","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.75,"mg/g"
-"565","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.481,"mg/g"
-"566","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.453,"mg/g"
-"567","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.94,"mg/g"
-"568","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.93,"mg/g"
-"569","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.563,"mg/g"
-"570","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.189,"mg/g"
-"571","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.406,"mg/g"
-"572","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.756,"mg/g"
-"573","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.467,"mg/g"
-"574","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.619,"mg/g"
-"575","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"576","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"577","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.681,"mg/g"
-"578","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"579","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.235,"mg/g"
-"580","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"581","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",1.61,"mg/g"
-"582","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",5.4,"mg/g"
-"583","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",1.11,"mg/g"
-"584","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.64,"mg/g"
-"585","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.326,"mg/g"
-"586","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",0.15,"mg/g"
-"587","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.938,"mg/g"
-"588","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",0.198,"mg/g"
-"589","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.291,"mg/g"
-"590","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"591","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.583,"mg/g"
-"592","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.96,"mg/g"
-"593","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.16,"mg/g"
-"594","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.743,"mg/g"
-"595","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.123,"mg/g"
-"596","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",1.08,"mg/g"
-"597","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",3.83,"mg/g"
-"598","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.78,"mg/g"
-"599","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.04,"mg/g"
-"600","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.15,"mg/g"
-"601","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.34,"mg/g"
-"602","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.24,"mg/g"
-"603","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.75,"mg/g"
-"604","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.34,"mg/g"
-"605","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.752,"mg/g"
-"606","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.74,"mg/g"
-"607","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.18,"mg/g"
-"608","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.82,"mg/g"
-"609","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.02,"mg/g"
-"610","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.982,"mg/g"
-"611","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.383,"mg/g"
-"612","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.87,"mg/g"
-"613","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.69,"mg/g"
-"614","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.483,"mg/g"
-"615","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"616","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",2.06,"mg/g"
-"617","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",10.4,"mg/g"
-"618","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",1.63,"mg/g"
-"619","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.88,"mg/g"
-"620","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.204,"mg/g"
-"621","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.191,"mg/g"
-"622","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.28,"mg/g"
-"623","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.486,"mg/g"
-"624","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.27,"mg/g"
-"625","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"626","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.733,"mg/g"
-"627","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.89,"mg/g"
-"628","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.22,"mg/g"
-"629","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.873,"mg/g"
-"630","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.197,"mg/g"
-"631","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"632","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.297,"mg/g"
-"633","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.235,"mg/g"
-"634","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.268,"mg/g"
-"635","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"636","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.527,"mg/g"
-"637","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.69,"mg/g"
-"638","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.295,"mg/g"
-"639","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.14,"mg/g"
-"640","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"641","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",1.26,"mg/g"
-"642","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.92,"mg/g"
-"643","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.506,"mg/g"
-"644","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.2,"mg/g"
-"645","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"646","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.847,"mg/g"
-"647","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",1.52,"mg/g"
-"648","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",1.1,"mg/g"
-"649","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",1.27,"mg/g"
-"650","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",0.114,"mg/g"
-"651","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",0.172,"mg/g"
-"652","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.816,"mg/g"
-"653","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",0.229,"mg/g"
-"654","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.385,"mg/g"
-"655","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"656","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g"
-"657","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.527,"mg/g"
-"658","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"659","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.224,"mg/g"
-"660","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"661","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",3.31,"mg/g"
-"662","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",2.87,"mg/g"
-"663","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",1.84,"mg/g"
-"664","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",2.85,"mg/g"
-"665","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.315,"mg/g"
-"666","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",1.03,"mg/g"
-"667","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",2.46,"mg/g"
-"668","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",1.18,"mg/g"
-"669","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",1.95,"mg/g"
-"670","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.168,"mg/g"
-"671","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.767,"mg/g"
-"672","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",2.47,"mg/g"
-"673","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.318,"mg/g"
-"674","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.51,"mg/g"
-"675","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"676","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",4.55,"mg/g"
-"677","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",3.39,"mg/g"
-"678","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",2.3,"mg/g"
-"679","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",3.84,"mg/g"
-"680","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.318,"mg/g"
-"681","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.176,"mg/g"
-"682","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",0.914,"mg/g"
-"683","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g"
-"684","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.445,"mg/g"
-"685","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"686","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.372,"mg/g"
-"687","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.29,"mg/g"
-"688","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.239,"mg/g"
-"689","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.75,"mg/g"
-"690","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"691","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.493,"mg/g"
-"692","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.4,"mg/g"
-"693","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.321,"mg/g"
-"694","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.916,"mg/g"
-"695","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"696","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.202,"mg/g"
-"697","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.01,"mg/g"
-"698","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.127,"mg/g"
-"699","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.465,"mg/g"
-"700","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"701","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.873,"mg/g"
-"702","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",4.44,"mg/g"
-"703","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",2.7,"mg/g"
-"704","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.33,"mg/g"
-"705","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"706","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.339,"mg/g"
-"707","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.61,"mg/g"
-"708","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.151,"mg/g"
-"709","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.884,"mg/g"
-"710","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"711","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",1.08,"mg/g"
-"712","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.62,"mg/g"
-"713","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.632,"mg/g"
-"714","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.09,"mg/g"
-"715","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"716","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.15,"mg/g"
-"717","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.64,"mg/g"
-"718","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.28,"mg/g"
-"719","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.75,"mg/g"
-"720","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.325,"mg/g"
-"721","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.203,"mg/g"
-"722","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",2.14,"mg/g"
-"723","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.04,"mg/g"
-"724","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.14,"mg/g"
-"725","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"726","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.652,"mg/g"
-"727","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",1.84,"mg/g"
-"728","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.239,"mg/g"
-"729","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.597,"mg/g"
-"730","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"731","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",0.616,"mg/g"
-"732","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",1,"mg/g"
-"733","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",0.796,"mg/g"
-"734","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",1.41,"mg/g"
-"735","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"736","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.49,"mg/g"
-"737","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.76,"mg/g"
-"738","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.667,"mg/g"
-"739","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.16,"mg/g"
-"740","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"741","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.45,"mg/g"
-"742","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",1.37,"mg/g"
-"743","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.222,"mg/g"
-"744","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.368,"mg/g"
-"745","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g"
-"746","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.421,"mg/g"
-"747","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",2.22,"mg/g"
-"748","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.455,"mg/g"
-"749","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",1.14,"mg/g"
-"750","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"751","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.216,"mg/g"
-"752","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.24,"mg/g"
-"753","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.231,"mg/g"
-"754","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.787,"mg/g"
-"755","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"756","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.265,"mg/g"
-"757","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.86,"mg/g"
-"758","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.574,"mg/g"
-"759","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.43,"mg/g"
-"760","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"761","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.399,"mg/g"
-"762","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.41,"mg/g"
-"763","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.3,"mg/g"
-"764","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.73,"mg/g"
-"765","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"766","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.229,"mg/g"
-"767","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.46,"mg/g"
-"768","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.351,"mg/g"
-"769","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.717,"mg/g"
-"770","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"771","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.249,"mg/g"
-"772","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.56,"mg/g"
-"773","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.443,"mg/g"
-"774","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.1,"mg/g"
-"775","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
-"776","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.28,"mg/g"
-"777","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.25,"mg/g"
-"778","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.99,"mg/g"
-"779","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.43,"mg/g"
-"780","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.668,"mg/g"
-"781","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.453,"mg/g"
-"782","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",2.45,"mg/g"
-"783","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.716,"mg/g"
-"784","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",2.03,"mg/g"
-"785","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g"
+"","State","Lake.Name","Scientific.Name","Common.Name","Family","Niche","Analyte","Abbreviation","Amount","Units","Year"
+"1","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"2","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.2,"mg/g",2010
+"3","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"4","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.228,"mg/g",2010
+"5","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"6","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.429,"mg/g",2010
+"7","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.68,"mg/g",2010
+"8","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.545,"mg/g",2010
+"9","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.844,"mg/g",2010
+"10","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"11","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.943,"mg/g",2010
+"12","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.89,"mg/g",2010
+"13","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.69,"mg/g",2010
+"14","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.63,"mg/g",2010
+"15","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.358,"mg/g",2010
+"16","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.83,"mg/g",2010
+"17","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",1.91,"mg/g",2010
+"18","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",1.45,"mg/g",2010
+"19","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",1.39,"mg/g",2010
+"20","IN","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"21","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",1.04,"mg/g",2010
+"22","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",4.75,"mg/g",2010
+"23","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.77,"mg/g",2010
+"24","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",2.14,"mg/g",2010
+"25","IN","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.195,"mg/g",2010
+"26","MI","Lake Erie","Morone americana","White perch","Moronidae","P","alpha-Linolenic acid","ALA",1.44,"mg/g",2010
+"27","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosahexaenoic acid","DHA",1.91,"mg/g",2010
+"28","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosapentaenoic acid","DPA",0.828,"mg/g",2010
+"29","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosapentaenoic acid","EPA",2.76,"mg/g",2010
+"30","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosatrienoic acid","ETE",0.18,"mg/g",2010
+"31","MI","Lake Erie","Morone americana","White perch","Moronidae","P","alpha-Linolenic acid","ALA",1.41,"mg/g",2010
+"32","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosahexaenoic acid","DHA",1.83,"mg/g",2010
+"33","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosapentaenoic acid","DPA",0.776,"mg/g",2010
+"34","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosapentaenoic acid","EPA",2.63,"mg/g",2010
+"35","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosatrienoic acid","ETE",0.184,"mg/g",2010
+"36","MI","Lake Erie","Morone americana","White perch","Moronidae","P","alpha-Linolenic acid","ALA",2,"mg/g",2010
+"37","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosahexaenoic acid","DHA",2.61,"mg/g",2010
+"38","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Docosapentaenoic acid","DPA",1.08,"mg/g",2010
+"39","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosapentaenoic acid","EPA",3.73,"mg/g",2010
+"40","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Eicosatrienoic acid","ETE",0.211,"mg/g",2010
+"41","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"42","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",0.652,"mg/g",2010
+"43","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"44","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.241,"mg/g",2010
+"45","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"46","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.42,"mg/g",2010
+"47","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",10.9,"mg/g",2010
+"48","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.88,"mg/g",2010
+"49","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.75,"mg/g",2010
+"50","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.02,"mg/g",2010
+"51","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.19,"mg/g",2010
+"52","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.09,"mg/g",2010
+"53","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.65,"mg/g",2010
+"54","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.57,"mg/g",2010
+"55","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.402,"mg/g",2010
+"56","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.19,"mg/g",2010
+"57","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.88,"mg/g",2010
+"58","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.9,"mg/g",2010
+"59","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.85,"mg/g",2010
+"60","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.493,"mg/g",2010
+"61","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.47,"mg/g",2010
+"62","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.34,"mg/g",2010
+"63","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.14,"mg/g",2010
+"64","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.6,"mg/g",2010
+"65","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.558,"mg/g",2010
+"66","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.613,"mg/g",2010
+"67","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.985,"mg/g",2010
+"68","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.968,"mg/g",2010
+"69","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",1.43,"mg/g",2010
+"70","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"71","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.45,"mg/g",2010
+"72","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.53,"mg/g",2010
+"73","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.08,"mg/g",2010
+"74","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.09,"mg/g",2010
+"75","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.725,"mg/g",2010
+"76","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.06,"mg/g",2010
+"77","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.23,"mg/g",2010
+"78","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.87,"mg/g",2010
+"79","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.16,"mg/g",2010
+"80","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.338,"mg/g",2010
+"81","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",1.29,"mg/g",2010
+"82","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",1.5,"mg/g",2010
+"83","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",2.37,"mg/g",2010
+"84","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",2.75,"mg/g",2010
+"85","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.145,"mg/g",2010
+"86","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"87","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.31,"mg/g",2010
+"88","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.576,"mg/g",2010
+"89","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.363,"mg/g",2010
+"90","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"91","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.72,"mg/g",2010
+"92","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.21,"mg/g",2010
+"93","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.74,"mg/g",2010
+"94","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.11,"mg/g",2010
+"95","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.833,"mg/g",2010
+"96","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.29,"mg/g",2010
+"97","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.47,"mg/g",2010
+"98","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.19,"mg/g",2010
+"99","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.6,"mg/g",2010
+"100","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.409,"mg/g",2010
+"101","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.312,"mg/g",2010
+"102","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",2.33,"mg/g",2010
+"103","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.827,"mg/g",2010
+"104","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",2.17,"mg/g",2010
+"105","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"106","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.778,"mg/g",2010
+"107","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.21,"mg/g",2010
+"108","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.95,"mg/g",2010
+"109","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.82,"mg/g",2010
+"110","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.299,"mg/g",2010
+"111","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.357,"mg/g",2010
+"112","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",1.13,"mg/g",2010
+"113","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",1.31,"mg/g",2010
+"114","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.963,"mg/g",2010
+"115","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",0.122,"mg/g",2010
+"116","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.823,"mg/g",2010
+"117","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.96,"mg/g",2010
+"118","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.14,"mg/g",2010
+"119","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.47,"mg/g",2010
+"120","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.163,"mg/g",2010
+"121","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.65,"mg/g",2010
+"122","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.99,"mg/g",2010
+"123","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.06,"mg/g",2010
+"124","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.39,"mg/g",2010
+"125","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.766,"mg/g",2010
+"126","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.725,"mg/g",2010
+"127","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.53,"mg/g",2010
+"128","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.06,"mg/g",2010
+"129","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.83,"mg/g",2010
+"130","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.278,"mg/g",2010
+"131","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.74,"mg/g",2010
+"132","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.14,"mg/g",2010
+"133","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.34,"mg/g",2010
+"134","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.77,"mg/g",2010
+"135","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.751,"mg/g",2010
+"136","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.519,"mg/g",2010
+"137","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.55,"mg/g",2010
+"138","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.995,"mg/g",2010
+"139","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.49,"mg/g",2010
+"140","MI","Lake Huron","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"141","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"142","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.304,"mg/g",2010
+"143","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.222,"mg/g",2010
+"144","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.377,"mg/g",2010
+"145","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"146","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.709,"mg/g",2010
+"147","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.46,"mg/g",2010
+"148","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.33,"mg/g",2010
+"149","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.934,"mg/g",2010
+"150","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.242,"mg/g",2010
+"151","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.948,"mg/g",2010
+"152","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.46,"mg/g",2010
+"153","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.95,"mg/g",2010
+"154","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.71,"mg/g",2010
+"155","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.425,"mg/g",2010
+"156","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.244,"mg/g",2010
+"157","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.88,"mg/g",2010
+"158","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.326,"mg/g",2010
+"159","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.567,"mg/g",2010
+"160","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"161","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.12,"mg/g",2010
+"162","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.44,"mg/g",2010
+"163","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.65,"mg/g",2010
+"164","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.45,"mg/g",2010
+"165","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.522,"mg/g",2010
+"166","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.737,"mg/g",2010
+"167","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.57,"mg/g",2010
+"168","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.866,"mg/g",2010
+"169","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.29,"mg/g",2010
+"170","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.226,"mg/g",2010
+"171","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.04,"mg/g",2010
+"172","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.21,"mg/g",2010
+"173","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.01,"mg/g",2010
+"174","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.7,"mg/g",2010
+"175","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.703,"mg/g",2010
+"176","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.35,"mg/g",2010
+"177","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.39,"mg/g",2010
+"178","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.5,"mg/g",2010
+"179","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.08,"mg/g",2010
+"180","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.417,"mg/g",2010
+"181","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.78,"mg/g",2010
+"182","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.53,"mg/g",2010
+"183","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.49,"mg/g",2010
+"184","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.87,"mg/g",2010
+"185","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.706,"mg/g",2010
+"186","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.814,"mg/g",2010
+"187","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.23,"mg/g",2010
+"188","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.55,"mg/g",2010
+"189","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.84,"mg/g",2010
+"190","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.195,"mg/g",2010
+"191","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.174,"mg/g",2010
+"192","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.68,"mg/g",2010
+"193","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.526,"mg/g",2010
+"194","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",1.61,"mg/g",2010
+"195","MI","Lake Michigan","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"196","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.793,"mg/g",2010
+"197","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.57,"mg/g",2010
+"198","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.11,"mg/g",2010
+"199","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.6,"mg/g",2010
+"200","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.166,"mg/g",2010
+"201","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.57,"mg/g",2010
+"202","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",12.9,"mg/g",2010
+"203","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.29,"mg/g",2010
+"204","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.09,"mg/g",2010
+"205","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.58,"mg/g",2010
+"206","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",4.99,"mg/g",2010
+"207","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",7.79,"mg/g",2010
+"208","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",2.55,"mg/g",2010
+"209","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",4.53,"mg/g",2010
+"210","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",1.19,"mg/g",2010
+"211","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","alpha-Linolenic acid","ALA",0.157,"mg/g",2010
+"212","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Docosahexaenoic acid","DHA",1.73,"mg/g",2010
+"213","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Docosapentaenoic acid","DPA",0.355,"mg/g",2010
+"214","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Eicosapentaenoic acid","EPA",0.657,"mg/g",2010
+"215","MI","Lake Michigan","Esox lucius","Northern pike","Esocidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"216","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.374,"mg/g",2010
+"217","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.83,"mg/g",2010
+"218","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.404,"mg/g",2010
+"219","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.48,"mg/g",2010
+"220","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"221","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.705,"mg/g",2010
+"222","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.74,"mg/g",2010
+"223","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.3,"mg/g",2010
+"224","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.12,"mg/g",2010
+"225","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.278,"mg/g",2010
+"226","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.279,"mg/g",2010
+"227","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.4,"mg/g",2010
+"228","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.172,"mg/g",2010
+"229","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.518,"mg/g",2010
+"230","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"231","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.776,"mg/g",2010
+"232","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",4.35,"mg/g",2010
+"233","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.996,"mg/g",2010
+"234","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",2.03,"mg/g",2010
+"235","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.245,"mg/g",2010
+"236","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.5,"mg/g",2010
+"237","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",5,"mg/g",2010
+"238","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.34,"mg/g",2010
+"239","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.81,"mg/g",2010
+"240","MI","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.404,"mg/g",2010
+"241","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","alpha-Linolenic acid","ALA",2.72,"mg/g",2010
+"242","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosahexaenoic acid","DHA",6.3,"mg/g",2010
+"243","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosapentaenoic acid","DPA",2.85,"mg/g",2010
+"244","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",3.07,"mg/g",2010
+"245","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.585,"mg/g",2010
+"246","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.625,"mg/g",2010
+"247","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.19,"mg/g",2010
+"248","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.676,"mg/g",2010
+"249","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.43,"mg/g",2010
+"250","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.261,"mg/g",2010
+"251","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.257,"mg/g",2010
+"252","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.18,"mg/g",2010
+"253","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.856,"mg/g",2010
+"254","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.565,"mg/g",2010
+"255","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.103,"mg/g",2010
+"256","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.339,"mg/g",2010
+"257","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",2.24,"mg/g",2010
+"258","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.431,"mg/g",2010
+"259","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.735,"mg/g",2010
+"260","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"261","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.212,"mg/g",2010
+"262","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.5,"mg/g",2010
+"263","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.222,"mg/g",2010
+"264","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.538,"mg/g",2010
+"265","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"266","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.992,"mg/g",2010
+"267","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",2.2,"mg/g",2010
+"268","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.401,"mg/g",2010
+"269","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.759,"mg/g",2010
+"270","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.161,"mg/g",2010
+"271","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",1.98,"mg/g",2010
+"272","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",6.04,"mg/g",2010
+"273","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.26,"mg/g",2010
+"274","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",2.52,"mg/g",2010
+"275","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.397,"mg/g",2010
+"276","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.84,"mg/g",2010
+"277","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",2.21,"mg/g",2010
+"278","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.436,"mg/g",2010
+"279","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.648,"mg/g",2010
+"280","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.136,"mg/g",2010
+"281","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.501,"mg/g",2010
+"282","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",1.65,"mg/g",2010
+"283","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.271,"mg/g",2010
+"284","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.397,"mg/g",2010
+"285","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"286","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.29,"mg/g",2010
+"287","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.95,"mg/g",2010
+"288","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.552,"mg/g",2010
+"289","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.42,"mg/g",2010
+"290","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"291","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.87,"mg/g",2010
+"292","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.13,"mg/g",2010
+"293","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.21,"mg/g",2010
+"294","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.02,"mg/g",2010
+"295","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.342,"mg/g",2010
+"296","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.26,"mg/g",2010
+"297","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.51,"mg/g",2010
+"298","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.73,"mg/g",2010
+"299","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.73,"mg/g",2010
+"300","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.945,"mg/g",2010
+"301","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.793,"mg/g",2010
+"302","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.92,"mg/g",2010
+"303","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.45,"mg/g",2010
+"304","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.02,"mg/g",2010
+"305","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.284,"mg/g",2010
+"306","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.815,"mg/g",2010
+"307","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.67,"mg/g",2010
+"308","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.24,"mg/g",2010
+"309","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.83,"mg/g",2010
+"310","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.311,"mg/g",2010
+"311","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.38,"mg/g",2010
+"312","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.97,"mg/g",2010
+"313","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.04,"mg/g",2010
+"314","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.07,"mg/g",2010
+"315","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.392,"mg/g",2010
+"316","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.942,"mg/g",2010
+"317","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.21,"mg/g",2010
+"318","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.34,"mg/g",2010
+"319","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.55,"mg/g",2010
+"320","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.344,"mg/g",2010
+"321","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"322","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.17,"mg/g",2010
+"323","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.135,"mg/g",2010
+"324","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",0.446,"mg/g",2010
+"325","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"326","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","alpha-Linolenic acid","ALA",0.18,"mg/g",2010
+"327","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Docosahexaenoic acid","DHA",1.37,"mg/g",2010
+"328","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Docosapentaenoic acid","DPA",0.318,"mg/g",2010
+"329","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Eicosapentaenoic acid","EPA",0.43,"mg/g",2010
+"330","MI","Lake Superior","Salvelinus fontinalis X Salvelinus namaycush","Splake","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"331","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.851,"mg/g",2010
+"332","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.78,"mg/g",2010
+"333","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.967,"mg/g",2010
+"334","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.83,"mg/g",2010
+"335","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.218,"mg/g",2010
+"336","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.17,"mg/g",2010
+"337","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.74,"mg/g",2010
+"338","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.52,"mg/g",2010
+"339","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.03,"mg/g",2010
+"340","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.649,"mg/g",2010
+"341","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.39,"mg/g",2010
+"342","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.95,"mg/g",2010
+"343","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.43,"mg/g",2010
+"344","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.4,"mg/g",2010
+"345","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.789,"mg/g",2010
+"346","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.44,"mg/g",2010
+"347","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",10.6,"mg/g",2010
+"348","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.52,"mg/g",2010
+"349","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.28,"mg/g",2010
+"350","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.84,"mg/g",2010
+"351","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.14,"mg/g",2010
+"352","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.01,"mg/g",2010
+"353","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.05,"mg/g",2010
+"354","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.89,"mg/g",2010
+"355","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.551,"mg/g",2010
+"356","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.99,"mg/g",2010
+"357","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.03,"mg/g",2010
+"358","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.31,"mg/g",2010
+"359","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4,"mg/g",2010
+"360","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.709,"mg/g",2010
+"361","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.88,"mg/g",2010
+"362","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.13,"mg/g",2010
+"363","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.74,"mg/g",2010
+"364","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.63,"mg/g",2010
+"365","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.606,"mg/g",2010
+"366","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.407,"mg/g",2010
+"367","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",2.33,"mg/g",2010
+"368","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.588,"mg/g",2010
+"369","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",1.76,"mg/g",2010
+"370","MI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"371","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.82,"mg/g",2010
+"372","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",10.6,"mg/g",2010
+"373","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.58,"mg/g",2010
+"374","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",6.56,"mg/g",2010
+"375","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.841,"mg/g",2010
+"376","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.614,"mg/g",2010
+"377","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",3.64,"mg/g",2010
+"378","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.779,"mg/g",2010
+"379","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.46,"mg/g",2010
+"380","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.144,"mg/g",2010
+"381","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.05,"mg/g",2010
+"382","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",11,"mg/g",2010
+"383","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.7,"mg/g",2010
+"384","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.84,"mg/g",2010
+"385","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.05,"mg/g",2010
+"386","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.07,"mg/g",2010
+"387","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",5.87,"mg/g",2010
+"388","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.42,"mg/g",2010
+"389","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.26,"mg/g",2010
+"390","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.341,"mg/g",2010
+"391","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.79,"mg/g",2010
+"392","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.07,"mg/g",2010
+"393","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.28,"mg/g",2010
+"394","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.78,"mg/g",2010
+"395","MI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.209,"mg/g",2010
+"396","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.73,"mg/g",2010
+"397","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",16.3,"mg/g",2010
+"398","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",5.5,"mg/g",2010
+"399","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",8.82,"mg/g",2010
+"400","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.23,"mg/g",2010
+"401","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.1,"mg/g",2010
+"402","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",4.34,"mg/g",2010
+"403","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.935,"mg/g",2010
+"404","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.86,"mg/g",2010
+"405","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.327,"mg/g",2010
+"406","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.02,"mg/g",2010
+"407","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.99,"mg/g",2010
+"408","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.2,"mg/g",2010
+"409","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.81,"mg/g",2010
+"410","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.702,"mg/g",2010
+"411","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.485,"mg/g",2010
+"412","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",2.53,"mg/g",2010
+"413","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.581,"mg/g",2010
+"414","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.27,"mg/g",2010
+"415","MN","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"416","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.87,"mg/g",2010
+"417","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.28,"mg/g",2010
+"418","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.69,"mg/g",2010
+"419","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.5,"mg/g",2010
+"420","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.631,"mg/g",2010
+"421","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.79,"mg/g",2010
+"422","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",8.06,"mg/g",2010
+"423","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.7,"mg/g",2010
+"424","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.13,"mg/g",2010
+"425","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.68,"mg/g",2010
+"426","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.279,"mg/g",2010
+"427","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.36,"mg/g",2010
+"428","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.277,"mg/g",2010
+"429","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.916,"mg/g",2010
+"430","MN","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"431","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.652,"mg/g",2010
+"432","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",2.81,"mg/g",2010
+"433","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.581,"mg/g",2010
+"434","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",1.11,"mg/g",2010
+"435","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.161,"mg/g",2010
+"436","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"437","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.48,"mg/g",2010
+"438","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.47,"mg/g",2010
+"439","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.24,"mg/g",2010
+"440","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"441","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.173,"mg/g",2010
+"442","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.61,"mg/g",2010
+"443","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.117,"mg/g",2010
+"444","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.583,"mg/g",2010
+"445","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"446","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.553,"mg/g",2010
+"447","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",2.36,"mg/g",2010
+"448","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.457,"mg/g",2010
+"449","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.07,"mg/g",2010
+"450","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"451","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.1,"mg/g",2010
+"452","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.28,"mg/g",2010
+"453","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.409,"mg/g",2010
+"454","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.275,"mg/g",2010
+"455","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"456","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"457","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.808,"mg/g",2010
+"458","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"459","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.164,"mg/g",2010
+"460","NY","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"461","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.143,"mg/g",2010
+"462","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.1,"mg/g",2010
+"463","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.757,"mg/g",2010
+"464","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.401,"mg/g",2010
+"465","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"466","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.787,"mg/g",2010
+"467","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.22,"mg/g",2010
+"468","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.526,"mg/g",2010
+"469","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.61,"mg/g",2010
+"470","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"471","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"472","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Docosahexaenoic acid","DHA",0.542,"mg/g",2010
+"473","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"474","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Eicosapentaenoic acid","EPA",NA,"mg/g",2010
+"475","NY","Lake Ontario","Esox niger","Chain pickerel","Esocidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"476","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.128,"mg/g",2010
+"477","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.27,"mg/g",2010
+"478","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.393,"mg/g",2010
+"479","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.228,"mg/g",2010
+"480","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"481","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",8.04,"mg/g",2010
+"482","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",17.7,"mg/g",2010
+"483","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",8.99,"mg/g",2010
+"484","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",10.5,"mg/g",2010
+"485","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",2.3,"mg/g",2010
+"486","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",0.257,"mg/g",2010
+"487","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.67,"mg/g",2010
+"488","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",0.562,"mg/g",2010
+"489","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",0.362,"mg/g",2010
+"490","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"491","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",3.53,"mg/g",2010
+"492","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",9.81,"mg/g",2010
+"493","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",2.01,"mg/g",2010
+"494","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",5.07,"mg/g",2010
+"495","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.481,"mg/g",2010
+"496","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.492,"mg/g",2010
+"497","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.36,"mg/g",2010
+"498","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.848,"mg/g",2010
+"499","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.663,"mg/g",2010
+"500","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.117,"mg/g",2010
+"501","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.408,"mg/g",2010
+"502","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.33,"mg/g",2010
+"503","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.11,"mg/g",2010
+"504","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.576,"mg/g",2010
+"505","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"506","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.37,"mg/g",2010
+"507","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.07,"mg/g",2010
+"508","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.694,"mg/g",2010
+"509","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.479,"mg/g",2010
+"510","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"511","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.73,"mg/g",2010
+"512","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.85,"mg/g",2010
+"513","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",3.83,"mg/g",2010
+"514","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",5.64,"mg/g",2010
+"515","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",1.09,"mg/g",2010
+"516","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.5,"mg/g",2010
+"517","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.7,"mg/g",2010
+"518","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.97,"mg/g",2010
+"519","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.687,"mg/g",2010
+"520","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"521","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.71,"mg/g",2010
+"522","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.77,"mg/g",2010
+"523","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.17,"mg/g",2010
+"524","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.853,"mg/g",2010
+"525","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.139,"mg/g",2010
+"526","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.909,"mg/g",2010
+"527","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",4.23,"mg/g",2010
+"528","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.58,"mg/g",2010
+"529","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.15,"mg/g",2010
+"530","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.201,"mg/g",2010
+"531","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",3.09,"mg/g",2010
+"532","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",4.25,"mg/g",2010
+"533","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.52,"mg/g",2010
+"534","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",3.32,"mg/g",2010
+"535","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.488,"mg/g",2010
+"536","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",3.24,"mg/g",2010
+"537","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",9.36,"mg/g",2010
+"538","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",4.43,"mg/g",2010
+"539","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.52,"mg/g",2010
+"540","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.877,"mg/g",2010
+"541","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.585,"mg/g",2010
+"542","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.72,"mg/g",2010
+"543","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.12,"mg/g",2010
+"544","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.715,"mg/g",2010
+"545","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.149,"mg/g",2010
+"546","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.831,"mg/g",2010
+"547","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",4.14,"mg/g",2010
+"548","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.48,"mg/g",2010
+"549","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.04,"mg/g",2010
+"550","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.175,"mg/g",2010
+"551","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.786,"mg/g",2010
+"552","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.45,"mg/g",2010
+"553","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.649,"mg/g",2010
+"554","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.4,"mg/g",2010
+"555","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.174,"mg/g",2010
+"556","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.105,"mg/g",2010
+"557","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.18,"mg/g",2010
+"558","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.497,"mg/g",2010
+"559","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.216,"mg/g",2010
+"560","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"561","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",2.51,"mg/g",2010
+"562","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.48,"mg/g",2010
+"563","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.5,"mg/g",2010
+"564","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.75,"mg/g",2010
+"565","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",0.481,"mg/g",2010
+"566","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.453,"mg/g",2010
+"567","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.94,"mg/g",2010
+"568","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.93,"mg/g",2010
+"569","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.563,"mg/g",2010
+"570","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.189,"mg/g",2010
+"571","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.406,"mg/g",2010
+"572","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.756,"mg/g",2010
+"573","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.467,"mg/g",2010
+"574","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.619,"mg/g",2010
+"575","NY","Lake Ontario","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"576","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"577","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.681,"mg/g",2010
+"578","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"579","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.235,"mg/g",2010
+"580","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"581","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",1.61,"mg/g",2010
+"582","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",5.4,"mg/g",2010
+"583","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",1.11,"mg/g",2010
+"584","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.64,"mg/g",2010
+"585","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.326,"mg/g",2010
+"586","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",0.15,"mg/g",2010
+"587","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.938,"mg/g",2010
+"588","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",0.198,"mg/g",2010
+"589","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.291,"mg/g",2010
+"590","NY","Lake Ontario","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"591","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.583,"mg/g",2010
+"592","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.96,"mg/g",2010
+"593","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.16,"mg/g",2010
+"594","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.743,"mg/g",2010
+"595","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.123,"mg/g",2010
+"596","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",1.08,"mg/g",2010
+"597","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",3.83,"mg/g",2010
+"598","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.78,"mg/g",2010
+"599","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.04,"mg/g",2010
+"600","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.15,"mg/g",2010
+"601","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.34,"mg/g",2010
+"602","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.24,"mg/g",2010
+"603","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.75,"mg/g",2010
+"604","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.34,"mg/g",2010
+"605","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.752,"mg/g",2010
+"606","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.74,"mg/g",2010
+"607","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.18,"mg/g",2010
+"608","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.82,"mg/g",2010
+"609","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosapentaenoic acid","EPA",4.02,"mg/g",2010
+"610","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.982,"mg/g",2010
+"611","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.383,"mg/g",2010
+"612","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.87,"mg/g",2010
+"613","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.69,"mg/g",2010
+"614","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.483,"mg/g",2010
+"615","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"616","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",2.06,"mg/g",2010
+"617","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",10.4,"mg/g",2010
+"618","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",1.63,"mg/g",2010
+"619","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.88,"mg/g",2010
+"620","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",0.204,"mg/g",2010
+"621","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.191,"mg/g",2010
+"622","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",1.28,"mg/g",2010
+"623","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",0.486,"mg/g",2010
+"624","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.27,"mg/g",2010
+"625","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"626","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.733,"mg/g",2010
+"627","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",2.89,"mg/g",2010
+"628","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",1.22,"mg/g",2010
+"629","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",0.873,"mg/g",2010
+"630","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",0.197,"mg/g",2010
+"631","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"632","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",0.297,"mg/g",2010
+"633","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",0.235,"mg/g",2010
+"634","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",0.268,"mg/g",2010
+"635","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"636","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.527,"mg/g",2010
+"637","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.69,"mg/g",2010
+"638","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.295,"mg/g",2010
+"639","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.14,"mg/g",2010
+"640","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"641","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",1.26,"mg/g",2010
+"642","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.92,"mg/g",2010
+"643","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.506,"mg/g",2010
+"644","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.2,"mg/g",2010
+"645","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"646","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","alpha-Linolenic acid","ALA",0.847,"mg/g",2010
+"647","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosahexaenoic acid","DHA",1.52,"mg/g",2010
+"648","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Docosapentaenoic acid","DPA",1.1,"mg/g",2010
+"649","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosapentaenoic acid","EPA",1.27,"mg/g",2010
+"650","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Eicosatrienoic acid","ETE",0.114,"mg/g",2010
+"651","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",0.172,"mg/g",2010
+"652","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.816,"mg/g",2010
+"653","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",0.229,"mg/g",2010
+"654","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.385,"mg/g",2010
+"655","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"656","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
+"657","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosahexaenoic acid","DHA",0.527,"mg/g",2010
+"658","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"659","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosapentaenoic acid","EPA",0.224,"mg/g",2010
+"660","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"661","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",3.31,"mg/g",2010
+"662","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",2.87,"mg/g",2010
+"663","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",1.84,"mg/g",2010
+"664","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",2.85,"mg/g",2010
+"665","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.315,"mg/g",2010
+"666","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",1.03,"mg/g",2010
+"667","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",2.46,"mg/g",2010
+"668","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",1.18,"mg/g",2010
+"669","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",1.95,"mg/g",2010
+"670","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.168,"mg/g",2010
+"671","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.767,"mg/g",2010
+"672","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",2.47,"mg/g",2010
+"673","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.318,"mg/g",2010
+"674","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",1.51,"mg/g",2010
+"675","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"676","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",4.55,"mg/g",2010
+"677","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",3.39,"mg/g",2010
+"678","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",2.3,"mg/g",2010
+"679","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",3.84,"mg/g",2010
+"680","OH","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",0.318,"mg/g",2010
+"681","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.176,"mg/g",2010
+"682","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",0.914,"mg/g",2010
+"683","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010
+"684","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.445,"mg/g",2010
+"685","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"686","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.372,"mg/g",2010
+"687","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.29,"mg/g",2010
+"688","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.239,"mg/g",2010
+"689","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.75,"mg/g",2010
+"690","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"691","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.493,"mg/g",2010
+"692","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.4,"mg/g",2010
+"693","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.321,"mg/g",2010
+"694","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.916,"mg/g",2010
+"695","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"696","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.202,"mg/g",2010
+"697","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.01,"mg/g",2010
+"698","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.127,"mg/g",2010
+"699","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.465,"mg/g",2010
+"700","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"701","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","alpha-Linolenic acid","ALA",0.873,"mg/g",2010
+"702","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosahexaenoic acid","DHA",4.44,"mg/g",2010
+"703","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Docosapentaenoic acid","DPA",2.7,"mg/g",2010
+"704","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosapentaenoic acid","EPA",1.33,"mg/g",2010
+"705","PA","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"706","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",0.339,"mg/g",2010
+"707","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",1.61,"mg/g",2010
+"708","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.151,"mg/g",2010
+"709","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",0.884,"mg/g",2010
+"710","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"711","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","alpha-Linolenic acid","ALA",1.08,"mg/g",2010
+"712","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosahexaenoic acid","DHA",3.62,"mg/g",2010
+"713","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Docosapentaenoic acid","DPA",0.632,"mg/g",2010
+"714","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosapentaenoic acid","EPA",2.09,"mg/g",2010
+"715","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"716","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",1.15,"mg/g",2010
+"717","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",6.64,"mg/g",2010
+"718","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",2.28,"mg/g",2010
+"719","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",2.75,"mg/g",2010
+"720","WI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.325,"mg/g",2010
+"721","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.203,"mg/g",2010
+"722","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",2.14,"mg/g",2010
+"723","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",1.04,"mg/g",2010
+"724","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.14,"mg/g",2010
+"725","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"726","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.652,"mg/g",2010
+"727","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",1.84,"mg/g",2010
+"728","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.239,"mg/g",2010
+"729","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.597,"mg/g",2010
+"730","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"731","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","alpha-Linolenic acid","ALA",0.616,"mg/g",2010
+"732","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosahexaenoic acid","DHA",1,"mg/g",2010
+"733","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Docosapentaenoic acid","DPA",0.796,"mg/g",2010
+"734","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosapentaenoic acid","EPA",1.41,"mg/g",2010
+"735","WI","Lake Michigan","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"736","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.49,"mg/g",2010
+"737","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosahexaenoic acid","DHA",3.76,"mg/g",2010
+"738","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.667,"mg/g",2010
+"739","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",1.16,"mg/g",2010
+"740","WI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"741","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","alpha-Linolenic acid","ALA",0.45,"mg/g",2010
+"742","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosahexaenoic acid","DHA",1.37,"mg/g",2010
+"743","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Docosapentaenoic acid","DPA",0.222,"mg/g",2010
+"744","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosapentaenoic acid","EPA",0.368,"mg/g",2010
+"745","WI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"746","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.421,"mg/g",2010
+"747","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",2.22,"mg/g",2010
+"748","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.455,"mg/g",2010
+"749","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",1.14,"mg/g",2010
+"750","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"751","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.216,"mg/g",2010
+"752","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.24,"mg/g",2010
+"753","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.231,"mg/g",2010
+"754","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.787,"mg/g",2010
+"755","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"756","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.265,"mg/g",2010
+"757","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.86,"mg/g",2010
+"758","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.574,"mg/g",2010
+"759","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.43,"mg/g",2010
+"760","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"761","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.399,"mg/g",2010
+"762","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.41,"mg/g",2010
+"763","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.3,"mg/g",2010
+"764","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.73,"mg/g",2010
+"765","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"766","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","alpha-Linolenic acid","ALA",0.229,"mg/g",2010
+"767","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosahexaenoic acid","DHA",1.46,"mg/g",2010
+"768","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Docosapentaenoic acid","DPA",0.351,"mg/g",2010
+"769","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosapentaenoic acid","EPA",0.717,"mg/g",2010
+"770","WI","Lake Superior","Prosopium cylindraceum","Round whitefish","Salmonidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"771","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.249,"mg/g",2010
+"772","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",1.56,"mg/g",2010
+"773","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.443,"mg/g",2010
+"774","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",1.1,"mg/g",2010
+"775","WI","Lake Superior","Catostomus commersonii","White sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010
+"776","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","alpha-Linolenic acid","ALA",2.28,"mg/g",2010
+"777","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosahexaenoic acid","DHA",7.25,"mg/g",2010
+"778","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Docosapentaenoic acid","DPA",1.99,"mg/g",2010
+"779","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosapentaenoic acid","EPA",3.43,"mg/g",2010
+"780","WI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Eicosatrienoic acid","ETE",0.668,"mg/g",2010
+"781","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","alpha-Linolenic acid","ALA",0.453,"mg/g",2010
+"782","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosahexaenoic acid","DHA",2.45,"mg/g",2010
+"783","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Docosapentaenoic acid","DPA",0.716,"mg/g",2010
+"784","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosapentaenoic acid","EPA",2.03,"mg/g",2010
+"785","WI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Eicosatrienoic acid","ETE",NA,"mg/g",2010

@@ -1,166 +1,166 @@
-"","State","Lake","Scientific.Name","Common.Name","Family","Niche","Analyte","Amount","Units.1","Units.2"
-"1","MI","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",145,"ng/g","ppb"
-"2","MI","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",228,"ng/g","ppb"
-"3","MI","Lake Erie","Morone chrysops","White Bass","Moronidae","P","Mercury",326,"ng/g","ppb"
-"4","MI","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",123,"ng/g","ppb"
-"5","MI","Lake Erie","Morone chrysops","White Bass","Moronidae","P","Mercury",300,"ng/g","ppb"
-"6","MI","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",153,"ng/g","ppb"
-"7","NY","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",119,"ng/g","ppb"
-"8","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",287,"ng/g","ppb"
-"9","NY","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",113,"ng/g","ppb"
-"10","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",202,"ng/g","ppb"
-"11","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",150,"ng/g","ppb"
-"12","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",288,"ng/g","ppb"
-"13","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",347,"ng/g","ppb"
-"14","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",140,"ng/g","ppb"
-"15","OH","Lake Erie","Ictalurus punctatus","Channel Catfish","Ictaluridae","BD","Mercury",35.3,"ng/g","ppb"
-"16","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",206,"ng/g","ppb"
-"17","OH","Lake Erie","Morone americana","White Perch","Moronidae","P","Mercury",136,"ng/g","ppb"
-"18","OH","Lake Erie","Perca flavescens","Yellow Perch","Percidae","P","Mercury",62.4,"ng/g","ppb"
-"19","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",123,"ng/g","ppb"
-"20","OH","Lake Erie","Morone americana","White Perch","Moronidae","P","Mercury",51.9,"ng/g","ppb"
-"21","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",90,"ng/g","ppb"
-"22","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",72.3,"ng/g","ppb"
-"23","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",43.1,"ng/g","ppb"
-"24","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",90.4,"ng/g","ppb"
-"25","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",99.1,"ng/g","ppb"
-"26","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",103,"ng/g","ppb"
-"27","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",99.7,"ng/g","ppb"
-"28","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",114,"ng/g","ppb"
-"29","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",920,"ng/g","ppb"
-"30","OH","Lake Erie","Morone americana","White Perch","Moronidae","P","Mercury",60.5,"ng/g","ppb"
-"31","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",129,"ng/g","ppb"
-"32","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",43.1,"ng/g","ppb"
-"33","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",89.2,"ng/g","ppb"
-"34","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",72.8,"ng/g","ppb"
-"35","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",218,"ng/g","ppb"
-"36","MI","Lake Huron","Ictalurus punctatus","Channel Catfish","Ictaluridae","BD","Mercury",214,"ng/g","ppb"
-"37","MI","Lake Huron","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",29.7,"ng/g","ppb"
-"38","MI","Lake Huron","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",143,"ng/g","ppb"
-"39","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",112,"ng/g","ppb"
-"40","MI","Lake Huron","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",169,"ng/g","ppb"
-"41","MI","Lake Huron","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",143,"ng/g","ppb"
-"42","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",77.1,"ng/g","ppb"
-"43","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",67.3,"ng/g","ppb"
-"44","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",286,"ng/g","ppb"
-"45","MI","Lake Huron","Salvelinus fontinalis","Brook Trout","Salmonidae","P","Mercury",101,"ng/g","ppb"
-"46","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",727,"ng/g","ppb"
-"47","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",147,"ng/g","ppb"
-"48","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",349,"ng/g","ppb"
-"49","MI","Lake Huron","Moxostoma anisurum","Silver Redhorse","Catostomidae","BD","Mercury",79.5,"ng/g","ppb"
-"50","MI","Lake Huron","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",175,"ng/g","ppb"
-"51","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",150,"ng/g","ppb"
-"52","MI","Lake Huron","Oncorhynchus tshawytscha","Chinook Salmon","Salmonidae","P","Mercury",99.4,"ng/g","ppb"
-"53","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",128,"ng/g","ppb"
-"54","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",186,"ng/g","ppb"
-"55","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",105,"ng/g","ppb"
-"56","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",182,"ng/g","ppb"
-"57","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",316,"ng/g","ppb"
-"58","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",162,"ng/g","ppb"
-"59","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",264,"ng/g","ppb"
-"60","MI","Lake Huron","Micropterus salmoides","Largemouth Bass","Centrarchidae","P","Mercury",364,"ng/g","ppb"
-"61","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",146,"ng/g","ppb"
-"62","MI","Lake Huron","Oncorhynchus tshawytscha","Chinook Salmon","Salmonidae","P","Mercury",192,"ng/g","ppb"
-"63","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",331,"ng/g","ppb"
-"64","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",141,"ng/g","ppb"
-"65","IN","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",75.3,"ng/g","ppb"
-"66","IN","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",170,"ng/g","ppb"
-"67","MI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",146,"ng/g","ppb"
-"68","MI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",56.9,"ng/g","ppb"
-"69","MI","Lake Michigan","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",328,"ng/g","ppb"
-"70","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",331,"ng/g","ppb"
-"71","MI","Lake Michigan","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",117,"ng/g","ppb"
-"72","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",421,"ng/g","ppb"
-"73","MI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",145,"ng/g","ppb"
-"74","MI","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",81.4,"ng/g","ppb"
-"75","MI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",355,"ng/g","ppb"
-"76","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",219,"ng/g","ppb"
-"77","MI","Lake Michigan","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",62.4,"ng/g","ppb"
-"78","MI","Lake Michigan","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",154,"ng/g","ppb"
-"79","MI","Lake Michigan","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",96.9,"ng/g","ppb"
-"80","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",370,"ng/g","ppb"
-"81","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",227,"ng/g","ppb"
-"82","MI","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",150,"ng/g","ppb"
-"83","WI","Lake Michigan","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",34.4,"ng/g","ppb"
-"84","WI","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",130,"ng/g","ppb"
-"85","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",69.7,"ng/g","ppb"
-"86","WI","Lake Michigan","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",77.5,"ng/g","ppb"
-"87","WI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",116,"ng/g","ppb"
-"88","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",79.3,"ng/g","ppb"
-"89","WI","Lake Michigan","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",142,"ng/g","ppb"
-"90","WI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",536,"ng/g","ppb"
-"91","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",78,"ng/g","ppb"
-"92","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",35.4,"ng/g","ppb"
-"93","WI","Lake Michigan","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",36.9,"ng/g","ppb"
-"94","NY","Lake Ontario","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",335,"ng/g","ppb"
-"95","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",197,"ng/g","ppb"
-"96","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Mercury",261,"ng/g","ppb"
-"97","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",411,"ng/g","ppb"
-"98","NY","Lake Ontario","Coregonus artedi","Cisco","Salmonidae","P","Mercury",106,"ng/g","ppb"
-"99","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",780,"ng/g","ppb"
-"100","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",129,"ng/g","ppb"
-"101","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",243,"ng/g","ppb"
-"102","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow Trout","Salmonidae","P","Mercury",108,"ng/g","ppb"
-"103","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",232,"ng/g","ppb"
-"104","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Mercury",202,"ng/g","ppb"
-"105","NY","Lake Ontario","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",613,"ng/g","ppb"
-"106","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",463,"ng/g","ppb"
-"107","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",138,"ng/g","ppb"
-"108","NY","Lake Ontario","Oncorhynchus kisutch","Coho Salmon","Salmonidae","P","Mercury",37.9,"ng/g","ppb"
-"109","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",406,"ng/g","ppb"
-"110","NY","Lake Ontario","Amploplites rupestris","Rock Bass","Centrarchidae","P","Mercury",170,"ng/g","ppb"
-"111","NY","Lake Ontario","Esox niger","Chain Pickerel","Esocidae","P","Mercury",235,"ng/g","ppb"
-"112","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",391,"ng/g","ppb"
-"113","NY","Lake Ontario","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",190,"ng/g","ppb"
-"114","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",133,"ng/g","ppb"
-"115","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",194,"ng/g","ppb"
-"116","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",121,"ng/g","ppb"
-"117","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",132,"ng/g","ppb"
-"118","NY","Lake Ontario","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",158,"ng/g","ppb"
-"119","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",181,"ng/g","ppb"
-"120","NY","Lake Ontario","Perca flavescens","Yellow Perch","Percidae","P","Mercury",105,"ng/g","ppb"
-"121","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",600,"ng/g","ppb"
-"122","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow Trout","Salmonidae","P","Mercury",323,"ng/g","ppb"
-"123","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",83.7,"ng/g","ppb"
-"124","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",211,"ng/g","ppb"
-"125","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",351,"ng/g","ppb"
-"126","NY","Lake Ontario","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",142,"ng/g","ppb"
-"127","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",80.4,"ng/g","ppb"
-"128","MI","Lake Superior","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",36.9,"ng/g","ppb"
-"129","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",81.5,"ng/g","ppb"
-"130","MI","Lake Superior","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",39.4,"ng/g","ppb"
-"131","MI","Lake Superior","Oncorhynchus tshawytscha","Chinook Salmon","Salmonidae","P","Mercury",48.1,"ng/g","ppb"
-"132","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",615,"ng/g","ppb"
-"133","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",133,"ng/g","ppb"
-"134","MI","Lake Superior","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",167,"ng/g","ppb"
-"135","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",103,"ng/g","ppb"
-"136","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",171,"ng/g","ppb"
-"137","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",75.1,"ng/g","ppb"
-"138","MI","Lake Superior","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",137,"ng/g","ppb"
-"139","MI","Lake Superior","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",35.6,"ng/g","ppb"
-"140","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",155,"ng/g","ppb"
-"141","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",386,"ng/g","ppb"
-"142","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",235,"ng/g","ppb"
-"143","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",155,"ng/g","ppb"
-"144","MI","Lake Superior","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",69.7,"ng/g","ppb"
-"145","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",174,"ng/g","ppb"
-"146","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",389,"ng/g","ppb"
-"147","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",124,"ng/g","ppb"
-"148","MI","Lake Superior","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",180,"ng/g","ppb"
-"149","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",175,"ng/g","ppb"
-"150","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",876,"ng/g","ppb"
-"151","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",87.3,"ng/g","ppb"
-"152","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",94.1,"ng/g","ppb"
-"153","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",154,"ng/g","ppb"
-"154","MN","Lake Superior","Oncorhynchus kisutch","Coho Salmon","Salmonidae","P","Mercury",49.6,"ng/g","ppb"
-"155","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",193,"ng/g","ppb"
-"156","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",59.2,"ng/g","ppb"
-"157","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",304,"ng/g","ppb"
-"158","MN","Lake Superior","Sander vitreus","Walleye","Percidae","P","Mercury",124,"ng/g","ppb"
-"159","MN","Lake Superior","Lota lota","Burbot","Gadidae","P","Mercury",182,"ng/g","ppb"
-"160","MN","Lake Superior","Oncorhynchus kisutch","Coho Salmon","Salmonidae","P","Mercury",83.1,"ng/g","ppb"
-"161","WI","Lake Superior","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",63.9,"ng/g","ppb"
-"162","WI","Lake Superior","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",128,"ng/g","ppb"
-"163","WI","Lake Superior","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",51.2,"ng/g","ppb"
-"164","WI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",63.5,"ng/g","ppb"
-"165","WI","Lake Superior","Sander vitreus","Walleye","Percidae","P","Mercury",85.1,"ng/g","ppb"
+"","State","Lake","Scientific.Name","Common.Name","Family","Niche","Analyte","Amount","Units.1","Units.2","Year"
+"1","MI","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",145,"ng/g","ppb",2020
+"2","MI","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",228,"ng/g","ppb",2020
+"3","MI","Lake Erie","Morone chrysops","White Bass","Moronidae","P","Mercury",326,"ng/g","ppb",2020
+"4","MI","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",123,"ng/g","ppb",2020
+"5","MI","Lake Erie","Morone chrysops","White Bass","Moronidae","P","Mercury",300,"ng/g","ppb",2020
+"6","MI","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",153,"ng/g","ppb",2020
+"7","NY","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",119,"ng/g","ppb",2020
+"8","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",287,"ng/g","ppb",2020
+"9","NY","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",113,"ng/g","ppb",2020
+"10","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",202,"ng/g","ppb",2020
+"11","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",150,"ng/g","ppb",2020
+"12","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",288,"ng/g","ppb",2020
+"13","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",347,"ng/g","ppb",2020
+"14","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",140,"ng/g","ppb",2020
+"15","OH","Lake Erie","Ictalurus punctatus","Channel Catfish","Ictaluridae","BD","Mercury",35.3,"ng/g","ppb",2020
+"16","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",206,"ng/g","ppb",2020
+"17","OH","Lake Erie","Morone americana","White Perch","Moronidae","P","Mercury",136,"ng/g","ppb",2020
+"18","OH","Lake Erie","Perca flavescens","Yellow Perch","Percidae","P","Mercury",62.4,"ng/g","ppb",2020
+"19","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",123,"ng/g","ppb",2020
+"20","OH","Lake Erie","Morone americana","White Perch","Moronidae","P","Mercury",51.9,"ng/g","ppb",2020
+"21","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",90,"ng/g","ppb",2020
+"22","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",72.3,"ng/g","ppb",2020
+"23","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",43.1,"ng/g","ppb",2020
+"24","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",90.4,"ng/g","ppb",2020
+"25","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",99.1,"ng/g","ppb",2020
+"26","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",103,"ng/g","ppb",2020
+"27","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",99.7,"ng/g","ppb",2020
+"28","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",114,"ng/g","ppb",2020
+"29","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",920,"ng/g","ppb",2020
+"30","OH","Lake Erie","Morone americana","White Perch","Moronidae","P","Mercury",60.5,"ng/g","ppb",2020
+"31","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",129,"ng/g","ppb",2020
+"32","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",43.1,"ng/g","ppb",2020
+"33","OH","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",89.2,"ng/g","ppb",2020
+"34","OH","Lake Erie","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",72.8,"ng/g","ppb",2020
+"35","PA","Lake Erie","Sander vitreus","Walleye","Percidae","P","Mercury",218,"ng/g","ppb",2020
+"36","MI","Lake Huron","Ictalurus punctatus","Channel Catfish","Ictaluridae","BD","Mercury",214,"ng/g","ppb",2020
+"37","MI","Lake Huron","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",29.7,"ng/g","ppb",2020
+"38","MI","Lake Huron","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",143,"ng/g","ppb",2020
+"39","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",112,"ng/g","ppb",2020
+"40","MI","Lake Huron","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",169,"ng/g","ppb",2020
+"41","MI","Lake Huron","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",143,"ng/g","ppb",2020
+"42","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",77.1,"ng/g","ppb",2020
+"43","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",67.3,"ng/g","ppb",2020
+"44","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",286,"ng/g","ppb",2020
+"45","MI","Lake Huron","Salvelinus fontinalis","Brook Trout","Salmonidae","P","Mercury",101,"ng/g","ppb",2020
+"46","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",727,"ng/g","ppb",2020
+"47","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",147,"ng/g","ppb",2020
+"48","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",349,"ng/g","ppb",2020
+"49","MI","Lake Huron","Moxostoma anisurum","Silver Redhorse","Catostomidae","BD","Mercury",79.5,"ng/g","ppb",2020
+"50","MI","Lake Huron","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",175,"ng/g","ppb",2020
+"51","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",150,"ng/g","ppb",2020
+"52","MI","Lake Huron","Oncorhynchus tshawytscha","Chinook Salmon","Salmonidae","P","Mercury",99.4,"ng/g","ppb",2020
+"53","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",128,"ng/g","ppb",2020
+"54","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",186,"ng/g","ppb",2020
+"55","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",105,"ng/g","ppb",2020
+"56","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",182,"ng/g","ppb",2020
+"57","MI","Lake Huron","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",316,"ng/g","ppb",2020
+"58","MI","Lake Huron","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",162,"ng/g","ppb",2020
+"59","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",264,"ng/g","ppb",2020
+"60","MI","Lake Huron","Micropterus salmoides","Largemouth Bass","Centrarchidae","P","Mercury",364,"ng/g","ppb",2020
+"61","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",146,"ng/g","ppb",2020
+"62","MI","Lake Huron","Oncorhynchus tshawytscha","Chinook Salmon","Salmonidae","P","Mercury",192,"ng/g","ppb",2020
+"63","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Mercury",331,"ng/g","ppb",2020
+"64","MI","Lake Huron","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",141,"ng/g","ppb",2020
+"65","IN","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",75.3,"ng/g","ppb",2020
+"66","IN","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",170,"ng/g","ppb",2020
+"67","MI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",146,"ng/g","ppb",2020
+"68","MI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",56.9,"ng/g","ppb",2020
+"69","MI","Lake Michigan","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",328,"ng/g","ppb",2020
+"70","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",331,"ng/g","ppb",2020
+"71","MI","Lake Michigan","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",117,"ng/g","ppb",2020
+"72","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",421,"ng/g","ppb",2020
+"73","MI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",145,"ng/g","ppb",2020
+"74","MI","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",81.4,"ng/g","ppb",2020
+"75","MI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",355,"ng/g","ppb",2020
+"76","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",219,"ng/g","ppb",2020
+"77","MI","Lake Michigan","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",62.4,"ng/g","ppb",2020
+"78","MI","Lake Michigan","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",154,"ng/g","ppb",2020
+"79","MI","Lake Michigan","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",96.9,"ng/g","ppb",2020
+"80","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",370,"ng/g","ppb",2020
+"81","MI","Lake Michigan","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",227,"ng/g","ppb",2020
+"82","MI","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",150,"ng/g","ppb",2020
+"83","WI","Lake Michigan","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",34.4,"ng/g","ppb",2020
+"84","WI","Lake Michigan","Perca flavescens","Yellow Perch","Percidae","P","Mercury",130,"ng/g","ppb",2020
+"85","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",69.7,"ng/g","ppb",2020
+"86","WI","Lake Michigan","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",77.5,"ng/g","ppb",2020
+"87","WI","Lake Michigan","Lota lota","Burbot","Gadidae","P","Mercury",116,"ng/g","ppb",2020
+"88","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",79.3,"ng/g","ppb",2020
+"89","WI","Lake Michigan","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",142,"ng/g","ppb",2020
+"90","WI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Mercury",536,"ng/g","ppb",2020
+"91","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",78,"ng/g","ppb",2020
+"92","WI","Lake Michigan","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",35.4,"ng/g","ppb",2020
+"93","WI","Lake Michigan","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",36.9,"ng/g","ppb",2020
+"94","NY","Lake Ontario","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",335,"ng/g","ppb",2020
+"95","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",197,"ng/g","ppb",2020
+"96","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Mercury",261,"ng/g","ppb",2020
+"97","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",411,"ng/g","ppb",2020
+"98","NY","Lake Ontario","Coregonus artedi","Cisco","Salmonidae","P","Mercury",106,"ng/g","ppb",2020
+"99","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",780,"ng/g","ppb",2020
+"100","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",129,"ng/g","ppb",2020
+"101","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",243,"ng/g","ppb",2020
+"102","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow Trout","Salmonidae","P","Mercury",108,"ng/g","ppb",2020
+"103","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",232,"ng/g","ppb",2020
+"104","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Mercury",202,"ng/g","ppb",2020
+"105","NY","Lake Ontario","Aplodinotus grunniens","Freshwater Drum","Sciaenidae","P","Mercury",613,"ng/g","ppb",2020
+"106","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",463,"ng/g","ppb",2020
+"107","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",138,"ng/g","ppb",2020
+"108","NY","Lake Ontario","Oncorhynchus kisutch","Coho Salmon","Salmonidae","P","Mercury",37.9,"ng/g","ppb",2020
+"109","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",406,"ng/g","ppb",2020
+"110","NY","Lake Ontario","Amploplites rupestris","Rock Bass","Centrarchidae","P","Mercury",170,"ng/g","ppb",2020
+"111","NY","Lake Ontario","Esox niger","Chain Pickerel","Esocidae","P","Mercury",235,"ng/g","ppb",2020
+"112","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",391,"ng/g","ppb",2020
+"113","NY","Lake Ontario","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",190,"ng/g","ppb",2020
+"114","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",133,"ng/g","ppb",2020
+"115","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",194,"ng/g","ppb",2020
+"116","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",121,"ng/g","ppb",2020
+"117","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",132,"ng/g","ppb",2020
+"118","NY","Lake Ontario","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",158,"ng/g","ppb",2020
+"119","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",181,"ng/g","ppb",2020
+"120","NY","Lake Ontario","Perca flavescens","Yellow Perch","Percidae","P","Mercury",105,"ng/g","ppb",2020
+"121","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",600,"ng/g","ppb",2020
+"122","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow Trout","Salmonidae","P","Mercury",323,"ng/g","ppb",2020
+"123","NY","Lake Ontario","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",83.7,"ng/g","ppb",2020
+"124","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Mercury",211,"ng/g","ppb",2020
+"125","NY","Lake Ontario","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",351,"ng/g","ppb",2020
+"126","NY","Lake Ontario","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",142,"ng/g","ppb",2020
+"127","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",80.4,"ng/g","ppb",2020
+"128","MI","Lake Superior","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",36.9,"ng/g","ppb",2020
+"129","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",81.5,"ng/g","ppb",2020
+"130","MI","Lake Superior","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",39.4,"ng/g","ppb",2020
+"131","MI","Lake Superior","Oncorhynchus tshawytscha","Chinook Salmon","Salmonidae","P","Mercury",48.1,"ng/g","ppb",2020
+"132","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",615,"ng/g","ppb",2020
+"133","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",133,"ng/g","ppb",2020
+"134","MI","Lake Superior","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",167,"ng/g","ppb",2020
+"135","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",103,"ng/g","ppb",2020
+"136","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",171,"ng/g","ppb",2020
+"137","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",75.1,"ng/g","ppb",2020
+"138","MI","Lake Superior","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",137,"ng/g","ppb",2020
+"139","MI","Lake Superior","Coregonus clupeaformis","Lake Whitefish","Salmonidae","BD","Mercury",35.6,"ng/g","ppb",2020
+"140","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",155,"ng/g","ppb",2020
+"141","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",386,"ng/g","ppb",2020
+"142","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",235,"ng/g","ppb",2020
+"143","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",155,"ng/g","ppb",2020
+"144","MI","Lake Superior","Catostomus commersonii","White Sucker","Catostomidae","BD","Mercury",69.7,"ng/g","ppb",2020
+"145","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",174,"ng/g","ppb",2020
+"146","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",389,"ng/g","ppb",2020
+"147","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",124,"ng/g","ppb",2020
+"148","MI","Lake Superior","Salmo trutta","Brown Trout","Salmonidae","P","Mercury",180,"ng/g","ppb",2020
+"149","MI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",175,"ng/g","ppb",2020
+"150","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",876,"ng/g","ppb",2020
+"151","MI","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",87.3,"ng/g","ppb",2020
+"152","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",94.1,"ng/g","ppb",2020
+"153","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",154,"ng/g","ppb",2020
+"154","MN","Lake Superior","Oncorhynchus kisutch","Coho Salmon","Salmonidae","P","Mercury",49.6,"ng/g","ppb",2020
+"155","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",193,"ng/g","ppb",2020
+"156","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",59.2,"ng/g","ppb",2020
+"157","MN","Lake Superior","Salvelinus namaycush","Lake Trout","Salmonidae","P","Mercury",304,"ng/g","ppb",2020
+"158","MN","Lake Superior","Sander vitreus","Walleye","Percidae","P","Mercury",124,"ng/g","ppb",2020
+"159","MN","Lake Superior","Lota lota","Burbot","Gadidae","P","Mercury",182,"ng/g","ppb",2020
+"160","MN","Lake Superior","Oncorhynchus kisutch","Coho Salmon","Salmonidae","P","Mercury",83.1,"ng/g","ppb",2020
+"161","WI","Lake Superior","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",63.9,"ng/g","ppb",2020
+"162","WI","Lake Superior","Micropterus dolomieu","Smallmouth Bass","Centrarchidae","P","Mercury",128,"ng/g","ppb",2020
+"163","WI","Lake Superior","Prosopium cylindraceum","Round Whitefish","Salmonidae","BD","Mercury",51.2,"ng/g","ppb",2020
+"164","WI","Lake Superior","Catostomus catostomus","Longnose Sucker","Catostomidae","BD","Mercury",63.5,"ng/g","ppb",2020
+"165","WI","Lake Superior","Sander vitreus","Walleye","Percidae","P","Mercury",85.1,"ng/g","ppb",2020

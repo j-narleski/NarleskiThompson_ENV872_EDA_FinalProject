@@ -1,153 +1,153 @@
-"","State","Lake","Scientific.Name","Common.Name","Family","Niche","Analyte","Amount","Unit.1","Unit.2"
-"1","IN","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",15.84,"ng/g","ppb"
-"2","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Total PCBs",385.29,"ng/g","ppb"
-"3","MI","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",576.67,"ng/g","ppb"
-"4","MI","Lake Huron","Morone americana","White perch","Moronidae","P","Total PCBs",431.62,"ng/g","ppb"
-"5","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",153.02,"ng/g","ppb"
-"6","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",449.04,"ng/g","ppb"
-"7","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",113.82,"ng/g","ppb"
-"8","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",215.25,"ng/g","ppb"
-"9","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",34.48,"ng/g","ppb"
-"10","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",112.32,"ng/g","ppb"
-"11","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",30.34,"ng/g","ppb"
-"12","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",78.15,"ng/g","ppb"
-"13","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",214.81,"ng/g","ppb"
-"14","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",64.56,"ng/g","ppb"
-"15","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",15.17,"ng/g","ppb"
-"16","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",81.58,"ng/g","ppb"
-"17","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",150.61,"ng/g","ppb"
-"18","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",7.93,"ng/g","ppb"
-"19","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Total PCBs",55.38,"ng/g","ppb"
-"20","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",5.21,"ng/g","ppb"
-"21","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",15.49,"ng/g","ppb"
-"22","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",325.57,"ng/g","ppb"
-"23","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",265.14,"ng/g","ppb"
-"24","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",8.52,"ng/g","ppb"
-"25","MI","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",176.27,"ng/g","ppb"
-"26","MI","Lake Michigan","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",4.07,"ng/g","ppb"
-"27","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",10.95,"ng/g","ppb"
-"28","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",46.26,"ng/g","ppb"
-"29","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",10.8,"ng/g","ppb"
-"30","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",13.34,"ng/g","ppb"
-"31","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",21.61,"ng/g","ppb"
-"32","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",4.97,"ng/g","ppb"
-"33","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",10.58,"ng/g","ppb"
-"34","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",15.37,"ng/g","ppb"
-"35","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",32.54,"ng/g","ppb"
-"36","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",8.28,"ng/g","ppb"
-"37","MI","Lake Superior","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",28.48,"ng/g","ppb"
-"38","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",38.33,"ng/g","ppb"
-"39","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",42.51,"ng/g","ppb"
-"40","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","","Total PCBs",6.49,"ng/g","ppb"
-"41","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",45.75,"ng/g","ppb"
-"42","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",3.32,"ng/g","ppb"
-"43","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",18.35,"ng/g","ppb"
-"44","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",19.12,"ng/g","ppb"
-"45","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",32.57,"ng/g","ppb"
-"46","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",11.99,"ng/g","ppb"
-"47","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",6.04,"ng/g","ppb"
-"48","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",50.39,"ng/g","ppb"
-"49","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",369.42,"ng/g","ppb"
-"50","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",101.58,"ng/g","ppb"
-"51","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",49.01,"ng/g","ppb"
-"52","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",341.36,"ng/g","ppb"
-"53","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",11.25,"ng/g","ppb"
-"54","MI","Lake Michigan","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",162.64,"ng/g","ppb"
-"55","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",166.9,"ng/g","ppb"
-"56","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",22.38,"ng/g","ppb"
-"57","MI","Lake Huron","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",50.86,"ng/g","ppb"
-"58","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",58.8,"ng/g","ppb"
-"59","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",66.4,"ng/g","ppb"
-"60","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",172.4,"ng/g","ppb"
-"61","MI","Lake Huron","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",6.23,"ng/g","ppb"
-"62","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",28.05,"ng/g","ppb"
-"63","MI","Lake Huron","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",112.21,"ng/g","ppb"
-"64","MI","Lake Huron","Perca flavescens","Yellow perch","Percidae","","Total PCBs",12.61,"ng/g","ppb"
-"65","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",133.11,"ng/g","ppb"
-"66","MI","Lake Huron","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",3.72,"ng/g","ppb"
-"67","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",31.89,"ng/g","ppb"
-"68","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",602.28,"ng/g","ppb"
-"69","MI","Lake Huron","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",18.42,"ng/g","ppb"
-"70","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Total PCBs",610.44,"ng/g","ppb"
-"71","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",36,"ng/g","ppb"
-"72","MI","Lake Huron","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",4.35,"ng/g","ppb"
-"73","MI","Lake Erie","Sander vitreus","Walleye","Percidae","P","Total PCBs",319.11,"ng/g","ppb"
-"74","MI","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Total PCBs",980.87,"ng/g","ppb"
-"75","MN","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",26.3,"ng/g","ppb"
-"76","MN","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",21.73,"ng/g","ppb"
-"77","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",69.86,"ng/g","ppb"
-"78","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",38.15,"ng/g","ppb"
-"79","MN","Lake Superior","Sander vitreus","Walleye","Percidae","P","Total PCBs",35.43,"ng/g","ppb"
-"80","MN","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",6.96,"ng/g","ppb"
-"81","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",118.59,"ng/g","ppb"
-"82","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",251.08,"ng/g","ppb"
-"83","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Total PCBs",45.09,"ng/g","ppb"
-"84","NY","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",520.89,"ng/g","ppb"
-"85","NY","Lake Ontario","Morone americana","White perch","Moronidae","P","Total PCBs",632.22,"ng/g","ppb"
-"86","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Total PCBs",117.65,"ng/g","ppb"
-"87","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",175.83,"ng/g","ppb"
-"88","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",951.6,"ng/g","ppb"
-"89","NY","Lake Ontario","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Total PCBs",409.09,"ng/g","ppb"
-"90","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",209.28,"ng/g","ppb"
-"91","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",362.73,"ng/g","ppb"
-"92","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",261.39,"ng/g","ppb"
-"93","NY","Lake Ontario","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Total PCBs",347.16,"ng/g","ppb"
-"94","NY","Lake Ontario","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Total PCBs",322.83,"ng/g","ppb"
-"95","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",334.99,"ng/g","ppb"
-"96","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",596.57,"ng/g","ppb"
-"97","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",1167.94,"ng/g","ppb"
-"98","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","","Total PCBs",160.34,"ng/g","ppb"
-"99","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",242.07,"ng/g","ppb"
-"100","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",197.62,"ng/g","ppb"
-"101","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",82.41,"ng/g","ppb"
-"102","NY","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",98.37,"ng/g","ppb"
-"103","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",40.78,"ng/g","ppb"
-"104","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",157.72,"ng/g","ppb"
-"105","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",355.71,"ng/g","ppb"
-"106","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",481.47,"ng/g","ppb"
-"107","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",1113.46,"ng/g","ppb"
-"108","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Total PCBs",194.06,"ng/g","ppb"
-"109","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",192.67,"ng/g","ppb"
-"110","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",644.71,"ng/g","ppb"
-"111","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",291.86,"ng/g","ppb"
-"112","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",22.92,"ng/g","ppb"
-"113","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",870.59,"ng/g","ppb"
-"114","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",495.99,"ng/g","ppb"
-"115","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",283.7,"ng/g","ppb"
-"116","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",221.43,"ng/g","ppb"
-"117","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",318.25,"ng/g","ppb"
-"118","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",117.91,"ng/g","ppb"
-"119","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",841.66,"ng/g","ppb"
-"120","NY","Lake Ontario","Esox lucius","Northern pike","Esocidae","P","Total PCBs",52.49,"ng/g","ppb"
-"121","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",611.95,"ng/g","ppb"
-"122","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",32.93,"ng/g","ppb"
-"123","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",9.55,"ng/g","ppb"
-"124","OH","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",184.65,"ng/g","ppb"
-"125","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",19.43,"ng/g","ppb"
-"126","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",29.31,"ng/g","ppb"
-"127","OH","Lake Erie","Morone americana","White perch","Moronidae","P","Total PCBs",137.97,"ng/g","ppb"
-"128","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",12.87,"ng/g","ppb"
-"129","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",576.77,"ng/g","ppb"
-"130","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",14.86,"ng/g","ppb"
-"131","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",205,"ng/g","ppb"
-"132","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",11.86,"ng/g","ppb"
-"133","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",10.62,"ng/g","ppb"
-"134","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",32.88,"ng/g","ppb"
-"135","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",427.98,"ng/g","ppb"
-"136","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",15.16,"ng/g","ppb"
-"137","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",7.23,"ng/g","ppb"
-"138","OH","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",160.37,"ng/g","ppb"
-"139","PA","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",77.04,"ng/g","ppb"
-"140","PA","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",187.24,"ng/g","ppb"
-"141","WI","Lake Michigan","Lota lota","Burbot","Gadidae","BD","Total PCBs",17.37,"ng/g","ppb"
-"142","WI","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",419.33,"ng/g","ppb"
-"143","WI","Lake Michigan","Lota lota","Burbot","Gadidae","BD","Total PCBs",9.15,"ng/g","ppb"
-"144","WI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",379.7,"ng/g","ppb"
-"145","WI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",32.74,"ng/g","ppb"
-"146","WI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",9.42,"ng/g","ppb"
-"147","WI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",13.73,"ng/g","ppb"
-"148","WI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",50.46,"ng/g","ppb"
-"149","WI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",64.3,"ng/g","ppb"
-"150","WI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",8.4,"ng/g","ppb"
-"151","WI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",166.54,"ng/g","ppb"
-"152","WI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",476.78,"ng/g","ppb"
+"","State","Lake","Scientific.Name","Common.Name","Family","Niche","Analyte","Amount","Unit.1","Unit.2","Year"
+"1","IN","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",15.84,"ng/g","ppb",2015
+"2","MI","Lake Erie","Morone americana","White perch","Moronidae","P","Total PCBs",385.29,"ng/g","ppb",2015
+"3","MI","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",576.67,"ng/g","ppb",2015
+"4","MI","Lake Huron","Morone americana","White perch","Moronidae","P","Total PCBs",431.62,"ng/g","ppb",2015
+"5","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",153.02,"ng/g","ppb",2015
+"6","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",449.04,"ng/g","ppb",2015
+"7","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",113.82,"ng/g","ppb",2015
+"8","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",215.25,"ng/g","ppb",2015
+"9","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",34.48,"ng/g","ppb",2015
+"10","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",112.32,"ng/g","ppb",2015
+"11","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",30.34,"ng/g","ppb",2015
+"12","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",78.15,"ng/g","ppb",2015
+"13","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",214.81,"ng/g","ppb",2015
+"14","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",64.56,"ng/g","ppb",2015
+"15","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",15.17,"ng/g","ppb",2015
+"16","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",81.58,"ng/g","ppb",2015
+"17","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",150.61,"ng/g","ppb",2015
+"18","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",7.93,"ng/g","ppb",2015
+"19","MI","Lake Michigan","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Total PCBs",55.38,"ng/g","ppb",2015
+"20","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",5.21,"ng/g","ppb",2015
+"21","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",15.49,"ng/g","ppb",2015
+"22","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",325.57,"ng/g","ppb",2015
+"23","MI","Lake Michigan","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",265.14,"ng/g","ppb",2015
+"24","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",8.52,"ng/g","ppb",2015
+"25","MI","Lake Michigan","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",176.27,"ng/g","ppb",2015
+"26","MI","Lake Michigan","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",4.07,"ng/g","ppb",2015
+"27","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",10.95,"ng/g","ppb",2015
+"28","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",46.26,"ng/g","ppb",2015
+"29","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",10.8,"ng/g","ppb",2015
+"30","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",13.34,"ng/g","ppb",2015
+"31","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",21.61,"ng/g","ppb",2015
+"32","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",4.97,"ng/g","ppb",2015
+"33","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",10.58,"ng/g","ppb",2015
+"34","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",15.37,"ng/g","ppb",2015
+"35","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",32.54,"ng/g","ppb",2015
+"36","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",8.28,"ng/g","ppb",2015
+"37","MI","Lake Superior","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",28.48,"ng/g","ppb",2015
+"38","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",38.33,"ng/g","ppb",2015
+"39","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",42.51,"ng/g","ppb",2015
+"40","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","","Total PCBs",6.49,"ng/g","ppb",2015
+"41","MI","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",45.75,"ng/g","ppb",2015
+"42","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",3.32,"ng/g","ppb",2015
+"43","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",18.35,"ng/g","ppb",2015
+"44","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",19.12,"ng/g","ppb",2015
+"45","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",32.57,"ng/g","ppb",2015
+"46","MI","Lake Superior","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",11.99,"ng/g","ppb",2015
+"47","MI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",6.04,"ng/g","ppb",2015
+"48","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",50.39,"ng/g","ppb",2015
+"49","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",369.42,"ng/g","ppb",2015
+"50","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",101.58,"ng/g","ppb",2015
+"51","MI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",49.01,"ng/g","ppb",2015
+"52","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",341.36,"ng/g","ppb",2015
+"53","MI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",11.25,"ng/g","ppb",2015
+"54","MI","Lake Michigan","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",162.64,"ng/g","ppb",2015
+"55","MI","Lake Michigan","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",166.9,"ng/g","ppb",2015
+"56","MI","Lake Michigan","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",22.38,"ng/g","ppb",2015
+"57","MI","Lake Huron","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",50.86,"ng/g","ppb",2015
+"58","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",58.8,"ng/g","ppb",2015
+"59","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",66.4,"ng/g","ppb",2015
+"60","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",172.4,"ng/g","ppb",2015
+"61","MI","Lake Huron","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",6.23,"ng/g","ppb",2015
+"62","MI","Lake Huron","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",28.05,"ng/g","ppb",2015
+"63","MI","Lake Huron","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",112.21,"ng/g","ppb",2015
+"64","MI","Lake Huron","Perca flavescens","Yellow perch","Percidae","","Total PCBs",12.61,"ng/g","ppb",2015
+"65","MI","Lake Huron","Sander vitreus","Walleye","Percidae","P","Total PCBs",133.11,"ng/g","ppb",2015
+"66","MI","Lake Huron","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",3.72,"ng/g","ppb",2015
+"67","MI","Lake Huron","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",31.89,"ng/g","ppb",2015
+"68","MI","Lake Huron","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",602.28,"ng/g","ppb",2015
+"69","MI","Lake Huron","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",18.42,"ng/g","ppb",2015
+"70","MI","Lake Huron","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Total PCBs",610.44,"ng/g","ppb",2015
+"71","MI","Lake Huron","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",36,"ng/g","ppb",2015
+"72","MI","Lake Huron","Catostomus catostomus","Longnose sucker","Catostomidae","BD","Total PCBs",4.35,"ng/g","ppb",2015
+"73","MI","Lake Erie","Sander vitreus","Walleye","Percidae","P","Total PCBs",319.11,"ng/g","ppb",2015
+"74","MI","Lake Erie","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Total PCBs",980.87,"ng/g","ppb",2015
+"75","MN","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",26.3,"ng/g","ppb",2015
+"76","MN","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",21.73,"ng/g","ppb",2015
+"77","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",69.86,"ng/g","ppb",2015
+"78","MN","Lake Superior","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",38.15,"ng/g","ppb",2015
+"79","MN","Lake Superior","Sander vitreus","Walleye","Percidae","P","Total PCBs",35.43,"ng/g","ppb",2015
+"80","MN","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",6.96,"ng/g","ppb",2015
+"81","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",118.59,"ng/g","ppb",2015
+"82","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",251.08,"ng/g","ppb",2015
+"83","NY","Lake Erie","Sander vitreus","Walleye","Percidae","P","Total PCBs",45.09,"ng/g","ppb",2015
+"84","NY","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",520.89,"ng/g","ppb",2015
+"85","NY","Lake Ontario","Morone americana","White perch","Moronidae","P","Total PCBs",632.22,"ng/g","ppb",2015
+"86","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Total PCBs",117.65,"ng/g","ppb",2015
+"87","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",175.83,"ng/g","ppb",2015
+"88","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",951.6,"ng/g","ppb",2015
+"89","NY","Lake Ontario","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Total PCBs",409.09,"ng/g","ppb",2015
+"90","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",209.28,"ng/g","ppb",2015
+"91","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",362.73,"ng/g","ppb",2015
+"92","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",261.39,"ng/g","ppb",2015
+"93","NY","Lake Ontario","Oncorhynchus kisutch","Coho salmon","Salmonidae","P","Total PCBs",347.16,"ng/g","ppb",2015
+"94","NY","Lake Ontario","Ictalurus punctatus","Channel catfish","Ictaluridae","BD","Total PCBs",322.83,"ng/g","ppb",2015
+"95","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",334.99,"ng/g","ppb",2015
+"96","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",596.57,"ng/g","ppb",2015
+"97","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",1167.94,"ng/g","ppb",2015
+"98","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","","Total PCBs",160.34,"ng/g","ppb",2015
+"99","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",242.07,"ng/g","ppb",2015
+"100","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",197.62,"ng/g","ppb",2015
+"101","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",82.41,"ng/g","ppb",2015
+"102","NY","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",98.37,"ng/g","ppb",2015
+"103","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",40.78,"ng/g","ppb",2015
+"104","NY","Lake Erie","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",157.72,"ng/g","ppb",2015
+"105","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",355.71,"ng/g","ppb",2015
+"106","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",481.47,"ng/g","ppb",2015
+"107","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",1113.46,"ng/g","ppb",2015
+"108","NY","Lake Ontario","Sander vitreus","Walleye","Percidae","P","Total PCBs",194.06,"ng/g","ppb",2015
+"109","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",192.67,"ng/g","ppb",2015
+"110","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",644.71,"ng/g","ppb",2015
+"111","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",291.86,"ng/g","ppb",2015
+"112","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",22.92,"ng/g","ppb",2015
+"113","NY","Lake Ontario","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",870.59,"ng/g","ppb",2015
+"114","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",495.99,"ng/g","ppb",2015
+"115","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",283.7,"ng/g","ppb",2015
+"116","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",221.43,"ng/g","ppb",2015
+"117","NY","Lake Ontario","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",318.25,"ng/g","ppb",2015
+"118","NY","Lake Ontario","Micropterus dolomieu","Smallmouth bass","Centrarchidae","P","Total PCBs",117.91,"ng/g","ppb",2015
+"119","NY","Lake Ontario","Salvelinus namaycush","Lake trout","Salmonidae","P","Total PCBs",841.66,"ng/g","ppb",2015
+"120","NY","Lake Ontario","Esox lucius","Northern pike","Esocidae","P","Total PCBs",52.49,"ng/g","ppb",2015
+"121","NY","Lake Ontario","Oncorhynchus tshawytscha","Chinook salmon","Salmonidae","P","Total PCBs",611.95,"ng/g","ppb",2015
+"122","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",32.93,"ng/g","ppb",2015
+"123","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",9.55,"ng/g","ppb",2015
+"124","OH","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",184.65,"ng/g","ppb",2015
+"125","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",19.43,"ng/g","ppb",2015
+"126","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",29.31,"ng/g","ppb",2015
+"127","OH","Lake Erie","Morone americana","White perch","Moronidae","P","Total PCBs",137.97,"ng/g","ppb",2015
+"128","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",12.87,"ng/g","ppb",2015
+"129","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",576.77,"ng/g","ppb",2015
+"130","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",14.86,"ng/g","ppb",2015
+"131","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",205,"ng/g","ppb",2015
+"132","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",11.86,"ng/g","ppb",2015
+"133","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",10.62,"ng/g","ppb",2015
+"134","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",32.88,"ng/g","ppb",2015
+"135","OH","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",427.98,"ng/g","ppb",2015
+"136","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",15.16,"ng/g","ppb",2015
+"137","OH","Lake Erie","Perca flavescens","Yellow perch","Percidae","P","Total PCBs",7.23,"ng/g","ppb",2015
+"138","OH","Lake Erie","Morone chrysops","White bass","Moronidae","P","Total PCBs",160.37,"ng/g","ppb",2015
+"139","PA","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",77.04,"ng/g","ppb",2015
+"140","PA","Lake Erie","Aplodinotus grunniens","Freshwater drum","Sciaenidae","P","Total PCBs",187.24,"ng/g","ppb",2015
+"141","WI","Lake Michigan","Lota lota","Burbot","Gadidae","BD","Total PCBs",17.37,"ng/g","ppb",2015
+"142","WI","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",419.33,"ng/g","ppb",2015
+"143","WI","Lake Michigan","Lota lota","Burbot","Gadidae","BD","Total PCBs",9.15,"ng/g","ppb",2015
+"144","WI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",379.7,"ng/g","ppb",2015
+"145","WI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",32.74,"ng/g","ppb",2015
+"146","WI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",9.42,"ng/g","ppb",2015
+"147","WI","Lake Superior","Coregonus clupeaformis","Lake whitefish","Salmonidae","BD","Total PCBs",13.73,"ng/g","ppb",2015
+"148","WI","Lake Superior","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",50.46,"ng/g","ppb",2015
+"149","WI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",64.3,"ng/g","ppb",2015
+"150","WI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",8.4,"ng/g","ppb",2015
+"151","WI","Lake Michigan","Catostomus commersonii","White sucker","Catostomidae","BD","Total PCBs",166.54,"ng/g","ppb",2015
+"152","WI","Lake Michigan","Sander vitreus","Walleye","Percidae","P","Total PCBs",476.78,"ng/g","ppb",2015
