@@ -71,14 +71,12 @@ PCB_2020_raw <- read.csv("RawData/2020_PCBs_Raw.csv")
 PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
-
-
 # Rationale and Research Questions
 The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
 
 Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids. The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
 
-Between the fragile ecosystems that depend on fish, to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
+Between the fragile ecosystems that depend on fish to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
 
 <ol><b>
   <li>How does fish tissue contamination vary within and between each lake?</li>
@@ -102,7 +100,7 @@ Fish contaminant data is collected using the following procedures, per the 2020 
 
 The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table 3.1). 
 
-**Table 3.1. Dataset Column Descriptions**
+**Table 3.1. Raw Dataset Column Descriptions**
 <br>
 <p style="color: lightgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
 
@@ -120,18 +118,47 @@ The Environmental Protection Agency has conducted periodic studies over the past
 | Analyte | The chemical of interest in each dataset |
 | Amount | Amount of chemcial detected in the sample |
 
+**Dataset Wrangling Procedures**
+<br>
+Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table 3.1 were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis.
+<br>
+<br>
+**Summary of Data Structure**
+<br>
+The basic structure of each of the raw datasets can be found in Table 3.1. The specific variables being investigated from  each of the processed files can be found below (Table 3.2).
 
+**Table 3.2. Processed Dataset Column Descriptions**
+
+| Variable | Description |
+|:----|:------|
+| State |  2-letter abbreviation for the state in which the sample was collected | 
+| Lake | The Great Lake the sample is from |
+| Scientific.Name | Taxonomic name of fish sampled |
+| Common.Name | Common name of fish sampled |
+| Family | Taxonomic family of fish sampled |
+| Niche | Codified ecological niche of the fish sampled; for example, "BD" is" "Benthic-Demersal" |
+| Method | EPA-standardized method of chemical analysis |
+| Analyte | The chemical of interest in each dataset |
+| Amount | Amount of chemcial detected in the sample |
+| Unit.1 | The original unit the chemical was measured in. See Table 3.3 |
+| Unit.2 | The amount of chemical converted to common units. Only for some contaminants. See Table 3.3 |
+<br>
+
+**Table 3.3. Contaminant Units**
+
+| Contaminant | Unit 1 (Original) | Unit 2 (Converted)|
+|:----|:------|:------|
+| Mercury | ng/g (nanograms per gram)  | ppb (parts per billion)|
+| Fatty Acids | mg/g (millograms per gram)| N/A |
+| PCBs | ng/g (nanograms per gram)  | ppb (parts per billion)|
+| PFAs  | ng/g (nanograms per gram)  | ppb (parts per billion)|
 
 ```{r}
 
-#Describe how you wrangled your dataset in a format similar to a methods section of a journal article.
 
-#Add a table that summarizes your data structure (variables, units, ranges and/or central tendencies, data source if multiple are used, etc.). This table can be made in markdown text or inserted as a kable function in an R chunk. If the latter, do not include the code used to generate your table.
+
+#Add a table that summarizes your data structure (variables, units, ranges and/or central tendencies, data source if multiple are used, etc.). This table can be made in markdown text or inserted as a kable function in an R chunk. If the latter, do not include the code used to generate your table. new table- add specific units for each of the variables (chems) and specific links to teh dataset
 ```
-
-\newpage
-
-# Data Wrangle/Processing 
 
 ```{r}
 
@@ -381,6 +408,8 @@ PCB_byniche_combined <-
 # References - i have to make these APA still but just links for now
 <add references here if relevant, otherwise delete this section> 
 [1]https://www.nwf.org/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes
+<br>
 [2] US EPA, O. (2020, June 11). National Coastal Condition Assessment—Great Lakes Human Health Fish Tissue Studies [Overviews and Factsheets]. https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-
 condition-assessment-great-lakes-human-health
-
+<br>
+[3] https://www.epa.gov/choose-fish-and-shellfish-wisely/2020-great-lakes-human-health-fish-fillet-tissue-study

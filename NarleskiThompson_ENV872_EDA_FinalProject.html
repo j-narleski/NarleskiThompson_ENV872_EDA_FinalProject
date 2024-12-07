@@ -383,7 +383,6 @@ in the Great Lakes</h3>
 Questions</a></li>
 <li><a href="#dataset-information" id="toc-dataset-information">Dataset
 Information</a></li>
-<li><a href="#data-wrangleprocessing" id="toc-data-wrangleprocessing">Data Wrangle/Processing</a></li>
 <li><a href="#exploratory-analysis" id="toc-exploratory-analysis">Exploratory Analysis</a></li>
 <li><a href="#analysis" id="toc-analysis">Analysis</a>
 <ul>
@@ -420,7 +419,7 @@ mercury, PFAS, PCBs, and fatty acids. The EPA hopes that data on these
 contamination levels will allow them to be better informed on the
 current risks to fish, and the aquatic and human lives that depend on
 them.</p>
-<p>Between the fragile ecosystems that depend on fish, to the entire
+<p>Between the fragile ecosystems that depend on fish to the entire
 human populations to rely on them, studying contamination is of the
 utmost importance. This has led to the development of the following
 research questions to guide our investigation:</p>
@@ -468,7 +467,7 @@ pesticides, and PCBs in each fish</p>
 over the past 15 years assessing the coastal conditions of marine and
 the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The
 basic structure of each is described below (Table 3.1).</p>
-<strong>Table 3.1. Dataset Column Descriptions</strong> <br>
+<strong>Table 3.1. Raw Dataset Column Descriptions</strong> <br>
 <p style="color: lightgray;">
 <em>adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury,
 PCBs, and PFAS Results November 2023</em>.
@@ -531,15 +530,119 @@ of the chemical analysis</td>
 </tr>
 </tbody>
 </table>
-<pre class="r"><code>#provide information on how the dataset for this analysis were collected, the data contained in the dataset, and any important pieces of information that are relevant to your analyses. This section should contain much of same information as the metadata file for the dataset but formatted in a way that is more narrative.
-
-#Describe how you wrangled your dataset in a format similar to a methods section of a journal article.
-
-#Add a table that summarizes your data structure (variables, units, ranges and/or central tendencies, data source if multiple are used, etc.). This table can be made in markdown text or inserted as a kable function in an R chunk. If the latter, do not include the code used to generate your table.</code></pre>
-<div style="page-break-after: always;"></div>
-</div>
-<div id="data-wrangleprocessing" class="section level1">
-<h1>Data Wrangle/Processing</h1>
+<p><strong>Dataset Wrangling Procedures</strong> Each of the 5-year
+publications from the EPA contains 4 separate data files arranged by
+contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3
+metadata files and 3 quality assurance reports for each. [3] Each of the
+4 separate contaminant data files were loaded into R as raw .xlsx files.
+The columns from Table 3.1 were selected from the raw file, and a new
+column was added for the collection year. This was repeated for all 12
+datasets (4 contaminants for each of 3 years). There are slight
+variations in the dataset formatting between years, leading to
+differences in the pipe function to account for them. For example, some
+columns are renamed as to all have a consistent naming conventions. Each
+wrangled dataset was reassigned to a “processed” .csv file for analysis.
+<br> <br> <strong>Summary of Data Structure</strong> The basic structure
+of each of the raw datasets can be found in Table 3.1. The specific
+variables being investigated from each of the processed files can be
+found below (Table 3.2).</p>
+<p><strong>Table 3.2. Processed Dataset Column Descriptions</strong></p>
+<table>
+<colgroup>
+<col width="41%" />
+<col width="58%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th align="left">Variable</th>
+<th align="left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">State</td>
+<td align="left">2-letter abbreviation for the state in which the sample
+was collected</td>
+</tr>
+<tr class="even">
+<td align="left">Lake</td>
+<td align="left">The Great Lake the sample is from</td>
+</tr>
+<tr class="odd">
+<td align="left">Scientific.Name</td>
+<td align="left">Taxonomic name of fish sampled</td>
+</tr>
+<tr class="even">
+<td align="left">Common.Name</td>
+<td align="left">Common name of fish sampled</td>
+</tr>
+<tr class="odd">
+<td align="left">Family</td>
+<td align="left">Taxonomic family of fish sampled</td>
+</tr>
+<tr class="even">
+<td align="left">Niche</td>
+<td align="left">Codified ecological niche of the fish sampled; for
+example, “BD” is” “Benthic-Demersal”</td>
+</tr>
+<tr class="odd">
+<td align="left">Method</td>
+<td align="left">EPA-standardized method of chemical analysis</td>
+</tr>
+<tr class="even">
+<td align="left">Analyte</td>
+<td align="left">The chemical of interest in each dataset</td>
+</tr>
+<tr class="odd">
+<td align="left">Amount</td>
+<td align="left">Amount of chemcial detected in the sample</td>
+</tr>
+<tr class="even">
+<td align="left">Unit.1</td>
+<td align="left">The original unit the chemical was measured in. See
+Table 3.3</td>
+</tr>
+<tr class="odd">
+<td align="left">Unit.2</td>
+<td align="left">The amount of chemical converted to common units. Only
+for some contaminants. See Table 3.3</td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p><strong>Table 3.3. Contaminant Units</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th align="left">Contaminant</th>
+<th align="left">Unit 1 (Original)</th>
+<th align="left">Unit 2 (Converted)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td align="left">Mercury</td>
+<td align="left">ng/g (nanograms per gram)</td>
+<td align="left">ppb (parts per billion)</td>
+</tr>
+<tr class="even">
+<td align="left">Fatty Acids</td>
+<td align="left">mg/g (millograms per gram)</td>
+<td align="left">N/A</td>
+</tr>
+<tr class="odd">
+<td align="left">PCBs</td>
+<td align="left">ng/g (nanograms per gram)</td>
+<td align="left">ppb (parts per billion)</td>
+</tr>
+<tr class="even">
+<td align="left">PFAs</td>
+<td align="left">ng/g (nanograms per gram)</td>
+<td align="left">ppb (parts per billion)</td>
+</tr>
+</tbody>
+</table>
+<pre class="r"><code>#Add a table that summarizes your data structure (variables, units, ranges and/or central tendencies, data source if multiple are used, etc.). This table can be made in markdown text or inserted as a kable function in an R chunk. If the latter, do not include the code used to generate your table. new table- add specific units for each of the variables (chems) and specific links to teh dataset</code></pre>
 <pre class="r"><code># Wrangle mercury data and write in as csvs
 
 mercury_2010_processed &lt;- mercury_2010_raw %&gt;%
@@ -789,10 +892,10 @@ subsections for additional questions below, if needed&gt;</h2>
 now</h1>
 <p>&lt;add references here if relevant, otherwise delete this
 section&gt; [1]<a href="https://www.nwf.org/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes" class="uri">https://www.nwf.org/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes</a>
-[2] US EPA, O. (2020, June 11). National Coastal Condition
+<br> [2] US EPA, O. (2020, June 11). National Coastal Condition
 Assessment—Great Lakes Human Health Fish Tissue Studies [Overviews and
 Factsheets]. <a href="https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-" class="uri">https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-</a>
-condition-assessment-great-lakes-human-health</p>
+condition-assessment-great-lakes-human-health <br> [3] <a href="https://www.epa.gov/choose-fish-and-shellfish-wisely/2020-great-lakes-human-health-fish-fillet-tissue-study" class="uri">https://www.epa.gov/choose-fish-and-shellfish-wisely/2020-great-lakes-human-health-fish-fillet-tissue-study</a></p>
 </div>
 
 
