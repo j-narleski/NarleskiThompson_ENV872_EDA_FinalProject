@@ -9,18 +9,56 @@
 ```{r setup, include=FALSE}
 # Set your working directory
 getwd()
+
 # Load your packages
 library(here)
+library(lubridate)
+library(tidyverse)
+library(agricolae)
+
+# Check working directory
+here()
 
 # Set your ggplot theme
+laketheme <- theme(
+  panel.background = element_rect(fill = "gray90"),
+  panel.border = element_rect(color = "darkcyan", fill = NA, linetype = 1),
+  plot.title = element_text(
+    hjust = 0.5, size = 12, color = "darkcyan", 
+    face = "bold"),
+  axis.title = element_text(size = 10, color = "darkcyan"),
+  panel.grid.major = element_line(
+    color = "aquamarine4", linetype = 2, size = 0.25),
+  panel.grid.minor = element_line(
+    color = "aquamarine3", linetype = 3, size = 0.25),
+  axis.text = element_text(color = "aquamarine4"),
+  axis.ticks = element_line(color = "aquamarine4"),
+  legend.title = element_text(size = 8, color = "darkcyan"),
+  legend.position = "right"
+)
+
+# Set theme
+theme_set(laketheme)
 
 # Load your datasets
+
+# 2010 data
 fattyacids_2010_raw <- read.csv("RawData/2010_FattyAcids_Raw.csv")
 mercury_2010_raw <- read.csv("RawData/2010_Mercury_Raw.csv")
-PBDE_2010_raw <- read.csv("RawData/2010_PBDEs_Raw.csv")
 PCB_2010_raw <- read.csv("RawData/2010_PCBs_Raw.csv")
 PFA_2010_raw <- read.csv("RawData/2010_PFAs_Raw.csv")
 
+# 2015 data
+fattyacids_2015_raw <- read.csv("RawData/2015_FattyAcids_Raw.csv")
+mercury_2015_raw <- read.csv("RawData/2015_Mercury_Raw.csv")
+PCB_2015_raw <- read.csv("RawData/2015_PCBs_Raw.csv")
+PFA_2015_raw <- read.csv("RawData/2015_PFAs_Raw.csv")
+
+# 2020 data
+fattyacids_2020_raw <- read.csv("RawData/2020_FattyAcids_Raw.csv")
+mercury_2020_raw <- read.csv("RawData/2020_Mercury_Raw.csv")
+PCB_2020_raw <- read.csv("RawData/2020_PCBs_Raw.csv")
+PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
 
@@ -70,8 +108,231 @@ The Environmental Protection Agency has conducted periodic studies over the past
 
 \newpage
 
-# Exploratory Analysis 
+# Data Wrangle/Processing 
 
+```{r}
+
+# Wrangle mercury data and write in as csvs
+
+mercury_2010_processed <- mercury_2010_raw %>%
+  select(State, Lake.Name, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  mutate(Year = rep(2010, nrow(mercury_2010_processed))) %>%
+  rename(Lake = Lake.Name)
+
+write.csv(mercury_2010_processed, 
+"~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_Mercury_Processed.csv")
+
+mercury_2015_processed <- mercury_2015_raw %>%
+  select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  mutate(Year = rep(2015, nrow(mercury_2015_processed)))
+
+write.csv(mercury_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_Mercury_Processed.csv")
+
+mercury_2020_processed <- mercury_2020_raw %>%
+  select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Units.1, Units.2) %>%
+  mutate(Year = rep(2020, nrow(mercury_2020_processed)))
+
+write.csv(mercury_2020_processed, 
+"~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_Mercury_Processed.csv")
+
+# Wrangle PFAs data and write in as csvs
+
+PFA_2010_processed <- PFA_2010_raw %>%
+  select(State, Lake.Name, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  mutate(Year = rep(2010, nrow(PFA_2010_processed))) %>%
+  rename(Lake = Lake.Name)
+
+write.csv(PFA_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_PFAs_Processed.csv")
+
+PFA_2015_processed <- PFA_2015_raw %>%
+  select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  mutate(Year = rep(2015, nrow(PFA_2015_processed)))
+
+write.csv(PFA_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_PFAs_Processed.csv")
+
+PFA_2020_processed <- PFA_2020_raw %>%
+  select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Chemical, Amount, Units.1, Units.2) %>%
+  mutate(Year = rep(2020, nrow(PFA_2020_processed)))
+
+write.csv(PFA_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_PFAs_Processed.csv")
+
+# Wrangle PCB data and write in as csvs
+
+PCB_2010_processed <- PCB_2010_raw %>%
+  select(State, Lake.Name, Species.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  filter(Analyte == "Total PCBs") %>%
+  mutate(Year = rep(2010, nrow(PCB_2010_processed))) %>%
+  rename(Lake = Lake.Name,
+         Scientific.Name = Species.Name)
+
+write.csv(PCB_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_PCBs_Processed.csv")
+
+PCB_2015_processed <- PCB_2015_raw %>%
+  select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  filter(Analyte == "Total PCBs") %>%
+  mutate(Year = rep(2015, nrow(PCB_2015_processed)))
+
+write.csv(PCB_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_PCBs_Processed.csv")
+
+PCB_2020_processed <- PCB_2020_raw %>%
+  select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Units.1, Units.2) %>%
+  filter(Analyte == "Total PCBs") %>%
+  mutate(Year = rep(2020, nrow(PCB_2020_processed)))
+
+write.csv(PCB_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_PCBs_Processed.csv")
+
+# Wrangle fatty acid data and write in as csvs
+
+fattyacids_2010_processed <- fattyacids_2010_raw %>%
+   select(State, Lake.Name, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Abbreviation, Amount, Units) %>%
+  mutate(Year = rep(2010, nrow(fattyacids_2010_processed))) %>%
+  rename(Lake = Lake.Name)
+
+write.csv(fattyacids_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_FattyAcids_Processed.csv")
+
+fattyacids_2015_processed <- fattyacids_2015_raw %>%
+   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Unit.1, Unit.2) %>%
+  mutate(Year = rep(2015, nrow(fattyacids_2015_processed)))
+
+write.csv(fattyacids_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_FattyAcids_Processed.csv")
+
+fattyacids_2020_processed <- fattyacids_2020_raw %>%
+   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+         Analyte, Amount, Units) %>%
+  mutate(Year = rep(2020, nrow(fattyacids_2020_processed)))
+
+write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_FattyAcids_Processed.csv")
+
+```
+
+
+\newpage
+
+# Exploratory Analysis
+
+```{r}
+
+# Mercury exploratory analysis
+
+# 2010
+Mercury_bylake_2010 <- mercury_2010_processed %>%
+  group_by(Lake, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+Mercury_byfish_2010 <- mercury_2010_processed %>%
+  group_by(Scientific.Name, Common.Name, Family, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+Mercury_byniche_2010 <- mercury_2010_processed %>%
+  group_by(Niche, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+# 2015
+Mercury_bylake_2015 <- mercury_2015_processed %>%
+  group_by(Lake, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+Mercury_byfish_2015 <- mercury_2015_processed %>%
+  group_by(Scientific.Name, Common.Name, Family, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+Mercury_byniche_2015 <- mercury_2015_processed %>%
+  group_by(Niche, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+# 2020
+Mercury_bylake_2020 <- mercury_2020_processed %>%
+  group_by(Lake, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+Mercury_byfish_2020 <- mercury_2020_processed %>%
+  group_by(Scientific.Name, Common.Name, Family, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+Mercury_byniche_2020 <- mercury_2020_processed %>%
+  group_by(Niche, Year) %>%
+  summarise(Mean.Mercury = mean(Amount))
+
+# Combined by lake 
+Mercury_bylake_combined <- 
+  rbind(Mercury_bylake_2010, Mercury_bylake_2015, Mercury_bylake_2020)
+
+# Combined by fish species
+Mercury_byfish_combined <-
+  rbind(Mercury_byfish_2010, Mercury_byfish_2015, Mercury_byfish_2020)
+
+# Combined by niche
+Mercury_byniche_combined <-
+  rbind(Mercury_byniche_2010, Mercury_byniche_2015, Mercury_byniche_2020)
+
+```
+```{r}
+
+# PCB exploratory analysis
+
+# 2010
+PCB_bylake_2010 <- PCB_2010_processed %>%
+  group_by(Lake, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+PCB_byfish_2010 <- PCB_2010_processed %>%
+  group_by(Scientific.Name, Common.Name, Family, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+PCB_byniche_2010 <- PCB_2010_processed %>%
+  group_by(Niche, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+# 2015
+PCB_bylake_2015 <- PCB_2015_processed %>%
+  group_by(Lake, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+PCB_byfish_2015 <- PCB_2015_processed %>%
+  group_by(Scientific.Name, Common.Name, Family, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+PCB_byniche_2015 <- PCB_2015_processed %>%
+  group_by(Niche, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+# 2020
+PCB_bylake_2020 <- PCB_2020_processed %>%
+  group_by(Lake, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+PCB_byfish_2020 <- PCB_2020_processed %>%
+  group_by(Scientific.Name, Common.Name, Family, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+PCB_byniche_2020 <- PCB_2020_processed %>%
+  group_by(Niche, Year) %>%
+  summarise(Mean.PCBs = mean(Amount))
+
+# Combined by lake 
+PCB_bylake_combined <- 
+  rbind(PCB_bylake_2010, PCB_bylake_2015, PCB_bylake_2020)
+
+# Combined by fish species
+PCB_byfish_combined <-
+  rbind(PCB_byfish_2010, PCB_byfish_2015, PCB_byfish_2020)
+
+# Combined by niche
+PCB_byniche_combined <-
+  rbind(PCB_byniche_2010, PCB_byniche_2015, PCB_byniche_2020)
+
+```
 
 
 \newpage

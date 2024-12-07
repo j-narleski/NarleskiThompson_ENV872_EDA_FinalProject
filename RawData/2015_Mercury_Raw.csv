@@ -1,0 +1,153 @@
+﻿EPA Region,State,Lake,Site ID,EPA Sample ID,Species ID,Scientific Name,Common Name,Family,Niche,Analyte,CAS Number,Amount,Unit 1,Unit 2,MDL,QL
+5,IN,Lake Michigan,GLNS15-2051,778474,778474.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,302.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Erie,GLNS15-1156,776254,776254.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,144.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Erie,GLNS15-1164,795874,795874.1,Morone chrysops,White bass,Moronidae,P,Mercury,7439-97-6,362.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1197,795814,795814.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,257.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1199,807254,807254.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,37.7,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1200,807234,807234.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,39.1,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1201,795834,795834.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,63.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1202,807954,807954.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,227.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1203,794414,794414.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,143.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1205,780134,780134.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,188.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1206,814374,814374.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,115.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1207,776334,776334.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,48.8,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1208,806814,806814.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,305.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1209,807774,807774.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,128.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1210,814314,814314.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,111.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1211,795494,795494.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,128.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-1212,793894,793894.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,265.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1245,794614,794614.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,62.1,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1246,795174,795174.1,Oncorhynchus kisutch,Coho salmon,Salmonidae,P,Mercury,7439-97-6,29.2,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1247,777014,777014.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,42.8,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1248,776954,776954.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,105.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1249,776914,776914.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,136.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1250,794774,794774.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,297.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1252,795214,795214.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,85.1,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1253,795114,795114.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,267.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1254,807914,807914.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,62.7,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-1255,795134,795134.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,37.6,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1335,795294,795294.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,120.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1336,807434,807434.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,38.5,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1338,807494,807494.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,47.9,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1339,794974,794974.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,81.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1340,778454,778454.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,26.5,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1341,806774,806774.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,44.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1343,777914,777914.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,61.5,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1345,795334,795334.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,196.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1346,806934,806934.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,51.6,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-1347,779974,779974.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,144.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2001,776534,776534.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,118.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2002,778514,778514.2,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,112.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2003,807174,807174.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,28.7,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2005,778554,778554.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,131.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2006,780154,780154.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,49.4,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2007,794954,794954.2,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,88.7,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2009,806994,806994.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,54.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2011,794934,794934.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,194.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2013,806794,806794.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,132.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Superior,GLNS15-2025,780014,780014.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,49.2,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2047,776234,776234.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,87.3,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2050,795234,795234.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,148.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2052,794494,794494.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,514.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2053,780174,780174.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,168.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2054,776874,776874.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,154.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2055,807874,807874.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,58.5,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2056,776934,776934.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,133.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2057,814554,814554.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,107.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Michigan,GLNS15-2061,795674,795674.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,131.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2093,807354,807354.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,130.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2094,776394,776394.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,97.2,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2095,807314,807314.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,119.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2096,814054,814054.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,219.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2097,807334,807334.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,51.4,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2098,794434,794434.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,41.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2099,814034,814034.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,99.3,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2100,806914,806914.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,138.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2101,795394,795394.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,323.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2102,814254,814254.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,201.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2103,795554,795554.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,557.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2104,807594,807594.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,384.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2106,795574,795574.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,58.1,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2107,806894,806894.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,141.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2108,807694,807694.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,37.5,ng/g,ppb,0.05,0.8
+5,MI,Lake Huron,GLNS15-2117,814274,814274.1,Catostomus catostomus,Longnose sucker,Catostomidae,BD,Mercury,7439-97-6,49.2,ng/g,ppb,0.05,0.8
+5,MI,Lake Erie,GLNS15-2145,795654,795654.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,420.0,ng/g,ppb,0.05,0.8
+5,MI,Lake Erie,GLNS15-2153,776434,776434.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,72.1,ng/g,ppb,0.05,0.8
+5,MN,Lake Superior,GLNS15-1333,778714,778714.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,101.0,ng/g,ppb,0.05,0.8
+5,MN,Lake Superior,GLNS15-1334,778734,778734.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,51.2,ng/g,ppb,0.05,0.8
+5,MN,Lake Superior,GLNS15-1342,778694,778694.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,424.0,ng/g,ppb,0.05,0.8
+5,MN,Lake Superior,GLNS15-2004,778314,778314.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,134.0,ng/g,ppb,0.05,0.8
+5,MN,Lake Superior,GLNS15-2010,778674,778674.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,238.0,ng/g,ppb,0.05,0.8
+5,MN,Lake Superior,GLNS15-2012,778754,778754.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,26.3,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-1154,793374,793374.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,329.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-1155,793434,793434.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,309.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-1158,793314,793314.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,221.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-1166,806054,806054.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,144.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1288,776854,776854.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,463.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1289,776794,776794.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,297.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1290,805514,805514.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,104.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1291,775714,775714.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,191.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1292,776754,776754.1,Oncorhynchus kisutch,Coho salmon,Salmonidae,P,Mercury,7439-97-6,132.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1293,777794,777794.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,388.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1294,775494,775494.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,122.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1295,780834,780834.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,140.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1296,777854,777854.1,Oncorhynchus kisutch,Coho salmon,Salmonidae,P,Mercury,7439-97-6,140.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1297,805674,805674.1,Ictalurus punctatus,Channel catfish,Ictaluridae,BD,Mercury,7439-97-6,144.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1298,793014,793014.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,207.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1299,777814,777814.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,199.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1300,776574,776574.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,208.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1301,795774,795774.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,533.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1302,780894,780894.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,162.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-1303,780874,780874.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,131.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-2139,806614,806614.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,310.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-2141,806592,806592.1,Morone chrysops,White bass,Moronidae,P,Mercury,7439-97-6,106.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-2143,793394,793394.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,406.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Erie,GLNS15-2152,793414,793414.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,163.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2185,776834,776834.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,130.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2186,780974,780974.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,123.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2187,775574,775574.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,157.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2188,805634,805634.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,131.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2189,775674,775674.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,90.1,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2190,780954,780954.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,189.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2191,775594,775594.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,129.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2192,780994,780994.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,178.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2193,775454,775454.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,406.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2194,777874,777874.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,191.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2195,780794,780794.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,162.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2196,795734,795734.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,214.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2197,805594,805594.1,Oncorhynchus mykiss,Rainbow trout,Salmonidae,P,Mercury,7439-97-6,162.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2198,776734,776734.1,Micropterus dolomieu,Smallmouth bass,Centrarchidae,P,Mercury,7439-97-6,383.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2199,776354,776354.1,Salvelinus namaycush,Lake trout,Salmonidae,P,Mercury,7439-97-6,140.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2200,795714,795714.1,Esox lucius,Northern pike,Esocidae,P,Mercury,7439-97-6,176.0,ng/g,ppb,0.05,0.8
+2,NY,Lake Ontario,GLNS15-2201,776614,776614.1,Oncorhynchus tshawytscha,Chinook salmon,Salmonidae,P,Mercury,7439-97-6,205.0,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1152,778874,778874.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,44.6,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1153,775194,775194.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,47.6,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1157,775214,775214.1,Morone chrysops,White bass,Moronidae,P,Mercury,7439-97-6,114.0,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1159,775174,775174.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,99.6,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1160,778794,778794.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,43.4,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1161,778834,778834.1,Morone americana,White perch,Moronidae,P,Mercury,7439-97-6,59.3,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1163,775154,775154.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,56.1,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-1165,775114,775114.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,160.0,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2140,775234,775234.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,68.3,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2142,775034,775034.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,113.0,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2144,778094,778094.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,56.3,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2147,778074,778074.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,51.8,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2149,778854,778854.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,47.7,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2150,775094,775094.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,145.0,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2151,805954,805954.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,62.6,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2154,778034,778034.1,Perca flavescens,Yellow perch,Percidae,P,Mercury,7439-97-6,57.8,ng/g,ppb,0.05,0.8
+5,OH,Lake Erie,GLNS15-2163,777154,777154.1,Morone chrysops,White bass,Moronidae,P,Mercury,7439-97-6,118.0,ng/g,ppb,0.05,0.8
+3,PA,Lake Erie,GLNS15-1162,777114,777114.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,89.7,ng/g,ppb,0.05,0.8
+3,PA,Lake Erie,GLNS15-2148,777094,777094.1,Aplodinotus grunniens,Freshwater drum,Sciaenidae,P,Mercury,7439-97-6,237.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-1243,775954,775954.1,Lota lota,Burbot,Gadidae,BD,Mercury,7439-97-6,190.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-1244,775974,775974.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,131.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-1251,776034,776034.1,Lota lota,Burbot,Gadidae,BD,Mercury,7439-97-6,134.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-1256,776054,776054.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,366.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Superior,GLNS15-1337,778934,778934.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,73.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Superior,GLNS15-1344,778954,778954.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,39.5,ng/g,ppb,0.05,0.8
+5,WI,Lake Superior,GLNS15-2008,779014,779014.1,Coregonus clupeaformis,Lake whitefish,Salmonidae,BD,Mercury,7439-97-6,56.6,ng/g,ppb,0.05,0.8
+5,WI,Lake Superior,GLNS15-2015,779034,779034.1,Salmo trutta,Brown trout,Salmonidae,P,Mercury,7439-97-6,123.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-2048,775814,775814.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,113.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-2058,775834,775834.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,57.2,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-2059,775854,775854.1,Catostomus commersonii,White sucker,Catostomidae,BD,Mercury,7439-97-6,117.0,ng/g,ppb,0.05,0.8
+5,WI,Lake Michigan,GLNS15-2060,775874,775874.1,Sander vitreus,Walleye,Percidae,P,Mercury,7439-97-6,502.0,ng/g,ppb,0.05,0.8
