@@ -1,4 +1,4 @@
-"","State","Lake.Name","Scientific.Name","Common.Name","Family","Niche","Analyte","Abbreviation","Amount","Units","Year"
+"","State","Lake","Scientific.Name","Common.Name","Family","Niche","Analyte","Abbreviation","Amount","Units","Year"
 "1","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","alpha-Linolenic acid","ALA",NA,"mg/g",2010
 "2","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosahexaenoic acid","DHA",1.2,"mg/g",2010
 "3","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Docosapentaenoic acid","DPA",NA,"mg/g",2010

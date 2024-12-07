@@ -1,4 +1,4 @@
-"","State","Lake.Name","Species.Name","Common.Name","Family","Niche","Analyte","Amount","Unit.1","Unit.2","Year"
+"","State","Lake","Scientific.Name","Common.Name","Family","Niche","Analyte","Amount","Unit.1","Unit.2","Year"
 "1","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",141.62302,"ng/g","ppb",2010
 "2","IL","Lake Michigan","Oncorhynchus mykiss","Rainbow trout","Salmonidae","P","Total PCBs",162.9766,"ng/g","ppb",2010
 "3","IL","Lake Michigan","Salmo trutta","Brown trout","Salmonidae","P","Total PCBs",658.72792,"ng/g","ppb",2010
