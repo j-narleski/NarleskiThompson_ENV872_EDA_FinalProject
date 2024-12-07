@@ -74,7 +74,17 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 
 
 # Rationale and Research Questions
+The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
 
+Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids. The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
+
+Between the fragile ecosystems that depend on fish, to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
+
+<ol><b>
+  <li>How does fish tissue contamination vary within and between each lake?</li>
+  <li>How do contaminants vary over time in each lake and overall?</li>
+  <li>Are different species more vulnerable to different contaminants?</li>
+</b></ol>
 
 
 \newpage
@@ -91,7 +101,11 @@ Fish contaminant data is collected using the following procedures, per the 2020 
 - A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish
 
 The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table 3.1). 
-#add caption/title: adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023
+
+**Table 3.1. Dataset Column Descriptions**
+<br>
+<p style="color: lightgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
+
 
 | Column Name | Description |
 |:----|:------|
@@ -109,7 +123,6 @@ The Environmental Protection Agency has conducted periodic studies over the past
 
 
 ```{r}
-#provide information on how the dataset for this analysis were collected, the data contained in the dataset, and any important pieces of information that are relevant to your analyses. This section should contain much of same information as the metadata file for the dataset but formatted in a way that is more narrative.
 
 #Describe how you wrangled your dataset in a format similar to a methods section of a journal article.
 
@@ -365,5 +378,9 @@ PCB_byniche_combined <-
 
 \newpage
 
-# References
+# References - i have to make these APA still but just links for now
 <add references here if relevant, otherwise delete this section> 
+[1]https://www.nwf.org/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes
+[2] US EPA, O. (2020, June 11). National Coastal Condition Assessment—Great Lakes Human Health Fish Tissue Studies [Overviews and Factsheets]. https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-
+condition-assessment-great-lakes-human-health
+
