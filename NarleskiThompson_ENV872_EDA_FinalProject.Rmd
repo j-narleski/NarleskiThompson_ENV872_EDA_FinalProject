@@ -126,7 +126,8 @@ Each of the 5-year publications from the EPA contains 4 separate data files arra
 **Summary of Data Structure**
 <br>
 The basic structure of each of the raw datasets can be found in Table 3.1. The specific variables being investigated from  each of the processed files can be found below (Table 3.2).
-
+<br>
+<br>
 **Table 3.2. Processed Dataset Column Descriptions**
 
 | Variable | Description |
@@ -153,14 +154,8 @@ The basic structure of each of the raw datasets can be found in Table 3.1. The s
 | PCBs | ng/g (nanograms per gram)  | ppb (parts per billion)|
 | PFAs  | ng/g (nanograms per gram)  | ppb (parts per billion)|
 
-```{r}
 
-
-
-#Add a table that summarizes your data structure (variables, units, ranges and/or central tendencies, data source if multiple are used, etc.). This table can be made in markdown text or inserted as a kable function in an R chunk. If the latter, do not include the code used to generate your table. new table- add specific units for each of the variables (chems) and specific links to teh dataset
-```
-
-```{r}
+```{r wrangling, include=FALSE}}
 
 # Wrangle mercury data and write in as csvs
 
@@ -270,6 +265,14 @@ write.csv(fattyacids_2020_processed, "~/NarleskiThompson_ENV872_EDA_FinalProject
 \newpage
 
 # Exploratory Analysis
+```{r}
+Insert exploratory visualizations of your dataset. This may include, but is not limited to, graphs illustrating the distributions of variables of interest and/or maps of the spatial context of your dataset. Format your R chunks so that graphs are displayed but code is not displayed. Accompany these graphs with text sections that describe the visualizations and provide context for further analyses.
+
+Each figure should be accompanied by a caption, and each figure should be referenced within the text.
+
+Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
+```
+
 
 ```{r}
 
