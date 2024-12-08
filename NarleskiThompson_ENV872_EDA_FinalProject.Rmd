@@ -73,21 +73,33 @@ fattyacids_2020_raw <- read.csv("RawData/2020_FattyAcids_Raw.csv")
 mercury_2020_raw <- read.csv("RawData/2020_Mercury_Raw.csv")
 PCB_2020_raw <- read.csv("RawData/2020_PCBs_Raw.csv")
 PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
+
 ```
 
 # Rationale and Research Questions
 The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
 
-Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids. The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
+Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids (Table 1.1). The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
 
 Between the fragile ecosystems that depend on fish to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
 
 <ol><b>
-  <li>How does fish tissue contamination vary significantly within and between each lake?</li>
-  <li>Are there trends in contaminant level in each fish species and in each lake?</li>
+  <li>Does fish tissue contamination vary significantly between each lake?</li>
+  <li>Are there trends in contaminant levels in each fish species over time?</li>
   <li>Are different species significantly more vulnerable than others to different contaminants?</li>
 </b></ol>
 
+**Table 1.1. Description of the contaminants used in this project.[5]**
+<br>
+
+| Contaminant   | Description | Effect on Human Health |
+|:---:|:----|:---------|
+| Mercury | A heavy metal that comes from sources such as factory outputs and landfill leaching | Reproductive, developmental, and sensory defects |
+| Fatty Acids | Organic compounds found in the tissues of organisms; required in some amounts but negative in excess | Excessive intake can lead to cardiovascular diseases |
+| PCBs | Industrial chemicals used in electrical equipment, plastics, and paints | Cancer, reproductive problems, and immune system suppression |
+| PFAs | Man-made chemicals found in products that resist oil and grease (i.e. non-stick coatings) and fire-fighting foam | Associated with cancer, liver damage, thyroid disorders, and immune system suppression |
+
+<br>
 \newpage
 
 # Dataset Information
@@ -560,19 +572,104 @@ print(PCB_by_fish)
 
 # Analysis
 
-## Question 1: How does fish tissue contamination vary significantly within and between each lake?
+## Question 1: Does fish tissue contamination vary significantly between each lake?
+<br>
+For this question, we use an ANOVA (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the null hypothesis **there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (4) and one for each year (3). The results of the 12 ANOVAs are recorded in Table 5.1 below.
 
-## Question 2: Are there trends in contaminant level in each fish species and in each lake?
+| Contaminant | Year | p-Value | Significant? |
+|:----|:-----|:------|:------|
+| Mercury | 2010 | 8.74e-05 | <span style="color:green">YES</span> | 
+| Mercury | 2015 | 0.0116 | <span style="color:green">YES</span> | 
+| Mercury | 2020 | 0.0798  | <span style="color:red">NO</span> | 
+| PCB | 2010 | 0.0183 | <span style="color:green">YES</span> | 
+| PCB | 2015 | 3.56e-11 | <span style="color:green">YES</span>  | 
+| PCB | 2020 | 6.11e-05 | <span style="color:green">YES</span> | 
+|  |  |  |  | 
+|  |  |  |  | 
+|  |  |  |  | 
+|  |  |  |  | 
+|  |  |  |  | 
+|  |  |  |  | 
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+
+#Mercury 2010
+mercury_2010_processed$Lake <- as.factor(mercury_2010_processed$Lake)
+mercury_bylake_2010_AOV <- aov(Amount ~ Lake, data = mercury_2010_processed)
+summary(mercury_bylake_2010_AOV)
+  #p = 8.74e-05 (SIG)
+
+#Mercury 2015
+mercury_2015_processed$Lake <- as.factor(mercury_2015_processed$Lake)
+mercury_bylake_2015_AOV <- aov(Amount ~ Lake, data = mercury_2015_processed)
+summary(mercury_bylake_2015_AOV)
+  #p = .0116 (SIG)
+
+#Mercury 2020
+mercury_2020_processed$Lake <- as.factor(mercury_2020_processed$Lake)
+mercury_bylake_2020_AOV <- aov(Amount ~ Lake, data = mercury_2020_processed)
+summary(mercury_bylake_2020_AOV)
+  #p = .00798 (NOTSIG)
+
+#PCB 2010
+PCB_2010_processed$Lake <- as.factor(PCB_2010_processed$Lake)
+PCB_bylake_2010_AOV <- aov(Amount ~ Lake, data = PCB_2010_processed)
+summary(PCB_bylake_2010_AOV)
+  #p = 0.0183 (SIG)
+
+#PCB 2015
+PCB_2015_processed$Lake <- as.factor(PCB_2015_processed$Lake)
+PCB_bylake_2015_AOV <- aov(Amount ~ Lake, data = PCB_2015_processed)
+summary(PCB_bylake_2015_AOV)
+  #p = 3.56e-11 (SIG)
+
+#PCB 2020
+PCB_2020_processed$Lake <- as.factor(PCB_2020_processed$Lake)
+PCB_bylake_2020_AOV <- aov(Amount ~ Lake, data = PCB_2020_processed)
+summary(PCB_bylake_2020_AOV)
+  #p = 6.11e-05 (SIG)
+
+#still need to do the rest (PFA and fatty acid) from the processed data
+```
+
+
+## Question 2: Are there trends in contaminant levels in each fish species over time?
+<br>
+To investigate the presence of potential linear trends over time, we use linear regressions on the data over time. Unfortunately, with only three sample years, there is not sufficient data for a time series. Instead, we search for meaningful results of linear regression models. **We focus only on fish species for which there is data for all three sample years.** We run 4 models, one for each contaminant, inputting "contaminant amount" as the dependent variable, "Year" as the dependent variable, and "Fish Species" as the grouping variable into the regression.
+<br>
+For mercury, the only two fish that were sampled for all three years were the Walleye and the Smallmouth Bass. 
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+#mercury 
+Mercury_byfish_combined_threeyeardata <- Mercury_byfish_combined %>% filter(Common.Name %in% c("Walleye", "Smallmouth bass"))
+mercury_by_fish_plot <- ggplot(Mercury_byfish_combined_threeyeardata, aes(x = as.factor(Year), y = Mean.Mercury, color = Common.Name)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(group = Common.Name), se = FALSE) +
+  labs(title = "Mean Mercury Levels by Fish Species (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)", subtitle = "Figure 4.3") +
+  theme_minimal()
+print(mercury_by_fish_plot)
+
+#separating the fish species
+# walleye
+walleye_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Walleye")
+walleye_lm <- lm(Mean.Mercury ~ Year, data = walleye_data)
+summary(walleye_lm)
+
+# bass
+smallmouth_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Smallmouth bass")
+smallmouth_lm <- lm(Mean.Mercury ~ Year, data = smallmouth_data)
+summary(smallmouth_lm)
+```
+The results of both regressions (walleye, p=0.1551; smallmouth, p= 0.8848) indicate that the trend between mercury in these fish over time is not statistically significant.
 
 ## Question 3: Are different species significantly more vulnerable than others to different contaminants?
-
+<br>
 
 
 
 \newpage
 
 # Summary and Conclusions
-
+variance between lakes means you probably cant just use braod and comprehensive management plans
 
 \newpage
 
@@ -583,7 +680,9 @@ print(PCB_by_fish)
 condition-assessment-great-lakes-human-health
 <br>
 [3] US EPA. (2024, April 9). 2020 Great Lakes Human Health Fish Fillet Tissue Study [Overviews and Factsheets]. https://www.epa.gov/choose-fish-and-shellfish-wisely/2020-great-lakes-human-health-fish-fillet-tissue-study
+<br>
 [4] EPA. (2020, June 15). Quality Assurance Project Plan for  National Coastal Condition Assessment (NCCA)  2020 Great Lakes Human Health Fish Sample Preparation.
-
+<br>
+[5] https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/
 
 
