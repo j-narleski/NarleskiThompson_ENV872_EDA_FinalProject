@@ -85,7 +85,6 @@ Between the fragile ecosystems that depend on fish to the entire human populatio
   <li>Are different species more vulnerable to different contaminants?</li>
 </b></ol>
 
-
 \newpage
 
 # Dataset Information
@@ -104,7 +103,6 @@ The Environmental Protection Agency has conducted periodic studies over the past
 **Table 3.1. Raw Dataset Column Descriptions**
 <br>
 <p style="color: lightgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
-
 
 | Column Name | Description |
 |:----|:------|
@@ -239,34 +237,34 @@ write.csv(PCB_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalP
 # Wrangle fatty acid data and write in as csvs
 
 fattyacids_2010_processed <- fattyacids_2010_raw %>%
-   select(State, Lake.Name, Scientific.Name, Common.Name, Family, Niche,
+   select(State, Lake.Name, Species.ID, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Abbreviation, Amount, Units) %>%
-  mutate(Year = 2010) %>%
+  mutate(Year = 2010, Amount = coalesce(Amount, 0)) %>%
   rename(Lake = Lake.Name)
 
 write.csv(fattyacids_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_FattyAcids_Processed.csv")
 
 fattyacids_2015_processed <- fattyacids_2015_raw %>%
-   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+   select(State, Lake, Species.ID, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2) %>%
-  mutate(Year = 2015)
+  mutate(Year = 2015, Amount = coalesce(Amount, 0))
 
 write.csv(fattyacids_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_FattyAcids_Processed.csv")
 
 fattyacids_2020_processed <- fattyacids_2020_raw %>%
-   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
+   select(State, Lake, Species.ID, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Units) %>%
-  mutate(Year = 2020)
+  mutate(Year = 2020, Amount = coalesce(Amount, 0))
 
 write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_FattyAcids_Processed.csv")
 
 ```
 
-
 \newpage
 
 # Exploratory Analysis
 Before beginning analysis aimed at answering our research questions, we explore it in several ways. First, to orient ourselves spatially, we mapped the all of the sites sampled in 2020. We aren't able use specific site location in our analysis, due to a lack of spatial data in the 2010 and 2015 datasets. However, it is noted in the metadata (from which we etxract the sites and their coordinates) that many of the 2020 sites were locations revisited from previous sample years (Figure 4.1).[4]
+
 ```{r}
 sampling_sites <- read.csv("RawData/2020sitelocations.csv")
 
@@ -395,6 +393,49 @@ PCB_byniche_combined <-
   rbind(PCB_byniche_2010, PCB_byniche_2015, PCB_byniche_2020)
 
 ```
+```{r}
+
+# Sum up fatty acids by fish
+
+# 2010
+totalfattyacids_byfish_2010 <- fattyacids_2010_processed %>%
+  group_by(Species.ID) %>%
+  summarise(Total_Omega3s = sum(Amount),
+            Scientific_Name = first(Scientific.Name),
+            Common_Name = first(Common.Name),
+            Family_Name = first(Family),
+            Date = first(Year))
+
+# 2015
+totalfattyacids_byfish_2015 <- fattyacids_2015_processed %>%
+  # Filter for Omega-3s
+  filter(Analyte == "Linoleic acid" | Analyte == 	"Docosahexaenoic acid" |
+           Analyte == "Docosapentaenoic acid" | Analyte == "Eicosadienoic acid"
+        |  Analyte ==  "Eicosatrienoic acid") %>%
+  group_by(Species.ID) %>%
+  # Sum up filtered Omega-3s and divide by 1000 to convert from ug/g to mg/g
+  summarise(Total_Omega3s = sum(Amount) / 1000,
+            Scientific_Name = first(Scientific.Name),
+            Common_Name = first(Common.Name),
+            Family_Name = first(Family),
+            Date = first(Year))
+
+# 2020
+totalfattyacids_byfish_2020 <- fattyacids_2020_processed %>%
+  # Filter for Omega-3s
+   filter(Analyte == "Linoleic acid" | Analyte == 	"Docosahexaenoic acid" |
+           Analyte == "Docosapentaenoic acid" | Analyte == "Eicosadienoic acid"
+        |  Analyte ==  "Eicosatrienoic acid") %>%
+  group_by(Species.ID) %>%
+  # Sum up filtered Omega-3s and divide by 1000 to convert from ug/g to mg/g
+  summarise(Total_Omega3s = sum(Amount) / 1000,
+            Scientific_Name = first(Scientific.Name),
+            Common_Name = first(Common.Name),
+            Family_Name = first(Family),
+            Date = first(Year))
+
+```
+
 
 
 \newpage
