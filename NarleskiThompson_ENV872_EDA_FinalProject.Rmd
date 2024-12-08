@@ -16,7 +16,7 @@ output:
 \listoffigures 
 \newpage
 
-```{r setup, include=FALSE}
+```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
 # Set your working directory
 getwd()
 
@@ -26,6 +26,9 @@ library(lubridate)
 library(tidyverse)
 library(agricolae)
 library(ggplot2)
+library(sf)
+library(gridExtra)
+library(patchwork)
 
 # Check working directory
 here()
@@ -80,9 +83,9 @@ Fish accumulate pollutants in their tissues, decreasing their health and alterin
 Between the fragile ecosystems that depend on fish to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
 
 <ol><b>
-  <li>How does fish tissue contamination vary within and between each lake?</li>
-  <li>How do contaminants vary over time in each lake and overall?</li>
-  <li>Are different species more vulnerable to different contaminants?</li>
+  <li>How does fish tissue contamination vary significantly within and between each lake?</li>
+  <li>Are there trends in contaminant level in each fish species and in each lake?</li>
+  <li>Are different species significantly more vulnerable than others to different contaminants?</li>
 </b></ol>
 
 \newpage
@@ -154,7 +157,7 @@ The basic structure of each of the raw datasets can be found in Table 3.1. The s
 | PFAs  | ng/g (nanograms per gram)  | ppb (parts per billion)|
 
 
-```{r wrangling, include=FALSE}}
+```{r wrangling, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Wrangle mercury data and write in as csvs
 
@@ -264,14 +267,32 @@ write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA
 
 # Exploratory Analysis
 Before beginning analysis aimed at answering our research questions, we explore it in several ways. First, to orient ourselves spatially, we mapped the all of the sites sampled in 2020. We aren't able use specific site location in our analysis, due to a lack of spatial data in the 2010 and 2015 datasets. However, it is noted in the metadata (from which we etxract the sites and their coordinates) that many of the 2020 sites were locations revisited from previous sample years (Figure 4.1).[4]
+<br>
+**Figure 4.1. Sampling Sites for 2020 NCCA Fish Tissue Contamination survey.**
 
-```{r}
-sampling_sites <- read.csv("RawData/2020sitelocations.csv")
 
-ggplot(data = sampling_sites , aes(x = LONGITUDE., y = lat)) +
-  geom_point(color = "blue") +
-  labs(title = "Fish Monitoring Sites", x = "Longitude", y = "Latitude") +
+```{r echo=FALSE, warning=FALSE, message=FALSE}
+#site map
+sampling_sites <- read_csv("RawData/2020sitelocationsv6.csv")
+sampling_sites_clean <- sampling_sites %>% select('Lake','State','SITEID', 'Latitude', 'Longitude')
+sampling_sites_clean$Latitude <- as.numeric(sampling_sites_clean$Latitude)
+sampling_sites_clean$Longitude<- as.numeric(sampling_sites_clean$Longitude)
+
+sampling_sites_sf <- st_as_sf(
+  sampling_sites_clean,
+  coords = c("Longitude", "Latitude"), 
+  crs = 4326)
+
+states_sf <- st_read(here('RawData/cb_2018_us_county_20m.shp'), quiet=TRUE) %>%
+  filter(STATEFP %in% c("26", "36", "39", "42", "55", "27"))
+
+map <- ggplot() +
+  geom_sf(data = states_sf, fill = "lightgray", color = "gray") + #counties
+  geom_sf(data = sampling_sites_sf, color = "blue", size = 1, alpha = 0.5) + # Plot sites
+  labs(title = "Sampling Sites for 2020 NCCA Fish Tissue Contamination Survey", x = "Longitude", y = "Latitude") +
   theme_minimal()
+
+print(map)
 
 #Insert exploratory visualizations of your dataset. This may include, but is not limited to, graphs illustrating the distributions of variables of interest and/or maps of the spatial context of your dataset. Format your R chunks so that graphs are displayed but code is not displayed. Accompany these graphs with text sections that describe the visualizations and provide context for further analyses.
 
@@ -279,9 +300,17 @@ ggplot(data = sampling_sites , aes(x = LONGITUDE., y = lat)) +
 
 #Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
 ```
+<br>
+To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant.
+<br>
 
+## MERCURY
+add text
+<br>
 
-```{r}
+**Figures 4.2-4.4. Exploratory analysis for Mercury**
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 
 # Mercury exploratory analysis
 
@@ -336,8 +365,47 @@ Mercury_byfish_combined <-
 Mercury_byniche_combined <-
   rbind(Mercury_byniche_2010, Mercury_byniche_2015, Mercury_byniche_2020)
 
+## PLOTS
+# Creating plot by LAKE
+mercury_by_lake <- ggplot(Mercury_bylake_combined, aes(x = as.factor(Year), y = Mean.Mercury, fill = Lake)) +
+  geom_bar(stat = "identity", position = "dodge") +  
+  labs(title = "Mercury Levels by Lake (2010-2020)", 
+       x = "Year", 
+       y = "Mean Mean Mercury (µg/kg)", subtitle = "Figure 4.2") +
+  scale_fill_manual(values = c("Lake Erie" = "lightblue", 
+                               "Lake Huron" = "lightgreen", 
+                               "Lake Michigan" = "blue", 
+                               "Lake Ontario" = "darkgreen", 
+                               "Lake Superior" = "darkblue")) +  
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+print(mercury_by_lake)
+
+# Creating plot by FISH SPECIES
+mercury_by_fish <- ggplot(Mercury_byfish_combined, aes(x = as.factor(Year), y = Mean.Mercury, fill = Common.Name)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Mean Mercury Levels by Fish (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)", subtitle = "Figure 4.3") +
+  theme_minimal()
+print(mercury_by_fish)
+
+# Creating plot by FISH NICHE
+mercury_by_niche <- ggplot(Mercury_byniche_combined, aes(x = as.factor(Year), y = Mean.Mercury, fill = Niche)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Mean Mercury Levels by Niche (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)",subtitle = "Figure 4.4") +
+  theme_minimal()
+print(mercury_by_niche)
+
+
 ```
-```{r}
+<br>
+
+## PCBs
+add text
+**Figures 4.5-4.7. Exploratory analysis for PCBs**
+
+<br>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 
 # PCB exploratory analysis
 
@@ -392,8 +460,46 @@ PCB_byfish_combined <-
 PCB_byniche_combined <-
   rbind(PCB_byniche_2010, PCB_byniche_2015, PCB_byniche_2020)
 
+## PLOTS
+# Creating plot by LAKE
+PCB_by_lake <- ggplot(PCB_bylake_combined, aes(x = as.factor(Year), y = Mean.PCBs, fill = Lake)) +
+  geom_bar(stat = "identity", position = "dodge") +  
+  labs(title = "PCB Levels by Lake (2010-2020)", 
+       x = "Year", 
+       y = "Mean PCBs (µg/kg)", subtitle = "Figure 4.5") +
+  scale_fill_manual(values = c("Lake Erie" = "lightblue", 
+                               "Lake Huron" = "lightgreen", 
+                               "Lake Michigan" = "blue", 
+                               "Lake Ontario" = "darkgreen", 
+                               "Lake Superior" = "darkblue")) +  
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+print(PCB_by_lake)
+
+# Creating plot by FISH SPECIES
+PCB_by_fish <- ggplot(PCB_byfish_combined, aes(x = as.factor(Year), y = Mean.PCBs, fill = Common.Name)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Mean PCB Levels by Fish (2010-2020)", x = "Year", y = "Mean PCB (µg/kg)", subtitle = "Figure 4.6") +
+  theme_minimal()
+print(PCB_by_fish)
+
+# Creating plot by FISH NICHE
+PCB_by_niche <- ggplot(PCB_byniche_combined, aes(x = as.factor(Year), y = Mean.PCBs, fill = Niche)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Mean PCB Levels by Niche (2010-2020)", x = "Year", y = "Mean PCB (µg/kg)",subtitle = "Figure 4.7") +
+  theme_minimal()
+print(mercury_by_niche)
+
+
 ```
-```{r}
+<br>
+
+## PFAs
+add text explaining why omega 3
+**Figure 4.8. Exploratory analysis for Fatty Acids**
+<br>
+
+```{r echo=FALSE, warning=FALSE, message=FALSE}
 
 # Sum up fatty acids by fish
 
@@ -434,6 +540,18 @@ totalfattyacids_byfish_2020 <- fattyacids_2020_processed %>%
             Family_Name = first(Family),
             Date = first(Year))
 
+# Combined by fish
+FA_byfish_combined <-
+  rbind(totalfattyacids_byfish_2010, totalfattyacids_byfish_2015, totalfattyacids_byfish_2020)
+
+## PLOTS
+# Creating plot by FISH SPECIES
+fattyacid_by_fish <- ggplot(FA_byfish_combined, aes(x = as.factor(Year), y = Total_Omega3s, fill = Common.Name)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Total Omega3 Levels by Fish (2010-2020)", x = "Year", y = "Omega-3s (m/g)", subtitle = "Figure 4.8") +
+  theme_minimal()
+print(PCB_by_fish)
+
 ```
 
 
@@ -442,11 +560,11 @@ totalfattyacids_byfish_2020 <- fattyacids_2020_processed %>%
 
 # Analysis
 
+## Question 1: How does fish tissue contamination vary significantly within and between each lake?
 
+## Question 2: Are there trends in contaminant level in each fish species and in each lake?
 
-## Question 1: <insert specific question here and add additional subsections for additional questions below, if needed>
-
-## Question 2: 
+## Question 3: Are different species significantly more vulnerable than others to different contaminants?
 
 
 
@@ -459,11 +577,13 @@ totalfattyacids_byfish_2020 <- fattyacids_2020_processed %>%
 \newpage
 
 # References - i have to make these APA still but just links for now
-[1]https://www.nwf.org/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes
+[1]The Great Lakes. (n.d.). National Wildlife Federation. Retrieved December 8, 2024, from https://www.nwf.org/Home/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes
 <br>
 [2] US EPA, O. (2020, June 11). National Coastal Condition Assessment—Great Lakes Human Health Fish Tissue Studies [Overviews and Factsheets]. https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-
 condition-assessment-great-lakes-human-health
 <br>
-[3] https://www.epa.gov/choose-fish-and-shellfish-wisely/2020-great-lakes-human-health-fish-fillet-tissue-study
-[4] https://www.epa.gov/system/files/documents/2024-04/glhhffts-qa-fish-sample-preparation-2020.pdf
+[3] US EPA. (2024, April 9). 2020 Great Lakes Human Health Fish Fillet Tissue Study [Overviews and Factsheets]. https://www.epa.gov/choose-fish-and-shellfish-wisely/2020-great-lakes-human-health-fish-fillet-tissue-study
+[4] EPA. (2020, June 15). Quality Assurance Project Plan for  National Coastal Condition Assessment (NCCA)  2020 Great Lakes Human Health Fish Sample Preparation.
+
+
 
