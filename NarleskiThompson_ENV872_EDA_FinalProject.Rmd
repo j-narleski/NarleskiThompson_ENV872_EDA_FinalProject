@@ -88,7 +88,7 @@ Between the fragile ecosystems that depend on fish to the entire human populatio
 <ol><b>
   <li>Does fish tissue contamination vary significantly between each lake?</li>
   <li>Are there trends in contaminant levels in each fish species over time?</li>
-  <li>Are different species significantly more vulnerable than others to different contaminants? SHOULD WE CHANGE THIS ONE</li>
+  <li>Are different species significantly more vulnerable than others to different contaminants? SHOULD WE CHANGE THIS ONE? same as #2</li>
 </b></ol>
 
 <center>
@@ -336,11 +336,11 @@ To better inform our statistical methods for answering our research questions, w
 <br>
 
 ## Mercury
-Data on mercury is complete across all three time periods. Visualizations of the relationships between mean mercury levels and lake (Huron, Superior, Erie, Michigan, and Ontario), fish species, and niche (Benthic and Pelagic) are below (Figures 4.2-4.4).  
+Data on mercury is complete across all three time periods. Visualizations of the relationships between mean mercury levels and lake (Huron, Superior, Erie, Michigan, and Ontario), fish species, and niche (Benthic and Pelagic) are below (Figure \@ref(fig:mercury-exp-lake), Figure \@ref(fig:mercury-exp-fish), and Figure \@ref(fig:mercury-exp-niche)).
 <br>
 
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+```{r mercury exploratory analysis, echo=FALSE, warning=FALSE, message=FALSE}
 
 # Mercury exploratory analysis
 
@@ -396,7 +396,8 @@ Mercury_byfish_combined <-
 Mercury_byniche_combined <-
   rbind(Mercury_byniche_2010, Mercury_byniche_2015, Mercury_byniche_2020)
 
-## PLOTS
+```
+```{r mercury-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels in each of the Great Lakes', warning=FALSE, message=FALSE}
 # Creating plot by LAKE
 mercury_by_lake <- ggplot(
   Mercury_bylake_combined, aes(
@@ -404,13 +405,16 @@ mercury_by_lake <- ggplot(
   geom_bar(stat = "identity", position = "dodge") +  
   labs(title = "Mercury Levels by Lake (2010-2020)", 
        x = "Year", 
-       y = "Mean Mean Mercury (µg/kg)", subtitle = "Figure 4.2") +
+       y = "Mean Mean Mercury (µg/kg)") +
   scale_fill_manual(values = c("Lake Erie" = "lightblue", 
                                "Lake Huron" = "lightgreen", 
                                "Lake Michigan" = "blue", 
                                "Lake Ontario" = "darkgreen", 
                                "Lake Superior" = "darkblue")) 
 print(mercury_by_lake)
+```
+
+```{r mercury-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels in each sampled fish species', warning=FALSE, message=FALSE}
 
 # Creating plot by FISH SPECIES
 mercury_by_fish <- ggplot(
@@ -420,11 +424,12 @@ mercury_by_fish <- ggplot(
   labs(title = "Mean Mercury Levels by Fish (2010-2020)", 
        x = "Year", 
        y = "Mean Mercury (µg/kg)", 
-       fill = "Fish Species",
-       subtitle = "Figure 4.3") 
+       fill = "Fish Species") 
 
 print(mercury_by_fish)
+```
 
+```{r mercury-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
 # Creating plot by FISH NICHE
 mercury_by_niche <- ggplot(
   Mercury_byniche_combined, aes(
@@ -433,13 +438,12 @@ mercury_by_niche <- ggplot(
   labs(title = "Mean Mercury Levels by Niche (2010-2020)", 
        x = "Year", 
        y = "Mean Mercury (µg/kg)",
-       fill = "Niche",
-       subtitle = "Figure 4.4")
+       fill = "Niche")
 
 print(mercury_by_niche)
-
-
 ```
+
+
 <br>
 **Figures 4.2-4.4. Exploratory analysis for Mercury**
 <br>
