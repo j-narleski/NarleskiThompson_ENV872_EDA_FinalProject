@@ -4,7 +4,7 @@ subtitle: "An examination of trends in fish tissue composition in the Great Lake
 author: "Jaclyn Narleski and Victoria Thompson"
 date: "`r Sys.Date()`"
 output:
-  html_document:
+  bookdown::html_document2:
     theme: cosmo
     toc: true
     toc_depth: 2
@@ -16,7 +16,7 @@ output:
 \listoffigures 
 \newpage
 
-```{r setup, echo=FALSE, warning=FALSE, message=FALSE}
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
 # Set your working directory
 getwd()
 
@@ -29,6 +29,7 @@ library(ggplot2)
 library(sf)
 library(gridExtra)
 library(patchwork)
+library(bookdown)
 
 # Check working directory
 here()
@@ -80,17 +81,20 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 # Rationale and Research Questions
 The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
 
-Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids (Table 1.1). The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
+Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids (Table 1). The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
 
 Between the fragile ecosystems that depend on fish to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
 
 <ol><b>
   <li>Does fish tissue contamination vary significantly between each lake?</li>
   <li>Are there trends in contaminant levels in each fish species over time?</li>
-  <li>Are different species significantly more vulnerable than others to different contaminants?</li>
+  <li>Are different species significantly more vulnerable than others to different contaminants? SHOULD WE CHANGE THIS ONE</li>
 </b></ol>
 
-**Table 1.1. Description of the contaminants used in this project.[5]**
+<center>
+**Table 1.** Description of the contaminants used in this project.[5]
+</center>
+
 <br>
 
 | Contaminant   | Description | Effect on Human Health |
@@ -114,9 +118,12 @@ Fish contaminant data is collected using the following procedures, per the 2020 
 - Fish are filleted (scales are removed, but skin and belly are left intact)
 - A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish
 
-The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table 3.1). 
+The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table 2). 
 
-**Table 3.1. Raw Dataset Column Descriptions**
+<center>
+**Table 2.** Raw Dataset Column Descriptions
+</center>
+
 <br>
 <p style="color: lightgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
 
@@ -135,7 +142,7 @@ The Environmental Protection Agency has conducted periodic studies over the past
 
 **Dataset Wrangling Procedures**
 <br>
-Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table 3.1 were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis.
+Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table 3.1 were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
 <br>
 <br>
 **Summary of Data Structure**
@@ -152,7 +159,7 @@ The basic structure of each of the raw datasets can be found in Table 3.1. The s
 | Scientific.Name | Taxonomic name of fish sampled |
 | Common.Name | Common name of fish sampled |
 | Family | Taxonomic family of fish sampled |
-| Niche | Codified ecological niche of the fish sampled; for example, "BD" is" "Benthic-Demersal" |
+| Niche | Codified ecological niche of the fish sampled; "BD" is" "Benthic-Demersal", "P" is "Pelagic" |
 | Method | EPA-standardized method of chemical analysis |
 | Analyte | The chemical of interest in each dataset |
 | Amount | Amount of chemcial detected in the sample |
@@ -291,12 +298,10 @@ write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA
 \newpage
 
 # Exploratory Analysis
-Before beginning analysis aimed at answering our research questions, we explore it in several ways. First, to orient ourselves spatially, we mapped the all of the sites sampled in 2020. We aren't able use specific site location in our analysis, due to a lack of spatial data in the 2010 and 2015 datasets. However, it is noted in the metadata (from which we etxract the sites and their coordinates) that many of the 2020 sites were locations revisited from previous sample years (Figure 4.1).[4]
+Before beginning analysis aimed at answering our research questions, we explore it in several ways. First, to orient ourselves spatially, we map the all of the sites sampled in 2020. We aren't able use specific site location in our analysis, due to a lack of spatial data in the 2010 and 2015 datasets. However, it is noted in the metadata (from which we extract the sites and their coordinates) that many of the 2020 sites were locations revisited from previous sample years (Figure \@ref(fig:site-map)).[4] Note the consistent spacing between each sample site is an intentional part of the design that ensures the nearshore area of each lake is properly and randomly sampled.
 <br>
-**Figure 4.1. Sampling Sites for 2020 NCCA Fish Tissue Contamination survey.**
 
-
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+```{r site-map, echo=FALSE, fig.align='center', fig.cap='Map of nearshore sampling sites used for NCCA 2020', warning=FALSE, message=FALSE}
 #site map
 sampling_sites <- read_csv("RawData/2020sitelocationsv6.csv")
 sampling_sites_clean <- sampling_sites %>% select('Lake','State','SITEID', 'Latitude', 'Longitude')
@@ -314,8 +319,7 @@ states_sf <- st_read(here('RawData/cb_2018_us_county_20m.shp'), quiet=TRUE) %>%
 map <- ggplot() +
   geom_sf(data = states_sf, fill = "lightgray", color = "gray") + #counties
   geom_sf(data = sampling_sites_sf, color = "blue", size = 1, alpha = 0.5) + # Plot sites
-  labs(title = "Sampling Sites for 2020 NCCA Fish Tissue Contamination Survey", x = "Longitude", y = "Latitude") +
-  theme_minimal()
+  labs(title = "Sampling Sites for 2020 NCCA Fish Tissue Contamination Survey", x = "Longitude", y = "Latitude") 
 
 print(map)
 
@@ -326,14 +330,15 @@ print(map)
 #Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
 ```
 <br>
+**Figure 4.1. Sampling Sites for 2020 NCCA Fish Tissue Contamination survey.**
+<br>
 To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant.
 <br>
 
-## MERCURY
-add text
+## Mercury
+Data on mercury is complete across all three time periods. Visualizations of the relationships between mean mercury levels and lake (Huron, Superior, Erie, Michigan, and Ontario), fish species, and niche (Benthic and Pelagic) are below (Figures 4.2-4.4).  
 <br>
 
-**Figures 4.2-4.4. Exploratory analysis for Mercury**
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -436,9 +441,11 @@ print(mercury_by_niche)
 
 ```
 <br>
-
+**Figures 4.2-4.4. Exploratory analysis for Mercury**
+<br>
+<br>
 ## PCBs
-add text
+PCBs (Polychlorinated Biphenyls) are also a complete dataset. Visualizations are shown below (Figures 4.5-4.7).
 **Figures 4.5-4.7. Exploratory analysis for PCBs**
 
 <br>
@@ -725,20 +732,19 @@ Mercury_byfish_combined_threeyeardata <- Mercury_byfish_combined %>% filter(Comm
 mercury_by_fish_plot <- ggplot(Mercury_byfish_combined_threeyeardata, aes(x = as.factor(Year), y = Mean.Mercury, color = Common.Name)) +
   geom_point() +
   geom_smooth(method = "lm", aes(group = Common.Name), se = FALSE) +
-  labs(title = "Mean Mercury Levels by Fish Species (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)", subtitle = "Figure 4.3") +
-  theme_minimal()
+  labs(title = "Mean Mercury Levels by Fish Species (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)", subtitle = "Figure 4.3") 
 print(mercury_by_fish_plot)
 
 #separating the fish species
 # walleye
 walleye_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Walleye")
-walleye_lm <- lm(Mean.Mercury ~ Year, data = walleye_data)
-summary(walleye_lm)
+#walleye_lm <- lm(Mean.Mercury ~ Year, data = walleye_data)
+#summary(walleye_lm)
 
 # bass
 smallmouth_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Smallmouth bass")
-smallmouth_lm <- lm(Mean.Mercury ~ Year, data = smallmouth_data)
-summary(smallmouth_lm)
+#smallmouth_lm <- lm(Mean.Mercury ~ Year, data = smallmouth_data)
+#summary(smallmouth_lm)
 ```
 The results of both regressions (walleye, p=0.1551; smallmouth, p= 0.8848) indicate that the trend between mercury in these fish over time is not statistically significant.
 
