@@ -8,6 +8,8 @@ output:
     theme: cosmo
     toc: true
     toc_depth: 2
+    number_sections: true
+    fig_caption: true
 ---
 \tableofcontents 
 \newpage
@@ -30,6 +32,7 @@ library(sf)
 library(gridExtra)
 library(patchwork)
 library(bookdown)
+library(knitr)
 
 # Check working directory
 here()
@@ -81,7 +84,7 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 # Rationale and Research Questions
 The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
 
-Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids (Table 1). The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
+Fish accumulate pollutants in their tissues, decreasing their health and altering ecological dynamics within the lakes. In 2010, the EPA launched the NCCA (National Coastal Condition Assessment) to “assess the condition of nearshore waters along the marine and Great Lakes coasts of the United States and to evaluate changes affecting the quality of these waters over time”.[2] This project includes sampling and testing fish tissues for particularly harmful long-lasting chemicals, including mercury, PFAS, PCBs, and fatty acids (Table \@ref(tab:contaminant-table) ). The EPA hopes that data on these contamination levels will allow them to be better informed on the current risks to fish, and the aquatic and human lives that depend on them.
 
 Between the fragile ecosystems that depend on fish to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
 
@@ -91,18 +94,28 @@ Between the fragile ecosystems that depend on fish to the entire human populatio
   <li>Are different species significantly more vulnerable than others to different contaminants? SHOULD WE CHANGE THIS ONE? same as #2</li>
 </b></ol>
 
-<center>
-**Table 1.** Description of the contaminants used in this project.[5]
-</center>
+```{r contaminant-table, echo=FALSE, message=FALSE}
+contaminants <- data.frame(
+  Contaminant = c("Mercury", "Fatty Acids", "PCBs", "PFAs"),
+  Description = c(
+    "A heavy metal that comes from sources such as factory outputs and landfill leaching",
+    "Organic compounds found in the tissues of organisms; required in some amounts but negative in excess",
+    "Industrial chemicals used in electrical equipment, plastics, and paints",
+    "Man-made chemicals found in products that resist oil and grease (i.e. non-stick coatings) and fire-fighting foam"
+  ),
+  `Effect on Human Health` = c(
+    "Reproductive, developmental, and sensory defects",
+    "Excessive intake can lead to cardiovascular diseases",
+    "Cancer, reproductive problems, and immune system suppression",
+    "Associated with cancer, liver damage, thyroid disorders, and immune system suppression"
+  )
+)
 
-<br>
+names(contaminants) <- c("Contaminant", "Description", "Effect on Human Health")
 
-| Contaminant   | Description | Effect on Human Health |
-|:---:|:----|:---------|
-| Mercury | A heavy metal that comes from sources such as factory outputs and landfill leaching | Reproductive, developmental, and sensory defects |
-| Fatty Acids | Organic compounds found in the tissues of organisms; required in some amounts but negative in excess | Excessive intake can lead to cardiovascular diseases |
-| PCBs | Industrial chemicals used in electrical equipment, plastics, and paints | Cancer, reproductive problems, and immune system suppression |
-| PFAs | Man-made chemicals found in products that resist oil and grease (i.e. non-stick coatings) and fire-fighting foam | Associated with cancer, liver damage, thyroid disorders, and immune system suppression |
+kable(contaminants, caption = "Description of the contaminants used in this project." )
+
+```
 
 <br>
 \newpage
@@ -118,75 +131,127 @@ Fish contaminant data is collected using the following procedures, per the 2020 
 - Fish are filleted (scales are removed, but skin and belly are left intact)
 - A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish
 
-The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table 2). 
+The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table \@ref(tab:columm-description-table) ). 
 
-<center>
-**Table 2.** Raw Dataset Column Descriptions
-</center>
+```{r columm-description-table, echo=FALSE, message=FALSE}
+
+column_descriptions <- data.frame(
+  `Column Name` = c(
+    "EPA Region", "State", "Lake", "Site ID", 
+    "EPA Sample ID", "Tissue Type", "% Lipids", 
+    "Method", "Analyte", "Amount"
+  ),
+  Description = c(
+    "The EPA Region in which the sample was collected",
+    "2-letter abbreviation for the state in which the sample was collected",
+    "The Great Lake the sample is from",
+    '"NGL" + site selection year + state + 4-digit site location',
+    "6-digit code assigned by the EPA",
+    "The type of fish tissue used for analysis; we use only fillet data",
+    "The lipid content of the sample, measured independently of the chemical analysis",
+    "EPA-standardized method of chemical analysis",
+    "The chemical of interest in each dataset",
+    "Amount of chemical detected in the sample"
+  )
+)
+
+
+# Generate the table
+kable(
+  column_descriptions, 
+  caption = "Description of the columns in the dataset."
+)
+
+```
 
 <br>
-<p style="color: lightgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
-
-| Column Name | Description |
-|:----|:------|
-| EPA Region | The EPA Region in which the sample was collected | 
-| State |  2-letter abbreviation for the state in which the sample was collected | 
-| Lake | The Great Lake the sample is from |
-| Site ID | "NGL" + site selection year + state + 4-digit site location |
-| EPA Sample ID | 6-digit code assigned by the EPA |
-| Tissue Type | The type of fish tissue used for analysis; we use only fillet data |
-| % Lipids | The lipid content of the sample, measured independently of the chemical analysis |
-| Method | EPA-standardized method of chemical analysis |
-| Analyte | The chemical of interest in each dataset |
-| Amount | Amount of chemcial detected in the sample |
+<p style="color: darkgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
 
 **Dataset Wrangling Procedures**
 <br>
-Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table 3.1 were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
+Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table \@ref(tab:columm-description-table) were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
 <br>
 <br>
 **Summary of Data Structure**
 <br>
-The basic structure of each of the raw datasets can be found in Table 3.1. The specific variables being investigated from  each of the processed files can be found below (Table 3.2). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table 3.4). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies (Table 3.4).
+The basic structure of each of the raw datasets can be found in Table \@ref(tab:columm-description-table). The specific variables being investigated from  each of the processed files can be found below (Table \@ref(tab:processed-description-table) ) They vary in units, described in Table \@ref(tab:contaminant-units-table). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table \@ref(tab:fatty-acids-table)). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies.
 <br>
 <br>
-**Table 3.2. Processed Dataset Column Descriptions**
+```{r processed-description-table, echo=FALSE, message=FALSE}
+variable_descriptions <- data.frame(
+  Variable = c(
+    "State", "Lake", "Scientific.Name", "Common.Name", 
+    "Family", "Niche", "Method", "Analyte", 
+    "Amount", "Unit.1", "Unit.2"
+  ),
+  Description = c(
+    "2-letter abbreviation for the state in which the sample was collected",
+    "The Great Lake the sample is from",
+    "Taxonomic name of fish sampled",
+    "Common name of fish sampled",
+    "Taxonomic family of fish sampled",
+    'Codified ecological niche of the fish sampled; "BD" is "Benthic-Demersal", "P" is "Pelagic"',
+    "EPA-standardized method of chemical analysis",
+    "The chemical of interest in each dataset",
+    "Amount of chemical detected in the sample",
+    "The original unit the chemical was measured in. See Table 3.3",
+    "The amount of chemical converted to common units. Only for some contaminants. See Table 3.3"
+  )
+)
 
-| Variable | Description |
-|:----|:------|
-| State |  2-letter abbreviation for the state in which the sample was collected | 
-| Lake | The Great Lake the sample is from |
-| Scientific.Name | Taxonomic name of fish sampled |
-| Common.Name | Common name of fish sampled |
-| Family | Taxonomic family of fish sampled |
-| Niche | Codified ecological niche of the fish sampled; "BD" is" "Benthic-Demersal", "P" is "Pelagic" |
-| Method | EPA-standardized method of chemical analysis |
-| Analyte | The chemical of interest in each dataset |
-| Amount | Amount of chemcial detected in the sample |
-| Unit.1 | The original unit the chemical was measured in. See Table 3.3 |
-| Unit.2 | The amount of chemical converted to common units. Only for some contaminants. See Table 3.3 |
-<br>
+# Generate the table
+kable(
+  variable_descriptions, 
+  caption = "Description of the variables in the dataset."
+)
 
-**Table 3.3. Contaminant Units**
+```
 
-| Contaminant | Unit 1 (Original) | Unit 2 (Converted)|
-|:----|:------|:------|
-| Mercury | ng/g (nanograms per gram)  | ppb (parts per billion)|
-| Fatty Acids | mg/g (millograms per gram)| ug/g (micrograms per gram) |
-| PCBs | ng/g (nanograms per gram)  | ppb (parts per billion)|
-| PFAs  | ng/g (nanograms per gram)  | ppb (parts per billion)|
-<br>
+```{r contaminant-units-table, echo=FALSE, message=FALSE}
+contaminant_units <- data.frame(
+  Contaminant = c("Mercury", "Fatty Acids", "PCBs", "PFAs"),
+  `Unit 1 (Original)` = c(
+    "ng/g (nanograms per gram)", 
+    "mg/g (milligrams per gram)", 
+    "ng/g (nanograms per gram)", 
+    "ng/g (nanograms per gram)"
+  ),
+  `Unit 2 (Converted)` = c(
+    "ppb (parts per billion)", 
+    "ug/g (micrograms per gram)", 
+    "ppb (parts per billion)", 
+    "ppb (parts per billion)"
+  )
+)
 
-**Table 3.4. Types of Fatty Acids**
+names(contaminant_units) <- c("Contaminant", "Unit 1 (Original)", "Unit 2 (Converted)")
 
-| Fatty Acid | Type | Abbreviation |
-|:----|:------|:------|
-| alpha-Linolenic acid | Omega-3 | ALA |
-| Docosahexaenoic acid | Omega-3 | DHA |
-| Docosapentaenoic acid | Omega-3 | DPA |
-| Eicosapentaenoic acid | Omega-3 | EPA |
-| Eicosatrienoic acid   | Omega-3 | ETE |
-| Linolenic acid | Omega-6| LA
+# Generate the table
+kable(
+  contaminant_units, 
+  caption = "Units of measurement for each contaminant."
+)
+```
+
+```{r fatty-acids-table, echo=FALSE, message=FALSE}
+
+fatty_acids <- data.frame(
+  `Fatty Acid` = c(
+    "alpha-Linolenic acid", "Docosahexaenoic acid", 
+    "Docosapentaenoic acid", "Eicosapentaenoic acid", 
+    "Eicosatrienoic acid", "Linolenic acid"
+  ),
+  Type = c("Omega-3", "Omega-3", "Omega-3", "Omega-3", "Omega-3", "Omega-6"),
+  Abbreviation = c("ALA", "DHA", "DPA", "EPA", "ETE", "LA")
+)
+
+# Generate the table
+kable(
+  fatty_acids, 
+  caption = "Types of fatty acids and their abbreviations. {#tbl:fatty-acids}"
+)
+```
+
 
 ```{r wrangling, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -330,8 +395,6 @@ print(map)
 #Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
 ```
 <br>
-**Figure 4.1. Sampling Sites for 2020 NCCA Fish Tissue Contamination survey.**
-<br>
 To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant.
 <br>
 
@@ -444,9 +507,6 @@ print(mercury_by_niche)
 ```
 
 
-<br>
-**Figures 4.2-4.4. Exploratory analysis for Mercury**
-<br>
 <br>
 ## PCBs
 PCBs (Polychlorinated Biphenyls) are also a complete dataset. Visualizations are shown below (Figures 4.5-4.7).
