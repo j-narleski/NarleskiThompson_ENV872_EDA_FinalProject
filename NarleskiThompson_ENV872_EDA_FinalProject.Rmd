@@ -46,6 +46,7 @@ laketheme <- theme(
   panel.grid.minor = element_line(
     color = "aquamarine3", linetype = 3, size = 0.25),
   axis.text = element_text(color = "aquamarine4"),
+  axis.text.x = element_text(angle = 45, hjust = 1),
   axis.ticks = element_line(color = "aquamarine4"),
   legend.title = element_text(size = 8, color = "darkcyan"),
   legend.position = "right"
@@ -139,7 +140,7 @@ Each of the 5-year publications from the EPA contains 4 separate data files arra
 <br>
 **Summary of Data Structure**
 <br>
-The basic structure of each of the raw datasets can be found in Table 3.1. The specific variables being investigated from  each of the processed files can be found below (Table 3.2).
+The basic structure of each of the raw datasets can be found in Table 3.1. The specific variables being investigated from  each of the processed files can be found below (Table 3.2). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table 3.4). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies (Table 3.4).
 <br>
 <br>
 **Table 3.2. Processed Dataset Column Descriptions**
@@ -164,10 +165,21 @@ The basic structure of each of the raw datasets can be found in Table 3.1. The s
 | Contaminant | Unit 1 (Original) | Unit 2 (Converted)|
 |:----|:------|:------|
 | Mercury | ng/g (nanograms per gram)  | ppb (parts per billion)|
-| Fatty Acids | mg/g (millograms per gram)| N/A |
+| Fatty Acids | mg/g (millograms per gram)| ug/g (micrograms per gram) |
 | PCBs | ng/g (nanograms per gram)  | ppb (parts per billion)|
 | PFAs  | ng/g (nanograms per gram)  | ppb (parts per billion)|
+<br>
 
+**Table 3.4. Types of Fatty Acids**
+
+| Fatty Acid | Type | Abbreviation |
+|:----|:------|:------|
+| alpha-Linolenic acid | Omega-3 | ALA |
+| Docosahexaenoic acid | Omega-3 | DHA |
+| Docosapentaenoic acid | Omega-3 | DPA |
+| Eicosapentaenoic acid | Omega-3 | EPA |
+| Eicosatrienoic acid   | Omega-3 | ETE |
+| Linolenic acid | Omega-6| LA
 
 ```{r wrangling, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -202,7 +214,7 @@ write.csv(mercury_2020_processed,
 PFA_2010_processed <- PFA_2010_raw %>%
   select(State, Lake.Name, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2) %>%
-  mutate(Year = rep(2010, nrow(PFA_2010_raw))) %>%
+  mutate(Year = rep(2010, nrow(PFA_2010_raw)), Amount = coalesce(Amount, 0)) %>%
   rename(Lake = Lake.Name)
 
 write.csv(PFA_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_PFAs_Processed.csv")
@@ -210,14 +222,15 @@ write.csv(PFA_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalP
 PFA_2015_processed <- PFA_2015_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2) %>%
-  mutate(Year = rep(2015, nrow(PFA_2015_raw)))
+  mutate(Year = rep(2015, nrow(PFA_2015_raw)), Amount = coalesce(Amount, 0))
 
 write.csv(PFA_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_PFAs_Processed.csv")
 
 PFA_2020_processed <- PFA_2020_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
          Chemical, Amount, Units.1, Units.2) %>%
-  mutate(Year = rep(2020, nrow(PFA_2020_raw)))
+  mutate(Year = rep(2020, nrow(PFA_2020_raw)), Amount = coalesce(Amount, 0)) %>%
+  rename(Analyte = Chemical)
 
 write.csv(PFA_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_PFAs_Processed.csv")
 
@@ -371,7 +384,8 @@ Mercury_bylake_combined <-
 
 # Combined by fish species
 Mercury_byfish_combined <-
-  rbind(Mercury_byfish_2010, Mercury_byfish_2015, Mercury_byfish_2020)
+  rbind(Mercury_byfish_2010, Mercury_byfish_2015, Mercury_byfish_2020) %>%
+  mutate(Common.Name = str_to_title(Common.Name))
 
 # Combined by niche
 Mercury_byniche_combined <-
@@ -379,7 +393,9 @@ Mercury_byniche_combined <-
 
 ## PLOTS
 # Creating plot by LAKE
-mercury_by_lake <- ggplot(Mercury_bylake_combined, aes(x = as.factor(Year), y = Mean.Mercury, fill = Lake)) +
+mercury_by_lake <- ggplot(
+  Mercury_bylake_combined, aes(
+    x = as.factor(Year), y = Mean.Mercury, fill = Lake)) +
   geom_bar(stat = "identity", position = "dodge") +  
   labs(title = "Mercury Levels by Lake (2010-2020)", 
        x = "Year", 
@@ -388,23 +404,33 @@ mercury_by_lake <- ggplot(Mercury_bylake_combined, aes(x = as.factor(Year), y = 
                                "Lake Huron" = "lightgreen", 
                                "Lake Michigan" = "blue", 
                                "Lake Ontario" = "darkgreen", 
-                               "Lake Superior" = "darkblue")) +  
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+                               "Lake Superior" = "darkblue")) 
 print(mercury_by_lake)
 
 # Creating plot by FISH SPECIES
-mercury_by_fish <- ggplot(Mercury_byfish_combined, aes(x = as.factor(Year), y = Mean.Mercury, fill = Common.Name)) +
+mercury_by_fish <- ggplot(
+  Mercury_byfish_combined, aes(
+    x = as.factor(Year), y = Mean.Mercury, fill = Common.Name)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Mean Mercury Levels by Fish (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)", subtitle = "Figure 4.3") +
-  theme_minimal()
+  labs(title = "Mean Mercury Levels by Fish (2010-2020)", 
+       x = "Year", 
+       y = "Mean Mercury (µg/kg)", 
+       fill = "Fish Species",
+       subtitle = "Figure 4.3") 
+
 print(mercury_by_fish)
 
 # Creating plot by FISH NICHE
-mercury_by_niche <- ggplot(Mercury_byniche_combined, aes(x = as.factor(Year), y = Mean.Mercury, fill = Niche)) +
+mercury_by_niche <- ggplot(
+  Mercury_byniche_combined, aes(
+    x = as.factor(Year), y = Mean.Mercury, fill = Niche)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Mean Mercury Levels by Niche (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)",subtitle = "Figure 4.4") +
-  theme_minimal()
+  labs(title = "Mean Mercury Levels by Niche (2010-2020)", 
+       x = "Year", 
+       y = "Mean Mercury (µg/kg)",
+       fill = "Niche",
+       subtitle = "Figure 4.4")
+
 print(mercury_by_niche)
 
 
@@ -466,7 +492,8 @@ PCB_bylake_combined <-
 
 # Combined by fish species
 PCB_byfish_combined <-
-  rbind(PCB_byfish_2010, PCB_byfish_2015, PCB_byfish_2020)
+  rbind(PCB_byfish_2010, PCB_byfish_2015, PCB_byfish_2020) %>%
+  mutate(Common.Name = str_to_title(Common.Name))
 
 # Combined by niche
 PCB_byniche_combined <-
@@ -474,7 +501,9 @@ PCB_byniche_combined <-
 
 ## PLOTS
 # Creating plot by LAKE
-PCB_by_lake <- ggplot(PCB_bylake_combined, aes(x = as.factor(Year), y = Mean.PCBs, fill = Lake)) +
+PCB_by_lake <- ggplot(
+  PCB_bylake_combined, aes(
+    x = as.factor(Year), y = Mean.PCBs, fill = Lake)) +
   geom_bar(stat = "identity", position = "dodge") +  
   labs(title = "PCB Levels by Lake (2010-2020)", 
        x = "Year", 
@@ -483,30 +512,41 @@ PCB_by_lake <- ggplot(PCB_bylake_combined, aes(x = as.factor(Year), y = Mean.PCB
                                "Lake Huron" = "lightgreen", 
                                "Lake Michigan" = "blue", 
                                "Lake Ontario" = "darkgreen", 
-                               "Lake Superior" = "darkblue")) +  
-  theme_minimal() +
-  theme(axis.text.x = element_text(angle = 45, hjust = 1)) 
+                               "Lake Superior" = "darkblue"))
+
 print(PCB_by_lake)
 
 # Creating plot by FISH SPECIES
-PCB_by_fish <- ggplot(PCB_byfish_combined, aes(x = as.factor(Year), y = Mean.PCBs, fill = Common.Name)) +
+PCB_by_fish <- ggplot(
+  PCB_byfish_combined, aes(
+    x = as.factor(Year), y = Mean.PCBs, fill = Common.Name)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Mean PCB Levels by Fish (2010-2020)", x = "Year", y = "Mean PCB (µg/kg)", subtitle = "Figure 4.6") +
-  theme_minimal()
+  labs(title = "Mean PCB Levels by Fish (2010-2020)", 
+       x = "Year", 
+       y = "Mean PCB (µg/kg)", 
+       fill = "Fish Species",
+       subtitle = "Figure 4.6")
+
 print(PCB_by_fish)
 
 # Creating plot by FISH NICHE
-PCB_by_niche <- ggplot(PCB_byniche_combined, aes(x = as.factor(Year), y = Mean.PCBs, fill = Niche)) +
+PCB_by_niche <- ggplot(
+  PCB_byniche_combined, aes(
+    x = as.factor(Year), y = Mean.PCBs, fill = Niche)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Mean PCB Levels by Niche (2010-2020)", x = "Year", y = "Mean PCB (µg/kg)",subtitle = "Figure 4.7") +
-  theme_minimal()
-print(mercury_by_niche)
+  labs(title = "Mean PCB Levels by Niche (2010-2020)", 
+       x = "Year", 
+       y = "Mean PCB (µg/kg)",
+       fill = "Niche",
+       subtitle = "Figure 4.7") 
+
+print(PCB_by_niche)
 
 
 ```
 <br>
 
-## PFAs
+## Fatty Acids
 add text explaining why omega 3
 **Figure 4.8. Exploratory analysis for Fatty Acids**
 <br>
@@ -558,11 +598,52 @@ FA_byfish_combined <-
 
 ## PLOTS
 # Creating plot by FISH SPECIES
-fattyacid_by_fish <- ggplot(FA_byfish_combined, aes(x = as.factor(Year), y = Total_Omega3s, fill = Common.Name)) +
+fattyacid_by_fish <- ggplot(
+  FA_byfish_combined, aes(
+    x = as.factor(Year), y = Total_Omega3s, fill = Common.Name)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Total Omega3 Levels by Fish (2010-2020)", x = "Year", y = "Omega-3s (m/g)", subtitle = "Figure 4.8") +
-  theme_minimal()
+  labs(title = "Total Omega-3 Levels by Fish (2010-2020)", 
+       x = "Year", 
+       y = "Omega-3s (m/g)", 
+       fill = "Fish Species",
+       subtitle = "Figure 4.8")
+
 print(PCB_by_fish)
+
+```
+<br>
+
+#PFAs
+add text https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas 
+**Figures 4.---**
+```{r}
+
+# PFAs Exploratory Analysis
+
+# 2010
+totalPFAs_bylake_2010 <- PFA_2010_processed %>%
+  filter(Analyte == "Perfluorooctanoate (PFOA)" | 
+           Analyte == "Perfluorooctanesulfonate (PFOS)" | 
+           Analyte == "Perfluorohexane sulfonate (PFHxS)" |
+           Analyte == "Perfluorononanoate (PFNA)") %>%
+  group_by(Lake, Analyte, Year) %>%
+  summarise(Total.PFAs = sum(Amount))
+
+# 2015
+totalPFAs_bylake_2015 <- PFA_2015_processed %>%
+  filter(Analyte == "Perfluorooctanoate (PFOA)" | 
+           Analyte == "Perfluorooctanesulfonate (PFOS)" | 
+           Analyte == "Perfluorohexane sulfonate (PFHxS)" |
+           Analyte == "Perfluorononanoate (PFNA)") %>%
+  group_by(Lake, Analyte, Year) %>%
+  summarise(Total.PFAs = sum(Amount))
+
+# 2020
+totalPFAs_bylake_2020 <- PFA_2020_processed %>%
+  filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
+          Analyte == "PFNA", Analyte == "HFPO-DA") %>%
+  group_by(Lake, Analyte, Year) %>%
+  summarise(Total.PFAs = sum(Amount))
 
 ```
 
