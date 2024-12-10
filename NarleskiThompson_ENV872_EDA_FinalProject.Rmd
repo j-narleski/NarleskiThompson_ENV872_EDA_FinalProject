@@ -395,7 +395,7 @@ print(map)
 #Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
 ```
 <br>
-To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant.
+To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant. Further, we found inconsistencies in the naming of fish (particularly in capitalization) that required extra secondary wrangling.
 <br>
 
 ## Mercury
@@ -460,6 +460,7 @@ Mercury_byniche_combined <-
   rbind(Mercury_byniche_2010, Mercury_byniche_2015, Mercury_byniche_2020)
 
 ```
+
 ```{r mercury-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels in each of the Great Lakes', warning=FALSE, message=FALSE}
 # Creating plot by LAKE
 mercury_by_lake <- ggplot(
@@ -493,6 +494,7 @@ print(mercury_by_fish)
 ```
 
 ```{r mercury-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
+
 # Creating plot by FISH NICHE
 mercury_by_niche <- ggplot(
   Mercury_byniche_combined, aes(
@@ -509,9 +511,7 @@ print(mercury_by_niche)
 
 <br>
 ## PCBs
-PCBs (Polychlorinated Biphenyls) are also a complete dataset. Visualizations are shown below (Figures 4.5-4.7).
-**Figures 4.5-4.7. Exploratory analysis for PCBs**
-
+PCBs (Polychlorinated Biphenyls) are also a complete dataset. Visualizations are shown below (Figures \@ref(fig:pcb-exp-lake), \@ref(fig:pcb-exp-fish), \@ref(fig:pcb-exp-niche)). 
 <br>
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
@@ -570,15 +570,16 @@ PCB_byfish_combined <-
 PCB_byniche_combined <-
   rbind(PCB_byniche_2010, PCB_byniche_2015, PCB_byniche_2020)
 
-## PLOTS
-# Creating plot by LAKE
+```
+
+```{r pcb-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PCB levels in each of the Great Lakes', warning=FALSE, message=FALSE}
 PCB_by_lake <- ggplot(
   PCB_bylake_combined, aes(
     x = as.factor(Year), y = Mean.PCBs, fill = Lake)) +
   geom_bar(stat = "identity", position = "dodge") +  
   labs(title = "PCB Levels by Lake (2010-2020)", 
        x = "Year", 
-       y = "Mean PCBs (µg/kg)", subtitle = "Figure 4.5") +
+       y = "Mean PCBs (µg/kg)") +
   scale_fill_manual(values = c("Lake Erie" = "lightblue", 
                                "Lake Huron" = "lightgreen", 
                                "Lake Michigan" = "blue", 
@@ -587,7 +588,10 @@ PCB_by_lake <- ggplot(
 
 print(PCB_by_lake)
 
-# Creating plot by FISH SPECIES
+```
+
+```{r pcb-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PCB levels in each sampled fish species', warning=FALSE, message=FALSE}
+
 PCB_by_fish <- ggplot(
   PCB_byfish_combined, aes(
     x = as.factor(Year), y = Mean.PCBs, fill = Common.Name)) +
@@ -595,12 +599,15 @@ PCB_by_fish <- ggplot(
   labs(title = "Mean PCB Levels by Fish (2010-2020)", 
        x = "Year", 
        y = "Mean PCB (µg/kg)", 
-       fill = "Fish Species",
-       subtitle = "Figure 4.6")
+       fill = "Fish Species")
 
 print(PCB_by_fish)
 
-# Creating plot by FISH NICHE
+```
+
+
+```{r pcb-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
+
 PCB_by_niche <- ggplot(
   PCB_byniche_combined, aes(
     x = as.factor(Year), y = Mean.PCBs, fill = Niche)) +
@@ -608,13 +615,16 @@ PCB_by_niche <- ggplot(
   labs(title = "Mean PCB Levels by Niche (2010-2020)", 
        x = "Year", 
        y = "Mean PCB (µg/kg)",
-       fill = "Niche",
-       subtitle = "Figure 4.7") 
+       fill = "Niche") 
 
 print(PCB_by_niche)
 
-
 ```
+
+
+
+
+
 <br>
 
 ## Fatty Acids
