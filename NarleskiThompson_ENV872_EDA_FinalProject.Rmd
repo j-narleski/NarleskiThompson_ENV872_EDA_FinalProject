@@ -621,6 +621,7 @@ print(PCB_by_niche)
 
 ```
 
+## can we add to the pink box that there is no niche listed? or remove that column from the data altogether
 
 
 
