@@ -623,8 +623,7 @@ print(PCB_by_niche)
 <br>
 
 ## Fatty Acids
-add text explaining why omega 3
-**Figure 4.8. Exploratory analysis for Fatty Acids**
+add text explaining why omega 3 and explain why fish only
 <br>
 
 ```{r echo=FALSE, warning=FALSE, message=FALSE}
@@ -753,19 +752,19 @@ PFAs_byniche_2015 <- PFA_2015_processed %>%
 # 2020
 totalPFAs_bylake_2020 <- PFA_2020_processed %>%
   filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
-          Analyte == "PFNA", Analyte == "HFPO-DA") %>%
+          Analyte == "PFNA" | Analyte == "HFPO-DA") %>%
   group_by(Lake, Analyte, Year) %>%
   summarise(Total.PFAs = sum(Amount))
 
 PFAs_byfish_2020 <- PFA_2020_processed %>%
   filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
-          Analyte == "PFNA", Analyte == "HFPO-DA") %>%
+          Analyte == "PFNA"| Analyte == "HFPO-DA") %>%
   group_by(Common.Name, Analyte, Year) %>%
   summarise(Mean.PFAs = mean(Amount))
 
 PFAs_byniche_2020 <- PFA_2020_processed %>%
   filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
-          Analyte == "PFNA", Analyte == "HFPO-DA") %>%
+          Analyte == "PFNA"| Analyte == "HFPO-DA") %>%
   group_by(Niche, Analyte, Year) %>%
   summarise(Mean.PFAs = mean(Amount))
 
