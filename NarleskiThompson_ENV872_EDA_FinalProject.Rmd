@@ -248,7 +248,7 @@ fatty_acids <- data.frame(
 # Generate the table
 kable(
   fatty_acids, 
-  caption = "Types of fatty acids and their abbreviations. {#tbl:fatty-acids}"
+  caption = "Types of fatty acids and their abbreviations."
 )
 ```
 
@@ -363,7 +363,7 @@ write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA
 \newpage
 
 # Exploratory Analysis
-Before beginning analysis aimed at answering our research questions, we explore it in several ways. First, to orient ourselves spatially, we map the all of the sites sampled in 2020. We aren't able use specific site location in our analysis, due to a lack of spatial data in the 2010 and 2015 datasets. However, it is noted in the metadata (from which we extract the sites and their coordinates) that many of the 2020 sites were locations revisited from previous sample years (Figure \@ref(fig:site-map)).[4] Note the consistent spacing between each sample site is an intentional part of the design that ensures the nearshore area of each lake is properly and randomly sampled.
+Before beginning analysis aimed at answering our research questions, we explore it in several ways. First, to orient ourselves spatially, we map the all of the sites sampled in 2020. We aren't able use specific site location in our analysis, due to a lack of spatial data in the 2010 and 2015 datasets. However, it is noted in the metadata (from which we extract the sites and their coordinates) that many of the 2020 sites were locations revisited from previous sample years (Figure \@ref(fig:site-map)).[4] Note that the spacing between each sample site and their distance from the shore is an intentional part of the design that ensures the nearshore area of each lake is properly and randomly sampled.
 <br>
 
 ```{r site-map, echo=FALSE, fig.align='center', fig.cap='Map of nearshore sampling sites used for NCCA 2020', warning=FALSE, message=FALSE}
@@ -395,10 +395,11 @@ print(map)
 #Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
 ```
 <br>
-To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant. Further, we found inconsistencies in the naming of fish (particularly in capitalization) that required extra secondary wrangling.
+To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant. Further, we found inconsistencies in the naming of fish (particularly in capitalization) that required secondary wrangling.
 <br>
 
 ## Mercury
+
 Data on mercury is complete across all three time periods. Visualizations of the relationships between mean mercury levels and lake (Huron, Superior, Erie, Michigan, and Ontario), fish species, and niche (Benthic and Pelagic) are below (Figure \@ref(fig:mercury-exp-lake), Figure \@ref(fig:mercury-exp-fish), and Figure \@ref(fig:mercury-exp-niche)).
 <br>
 
@@ -510,11 +511,13 @@ print(mercury_by_niche)
 
 
 <br>
+
 ## PCBs
+
 PCBs (Polychlorinated Biphenyls) are also a complete dataset. Visualizations are shown below (Figures \@ref(fig:pcb-exp-lake), \@ref(fig:pcb-exp-fish), \@ref(fig:pcb-exp-niche)). 
 <br>
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+```{r PCB exploratory analysis, echo=FALSE, warning=FALSE, message=FALSE}
 
 # PCB exploratory analysis
 
@@ -605,7 +608,6 @@ print(PCB_by_fish)
 
 ```
 
-
 ```{r pcb-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
 
 PCB_by_niche <- ggplot(
@@ -623,10 +625,11 @@ print(PCB_by_niche)
 <br>
 
 ## Fatty Acids
-add text explaining why omega 3 and explain why fish only
+
+**add text explaining why omega 3 and explain why fish only** For these reasons, fatty acids are only grouped by fish species (Figure \@ref(fig:fatty-exp-fish) ).
 <br>
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+```{r fatty-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean fatty acid levels by fish species', warning=FALSE, message=FALSE}
 
 # Sum up fatty acids by fish
 
@@ -683,18 +686,20 @@ fattyacid_by_fish <- ggplot(
   labs(title = "Total Omega-3 & 6 Levels by Fish (2010-2020)", 
        x = "Date", 
        y = "Omega-3 & 6s (m/g)", 
-       fill = "Fish Species",
-       subtitle = "Figure 4.8")
+       fill = "Fish Species")
 
 print(fattyacid_by_fish)
 
 ```
+
+
 <br>
 
-#PFAs
-add text https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas 
-**Figures 4.---**
-```{r}
+## PFAs
+
+Like Fatty Acids, there are multiple PFAs (Per- and Polyfluoroalkyl Substances) that were measured in the sampling. Of the ones included, we filtered out four specifically, due to their known negative effect on human health (Perfluorooctanoate (PFOA), Perfluorooctanesulfonate (PFOS), Perfluorohexane sulfonate (PFHxS),and Perfluorononanoate (PFNA)). They are also specifically monitored by the EPA across other projects, and have clear levels where they become unsafe for consumption [6]. We use total PFA values for each lake (Figure \@ref(fig:pfa-exp-lake) ) and mean PFA values for the fish species (Figure \@ref(fig:pfa-exp-fish) ) and niche explorations (Figure \@ref(fig:pfa-exp-niche) ).
+
+```{r pfa-exp, echo=FALSE, warning=FALSE, message=FALSE}
 
 # PFAs Exploratory Analysis
 
@@ -772,27 +777,90 @@ PFAs_byniche_2020 <- PFA_2020_processed %>%
 
 ```
 
+```{r pfa-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of total PFA levels by lake', warning=FALSE, message=FALSE}
 
+#combined by lake 
+PFA_bylake_combined <- 
+  rbind(totalPFAs_bylake_2010,
+        totalPFAs_bylake_2015,
+        totalPFAs_bylake_2020)
+
+PFA_by_lake <- ggplot(
+ PFA_bylake_combined , aes(
+    x = as.factor(Year), y = Total.PFAs, fill = Lake)) +
+  geom_bar(stat = "identity", position = "dodge") +  
+  labs(title = "PFA Levels by Lake (2010-2020)", 
+       x = "Year", 
+       y = "Total PFAs (µg/kg)") +
+  scale_fill_manual(values = c("Lake Erie" = "lightblue", 
+                               "Lake Huron" = "lightgreen", 
+                               "Lake Michigan" = "blue", 
+                               "Lake Ontario" = "darkgreen", 
+                               "Lake Superior" = "darkblue"))
+
+
+print(PFA_by_lake)
+
+
+```
+
+```{r pfa-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PFA levels by fish species', warning=FALSE, message=FALSE}
+# Combined by fish species
+PFA_byfish_combined <-
+  rbind(PFAs_byfish_2010, PFAs_byfish_2015, PFAs_byfish_2020) %>%
+  mutate(Common.Name = str_to_title(Common.Name))
+
+PFA_by_fish <- ggplot(
+  PFA_byfish_combined, aes(
+    x = as.factor(Year), y = Mean.PFAs, fill = Common.Name)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Mean PFA Levels by Fish (2010-2020)", 
+       x = "Year", 
+       y = "Mean PFA (µg/kg)", 
+       fill = "Fish Species")
+
+print(PFA_by_fish) 
+
+```
+
+```{r pfa-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PFA levels by fish niche', warning=FALSE, message=FALSE}
+# Combined by niche
+PFA_byniche_combined <-
+  rbind(PFAs_byniche_2010, PFAs_byniche_2015, PFAs_byniche_2020)
+
+PFA_by_niche <- ggplot(
+  PFA_byniche_combined, aes(
+    x = as.factor(Year), y = Mean.PFAs, fill = Niche)) +
+  geom_bar(stat = "identity", position = "dodge") +
+  labs(title = "Mean PFA Levels by Niche (2010-2020)", 
+       x = "Year", 
+       y = "Mean PFA (µg/g)",
+       fill = "Niche") 
+
+print(PFA_by_niche)
+
+```
 
 \newpage
+
 
 # Analysis
 
 ## Question 1: Does fish tissue contamination vary significantly between each lake?
 <br>
-For this question, we use an ANOVA (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the null hypothesis **there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (4) and one for each year (3). The results of the 12 ANOVAs are recorded in Table 5.1 below.
+For this question, we use an ANOVA (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (4) and one for each year (3). The results of the 12 ANOVAs are recorded in Table 5.1 below. **MAKE INTO KABLE AND REFERENCE** **WHY WERE FATTY ACID EXLCUDED**
 
-| Contaminant | Year | p-Value | Significant? |
+| Contaminant | Year | F Value | P-value | Significant? (p < 0.05) |
 |:----|:-----|:------|:------|
-| Mercury | 2010 | 8.74e-05 | <span style="color:green">YES</span> | 
-| Mercury | 2015 | 0.0116 | <span style="color:green">YES</span> | 
-| Mercury | 2020 | 0.0798  | <span style="color:red">NO</span> | 
-| PCB | 2010 | 0.0183 | <span style="color:green">YES</span> | 
-| PCB | 2015 | 3.56e-11 | <span style="color:green">YES</span>  | 
-| PCB | 2020 | 6.11e-05 | <span style="color:green">YES</span> | 
-|  |  |  |  | 
-|  |  |  |  | 
-|  |  |  |  | 
+| Mercury | 2010 | 6.397 | 8.74e-05 | <span style="color:green">YES</span> | 
+| Mercury | 2015 | 3.357 | 0.0116 | <span style="color:green">YES</span> | 
+| Mercury | 2020 | 2.127 | 0.0798  |  <span style="color:red">NO</span> | 
+| PCB | 2010 | 3.067 | 0.0183 |  <span style="color:green">YES</span> | 
+| PCB | 2015 | | 3.56e-11  | <span style="color:green">YES</span>  | 
+| PCB | 2020 | | 6.11e-05 |  <span style="color:green">YES</span> | 
+| PFA | 2010 | 5.987 | 8.68e-05 | <span style="color:green">YES</span> |
+| PFA | 2015  |  4.807 | 0.000736 | <span style="color:green">YES</span> |
+| PFA | 2020 | 7.257 | 7.93e-06 |  <span style="color:green">YES</span> |
 |  |  |  |  | 
 |  |  |  |  | 
 |  |  |  |  | 
@@ -835,7 +903,26 @@ PCB_bylake_2020_AOV <- aov(Amount ~ Lake, data = PCB_2020_processed)
 summary(PCB_bylake_2020_AOV)
   #p = 6.11e-05 (SIG)
 
-#still need to do the rest (PFA and fatty acid) from the processed data
+#PFA 2010
+PFA_2010_processed$Lake <- as.factor(PFA_2010_processed$Lake )
+PFA_bylake_2010_AOV <- aov(Amount ~ Lake, data = PFA_2010_processed)
+summary(PFA_bylake_2010_AOV)
+  #p = 8.68e-05 (SIG)
+
+#PFA 2015
+PFA_2015_processed$Lake <- as.factor(PFA_2015_processed$Lake )
+PFA_bylake_2015_AOV <- aov(Amount ~ Lake, data = PFA_2015_processed)
+summary(PFA_bylake_2015_AOV)
+  #p = 0.000736 (SIG)
+
+#PFA 2020
+PFA_2020_processed$Lake <- as.factor(PFA_2020_processed$Lake )
+PFA_bylake_2020_AOV <- aov(Amount ~ Lake, data = PFA_2020_processed)
+summary(PFA_bylake_2020_AOV)
+  #p = 0.000736 (SIG)
+'
+#still need to do fatty acid(?) from the processed data
+#should we do tukey test?
 ```
 
 
@@ -889,5 +976,6 @@ condition-assessment-great-lakes-human-health
 [4] EPA. (2020, June 15). Quality Assurance Project Plan for  National Coastal Condition Assessment (NCCA)  2020 Great Lakes Human Health Fish Sample Preparation.
 <br>
 [5] https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/
+[6] https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas
 
 
