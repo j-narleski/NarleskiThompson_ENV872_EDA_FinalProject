@@ -614,18 +614,12 @@ PCB_by_niche <- ggplot(
   geom_bar(stat = "identity", position = "dodge") +
   labs(title = "Mean PCB Levels by Niche (2010-2020)", 
        x = "Year", 
-       y = "Mean PCB (µg/kg)",
+       y = "Mean PCB (µg/g)",
        fill = "Niche") 
 
 print(PCB_by_niche)
 
 ```
-
-## can we add to the pink box that there is no niche listed? or remove that column from the data altogether
-
-
-
-
 <br>
 
 ## Fatty Acids
@@ -676,21 +670,24 @@ totalfattyacids_byfish_2020 <- fattyacids_2020_processed %>%
 
 # Combined by fish
 FA_byfish_combined <-
-  rbind(totalfattyacids_byfish_2010, totalfattyacids_byfish_2015, totalfattyacids_byfish_2020)
+  rbind(totalfattyacids_byfish_2010, 
+        totalfattyacids_byfish_2015, 
+        totalfattyacids_byfish_2020) %>%
+    mutate(Common_Name = str_to_title(Common_Name))
 
 ## PLOTS
 # Creating plot by FISH SPECIES
 fattyacid_by_fish <- ggplot(
   FA_byfish_combined, aes(
-    x = as.factor(Year), y = Total_Omega3s, fill = Common.Name)) +
+    x = as.factor(Date), y = Total_Omega3s, fill = Common_Name)) +
   geom_bar(stat = "identity", position = "dodge") +
-  labs(title = "Total Omega-3 Levels by Fish (2010-2020)", 
-       x = "Year", 
-       y = "Omega-3s (m/g)", 
+  labs(title = "Total Omega-3 & 6 Levels by Fish (2010-2020)", 
+       x = "Date", 
+       y = "Omega-3 & 6s (m/g)", 
        fill = "Fish Species",
        subtitle = "Figure 4.8")
 
-print(PCB_by_fish)
+print(fattyacid_by_fish)
 
 ```
 <br>
@@ -711,6 +708,22 @@ totalPFAs_bylake_2010 <- PFA_2010_processed %>%
   group_by(Lake, Analyte, Year) %>%
   summarise(Total.PFAs = sum(Amount))
 
+PFAs_byfish_2010 <- PFA_2010_processed %>%
+  filter(Analyte == "Perfluorooctanoate (PFOA)" | 
+           Analyte == "Perfluorooctanesulfonate (PFOS)" | 
+           Analyte == "Perfluorohexane sulfonate (PFHxS)" |
+           Analyte == "Perfluorononanoate (PFNA)") %>%
+  group_by(Common.Name, Analyte, Year) %>%
+  summarise(Mean.PFAs = mean(Amount))
+
+PFAs_byniche_2010 <- PFA_2010_processed %>%
+  filter(Analyte == "Perfluorooctanoate (PFOA)" | 
+           Analyte == "Perfluorooctanesulfonate (PFOS)" | 
+           Analyte == "Perfluorohexane sulfonate (PFHxS)" |
+           Analyte == "Perfluorononanoate (PFNA)") %>%
+  group_by(Niche, Analyte, Year) %>%
+  summarise(Mean.PFAs = mean(Amount))
+
 # 2015
 totalPFAs_bylake_2015 <- PFA_2015_processed %>%
   filter(Analyte == "Perfluorooctanoate (PFOA)" | 
@@ -720,12 +733,43 @@ totalPFAs_bylake_2015 <- PFA_2015_processed %>%
   group_by(Lake, Analyte, Year) %>%
   summarise(Total.PFAs = sum(Amount))
 
+PFAs_byfish_2015 <- PFA_2015_processed %>%
+  filter(Analyte == "Perfluorooctanoate (PFOA)" | 
+           Analyte == "Perfluorooctanesulfonate (PFOS)" | 
+           Analyte == "Perfluorohexane sulfonate (PFHxS)" |
+           Analyte == "Perfluorononanoate (PFNA)") %>%
+  group_by(Common.Name, Analyte, Year) %>%
+  summarise(Mean.PFAs = mean(Amount))
+
+PFAs_byniche_2015 <- PFA_2015_processed %>%
+  filter(Analyte == "Perfluorooctanoate (PFOA)" | 
+           Analyte == "Perfluorooctanesulfonate (PFOS)" | 
+           Analyte == "Perfluorohexane sulfonate (PFHxS)" |
+           Analyte == "Perfluorononanoate (PFNA)") %>%
+  group_by(Niche, Analyte, Year) %>%
+  summarise(Mean.PFAs = mean(Amount))
+
+
 # 2020
 totalPFAs_bylake_2020 <- PFA_2020_processed %>%
   filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
           Analyte == "PFNA", Analyte == "HFPO-DA") %>%
   group_by(Lake, Analyte, Year) %>%
   summarise(Total.PFAs = sum(Amount))
+
+PFAs_byfish_2020 <- PFA_2020_processed %>%
+  filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
+          Analyte == "PFNA", Analyte == "HFPO-DA") %>%
+  group_by(Common.Name, Analyte, Year) %>%
+  summarise(Mean.PFAs = mean(Amount))
+
+PFAs_byniche_2020 <- PFA_2020_processed %>%
+  filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
+          Analyte == "PFNA", Analyte == "HFPO-DA") %>%
+  group_by(Niche, Analyte, Year) %>%
+  summarise(Mean.PFAs = mean(Amount))
+
+
 
 ```
 
