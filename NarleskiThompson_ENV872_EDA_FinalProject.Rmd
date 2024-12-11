@@ -697,7 +697,7 @@ print(fattyacid_by_fish)
 
 ## PFAs
 
-Like Fatty Acids, there are multiple PFAs (Per- and Polyfluoroalkyl Substances) that were measured in the sampling. Of the ones included, we filtered out four specifically, due to their known negative effect on human health (Perfluorooctanoate (PFOA), Perfluorooctanesulfonate (PFOS), Perfluorohexane sulfonate (PFHxS),and Perfluorononanoate (PFNA)). They are also specifically monitored by the EPA across other projects, and have clear levels where they become unsafe for consumption [6]. We use total PFA values for each lake (Figure \@ref(fig:pfa-exp-lake) ) and mean PFA values for the fish species (Figure \@ref(fig:pfa-exp-fish) ) and niche explorations (Figure \@ref(fig:pfa-exp-niche) ).
+Like Fatty Acids, there are multiple PFAs (Per- and Polyfluoroalkyl Substances) that were measured in the sampling. Of the ones included, we filtered out four specifically, due to their known negative effect on human health (Perfluorooctanoate (PFOA), Perfluorooctanesulfonate (PFOS), Perfluorohexane sulfonate (PFHxS),and Perfluorononanoate (PFNA)). They are also specifically monitored by the EPA across other projects, and have clear levels where they become unsafe for consumption [6]. We used mean PFA values for each lake, (Figure \@ref(fig:pfa-exp-lake) ), each fish species (Figure \@ref(fig:pfa-exp-fish) ), and for each niche (Figure \@ref(fig:pfa-exp-niche) ).
 
 ```{r pfa-exp, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -785,9 +785,28 @@ PFA_bylake_combined <-
         totalPFAs_bylake_2015,
         totalPFAs_bylake_2020)
 
+# mean values for each lake 
+PFA_bylake_2010_mean_values <- totalPFAs_bylake_2010 %>%
+  group_by(Lake, Year) %>%
+  summarise(mean_PFAs = mean(Total.PFAs))
+
+PFA_bylake_2015_mean_values <- totalPFAs_bylake_2015 %>%
+  group_by(Lake, Year) %>%
+  summarise(mean_PFAs = mean(Total.PFAs))
+
+PFA_bylake_2020_mean_values <- totalPFAs_bylake_2020 %>%
+  group_by(Lake, Year) %>%
+  summarise(mean_PFAs = mean(Total.PFAs))
+
+#means combined by lake 
+PFA_bylake_combined_meanvalues <- 
+  rbind(PFA_bylake_2010_mean_values,
+        PFA_bylake_2015_mean_values,
+        PFA_bylake_2020_mean_values)
+
 PFA_by_lake <- ggplot(
- PFA_bylake_combined , aes(
-    x = as.factor(Year), y = Total.PFAs, fill = Lake)) +
+ PFA_bylake_combined_meanvalues , aes(
+    x = as.factor(Year), y = mean_PFAs, fill = Lake)) +
   geom_bar(stat = "identity", position = "dodge") +  
   labs(title = "PFA Levels by Lake (2010-2020)", 
        x = "Year", 
@@ -851,18 +870,6 @@ print(PFA_by_niche)
 For this question, we use an **ANOVA** (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (3) and one for each year (3). The results of the 9 ANOVAs are recorded in Table \@ref(tab:contaminant-anova-table) below. 
 <br>
 <p style="color: darkgray;">*Note: Because of the complex and incomplete Fatty Acid data, as well as its mixed effect on human health, we exclude Fatty Acids from this analysis*.</p>
-<br>
-| Contaminant | Year | F Value | P-value | Significant? (p < 0.05) |
-|:----|:-----|:------|:------|
-| Mercury | 2010 | 6.397 | 8.74e-05 | <span style="color:green">YES</span> | 
-| Mercury | 2015 | 3.357 | 0.0116 | <span style="color:green">YES</span> | 
-| Mercury | 2020 | 2.127 | 0.0798  |  <span style="color:red">NO</span> | 
-| PCB | 2010 | 3.067 | 0.0183 |  <span style="color:green">YES</span> | 
-| PCB | 2015 | 16.48 | 3.56e-11  | <span style="color:green">YES</span>  | 
-| PCB | 2020 | 6.599 | 6.11e-05 |  <span style="color:green">YES</span> | 
-| PFA | 2010 | 5.987 | 8.68e-05 | <span style="color:green">YES</span> |
-| PFA | 2015 |  4.807 | 0.000736 | <span style="color:green">YES</span> |
-| PFA | 2020 | 7.257 | 7.93e-06 |  <span style="color:green">YES</span> |
 
 ```{r contaminant-anova-table, echo=FALSE, message=FALSE}
 contaminant_anova <- data.frame(
@@ -952,7 +959,70 @@ summary(PFA_bylake_2020_AOV)
 
 
 ```
-We continue this analysis by performing a Tukey's HSD test in order to investigate which lakes specifically differ from each other within each ANOVA. 
+We continue this analysis by performing a Tukey's HSD test in order to investigate which lakes specifically differ from each other within each ANOVA. We assess only ANOVAs that were significant (ie. excluding Mercury 2020). Further, to maintain a reasonable analysis size, and because it is the most recent year with statistically different means for all three contaminants, we perform a Tukey test only on the 2015 ANOVAs. 
+<br>
+The results from the 2015 Mercury Tukey test reveal that Lake Erie, Huron, and Michigan are not statistically different, while Lake Ontario and Superior are statistically different from them and from each other (Figure \@ref(fig:mercury-tukey-plot) ). Similarly, for the 2015 PCBs, Lake Erie, Huron, and Michigan are not statistically different (Figure \@ref(fig:PCB-tukey-plot) ). However, Lake Ontario is statistically different from all other lakes, but Lake Superior is only different from Lake Ontario and Erie. Lastly, for PFAs, Lake Erie, Huron, Michigan, and Ontario were not statistically different; Lake Superior was not statistically different from Lake Huron or Lake Michigan (Figure \@ref(fig:PFA-tukey-plot) ). 
+<br> 
+From this analysis, it is apparent that Lakes Erie, Huron, and Michigan tend to have contaminant means that are not statistically different from each other, while Lakes Ontario and Superior more often had significantly different means from them.
+
+
+```{r tukey, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
+mercury_bylake_2015_AOV.groups <- HSD.test(mercury_bylake_2015_AOV, "Lake", group = TRUE)
+mercury_bylake_2015_AOV.groups$groups
+
+PCB_bylake_2015_AOV.groups <- HSD.test(PCB_bylake_2015_AOV, "Lake", group = TRUE)
+PCB_bylake_2015_AOV.groups$groups
+
+PFA_bylake_2015_AOV.groups <- HSD.test(PFA_bylake_2015_AOV, "Lake", group = TRUE)
+PFA_bylake_2015_AOV.groups$groups
+
+
+```
+```{r mercury-tukey-plot, fig.align='center', fig.cap='Results of Tukey HSD test performed on ANOVA of Mercury levels in sampled fish from each of the Great Lakes.', warning=FALSE, message=FALSE, echo = FALSE}
+
+mercury.tukey.plot <- ggplot(Mercury_bylake_2015, aes(x = Lake, y = Mean.Mercury, fill = Lake)) +
+  geom_bar(stat = "identity") +  
+  geom_text(aes(label = c("ab", "ab", "ab", "a", "b")), vjust = -0.5, size = 4) +  
+  labs(x = "Lake", y = "Mean Mercury (ug/g)") + 
+  scale_fill_manual(values = c("Lake Erie" = "lightblue", 
+                               "Lake Huron" = "lightgreen", 
+                               "Lake Michigan" = "blue", 
+                               "Lake Ontario" = "darkgreen", 
+                               "Lake Superior" = "darkblue")) + laketheme
+
+print(mercury.tukey.plot)
+
+```
+
+```{r PCB-tukey-plot, fig.align='center', fig.cap='Results of Tukey HSD test performed on ANOVA of PCB levels in sampled fish from each of the Great Lakes.', warning=FALSE, message=FALSE, echo=FALSE}
+
+PCB.tukey.plot <- ggplot(PCB_bylake_2015, aes(x = Lake, y = Mean.PCBs, fill = Lake)) +
+  geom_bar(stat = "identity") +  
+  geom_text(aes(label = c("b", "bc", "bc", "a", "c")), vjust = -0.5, size = 4) +  
+  labs(x = "Lake", y = "Mean PFAs (ug/g)") + 
+  scale_fill_manual(values = c("Lake Erie" = "lightblue", 
+                               "Lake Huron" = "lightgreen", 
+                               "Lake Michigan" = "blue", 
+                               "Lake Ontario" = "darkgreen", 
+                               "Lake Superior" = "darkblue")) + laketheme
+
+print(PCB.tukey.plot)
+```
+
+```{r PFA-tukey-plot, fig.align='center', fig.cap='Results of Tukey HSD test performed on ANOVA of PFA levels in sampled fish from each of the Great Lakes.', warning=FALSE, message=FALSE, echo = FALSE}
+
+PFA.tukey.plot <- ggplot(PFA_bylake_2015_mean_values, aes(x = Lake, y = mean_PFAs, fill = Lake)) +
+  geom_bar(stat = "identity") +  
+  geom_text(aes(label = c("a", "ab", "ab", "a", "b")), vjust = -0.5, size = 4) +  
+  labs(x = "Lake", y = "Mean PFAs (ug/g)") + 
+  scale_fill_manual(values = c("Lake Erie" = "lightblue", 
+                               "Lake Huron" = "lightgreen", 
+                               "Lake Michigan" = "blue", 
+                               "Lake Ontario" = "darkgreen", 
+                               "Lake Superior" = "darkblue")) + laketheme
+
+print(PFA.tukey.plot)
+```
 
 ## Question 2: Are there trends in contaminant levels in each fish species over time?
 <br>
