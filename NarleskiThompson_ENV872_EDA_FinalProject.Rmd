@@ -89,9 +89,9 @@ Fish accumulate pollutants in their tissues, decreasing their health and alterin
 Between the fragile ecosystems that depend on fish to the entire human populations to rely on them, studying contamination is of the utmost importance. This has led to the development of the following research questions to guide our investigation:
 
 <ol><b>
-  <li>Does fish tissue contamination vary significantly between each lake?</li>
+  <li>Does average fish tissue contamination vary significantly between each lake within each sampling year?</li>
+  <li>Does average fish tissue contamination of all lakes vary significantly between each sampling year?</li>
   <li>Are there trends in contaminant levels in each fish species over time?</li>
-  <li>Are different species significantly more vulnerable than others to different contaminants? SHOULD WE CHANGE THIS ONE? same as #2</li>
 </b></ol>
 
 ```{r contaminant-table, echo=FALSE, message=FALSE}
@@ -395,7 +395,7 @@ print(map)
 #Scope: think about what information someone might want to know about the dataset before analyzing it statistically. How might you visualize this information?
 ```
 <br>
-To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant. Further, we found inconsistencies in the naming of fish (particularly in capitalization) that required secondary wrangling.
+To better inform our statistical methods for answering our research questions, we explored the presence of each contaminant each year based on (1) lake, (2) fish, and (3) niche. Through the act of processing data for exploration, we discovered some gaps and inconsistencies in data recording that rendered us unable to explore certain aspects of each contaminant. Further, we found inconsistencies in the naming of fish (particularly in capitalization) that required secondary wrangling. 
 <br>
 
 ## Mercury
@@ -626,7 +626,7 @@ print(PCB_by_niche)
 
 ## Fatty Acids
 
-**add text explaining why omega 3 and explain why fish only** For these reasons, fatty acids are only grouped by fish species (Figure \@ref(fig:fatty-exp-fish) ).
+When exploring the fatty acid data, problems arose with the fact that multiple fatty acids were tested for per sample. Further, most fatty acids are actually beneficial to human health, so to study all of them would be out of our project's scope. Instead, we focus on the subset of fatty acids within the Omega-3 family, as there is clear evidence of negative consequences to human health from consuming fish with excessive Omega-3s [7]. This includes Linoleic acid, Docosahexaenoic acid, Docosapentaenoic acid, Eicosadienoic acid, and Eicosatrienoic acid. In order to make the exploration managable, and also to focus on the direct threat to human health via fish consumption, fatty acids are only grouped by fish species (Figure \@ref(fig:fatty-exp-fish) ), and not lake or niche. 
 <br>
 
 ```{r fatty-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean fatty acid levels by fish species', warning=FALSE, message=FALSE}
@@ -846,26 +846,55 @@ print(PFA_by_niche)
 
 # Analysis
 
-## Question 1: Does fish tissue contamination vary significantly between each lake?
+## Question 1: Does average fish tissue contamination vary significantly between each lake within each sampling year?
 <br>
-For this question, we use an ANOVA (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (4) and one for each year (3). The results of the 12 ANOVAs are recorded in Table 5.1 below. **MAKE INTO KABLE AND REFERENCE** **WHY WERE FATTY ACID EXLCUDED**
-
+For this question, we use an **ANOVA** (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (3) and one for each year (3). The results of the 9 ANOVAs are recorded in Table \@ref(tab:contaminant-anova-table) below. 
+<br>
+<p style="color: darkgray;">*Note: Because of the complex and incomplete Fatty Acid data, as well as its mixed effect on human health, we exclude Fatty Acids from this analysis*.</p>
+<br>
 | Contaminant | Year | F Value | P-value | Significant? (p < 0.05) |
 |:----|:-----|:------|:------|
 | Mercury | 2010 | 6.397 | 8.74e-05 | <span style="color:green">YES</span> | 
 | Mercury | 2015 | 3.357 | 0.0116 | <span style="color:green">YES</span> | 
 | Mercury | 2020 | 2.127 | 0.0798  |  <span style="color:red">NO</span> | 
 | PCB | 2010 | 3.067 | 0.0183 |  <span style="color:green">YES</span> | 
-| PCB | 2015 | | 3.56e-11  | <span style="color:green">YES</span>  | 
-| PCB | 2020 | | 6.11e-05 |  <span style="color:green">YES</span> | 
+| PCB | 2015 | 16.48 | 3.56e-11  | <span style="color:green">YES</span>  | 
+| PCB | 2020 | 6.599 | 6.11e-05 |  <span style="color:green">YES</span> | 
 | PFA | 2010 | 5.987 | 8.68e-05 | <span style="color:green">YES</span> |
-| PFA | 2015  |  4.807 | 0.000736 | <span style="color:green">YES</span> |
+| PFA | 2015 |  4.807 | 0.000736 | <span style="color:green">YES</span> |
 | PFA | 2020 | 7.257 | 7.93e-06 |  <span style="color:green">YES</span> |
-|  |  |  |  | 
-|  |  |  |  | 
-|  |  |  |  | 
 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+```{r contaminant-anova-table, echo=FALSE, message=FALSE}
+contaminant_anova <- data.frame(
+  Contaminant = c(
+    "Mercury", "Mercury", "Mercury", 
+    "PCB", "PCB", "PCB", 
+    "PFA", "PFA", "PFA"
+  ),
+  Year = c(2010, 2015, 2020, 2010, 2015, 2020, 2010, 2015, 2020),
+  `F Value` = c(6.397, 3.357, 2.127, 3.067, 16.48, 6.599, 5.987, 4.807, 7.257),
+  `P-value` = c(8.74e-05, 0.0116, 0.0798, 0.0183, 3.56e-11, 6.11e-05, 8.68e-05, 0.000736, 7.93e-06),
+  `Significant? (p < 0.05)` = c(
+    "<span style='color:green'>YES</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:red'>NO</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:green'>YES</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:green'>YES</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:green'>YES</span>"
+  )
+)
+
+names(contaminant_anova) <- c("Contaminant", "Year", "F Value", "P-value", "Significant? (p<0.05)")
+
+kable(
+  contaminant_anova, 
+  caption = "ANOVA results of mean contaminant levels found in fish samples from each of the Great Lakes from 3 sampling years.", 
+  escape = FALSE
+)
+```
+
+The results of the ANOVAs indicate that for all contaminants except Mercury in 2020, the mean contaminant level between lakes varied significantly (p<0.05). This suggests that the levels of contaminants are not evenly distributed across the Great Lakes, potentially due to differences in environmental conditions, pollutant sources, or other ecological factors. The lack of significant variation in Mercury levels in 2020 may indicate more consistent exposure across lakes for this contaminant during that year. 
+<br>
+```{r anovas, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 
 #Mercury 2010
 mercury_2010_processed$Lake <- as.factor(mercury_2010_processed$Lake)
@@ -920,11 +949,10 @@ PFA_2020_processed$Lake <- as.factor(PFA_2020_processed$Lake )
 PFA_bylake_2020_AOV <- aov(Amount ~ Lake, data = PFA_2020_processed)
 summary(PFA_bylake_2020_AOV)
   #p = 0.000736 (SIG)
-'
-#still need to do fatty acid(?) from the processed data
-#should we do tukey test?
-```
 
+
+```
+We continue this analysis by performing a Tukey's HSD test in order to investigate which lakes specifically differ from each other within each ANOVA. 
 
 ## Question 2: Are there trends in contaminant levels in each fish species over time?
 <br>
@@ -977,5 +1005,5 @@ condition-assessment-great-lakes-human-health
 <br>
 [5] https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/
 [6] https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas
-
+[7] https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/
 
