@@ -31,8 +31,11 @@ library(ggplot2)
 library(sf)
 library(gridExtra)
 library(patchwork)
-library(bookdown)
-library(knitr)
+library(bookdown) #allows for autoreferencing
+library(knitr) #allows for autoreferencing
+library(stringr) #allows for fix to capitalization of fish names
+
+
 
 # Check working directory
 here()
@@ -167,14 +170,15 @@ kable(
 <br>
 <p style="color: darkgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
 
-**Dataset Wrangling Procedures**
+## Dataset Wrangling Procedures
 <br>
 Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table \@ref(tab:columm-description-table) were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
 <br>
 <br>
-**Summary of Data Structure**
+ 
+## Summary of Data Structure
 <br>
-The basic structure of each of the raw datasets can be found in Table \@ref(tab:columm-description-table). The specific variables being investigated from  each of the processed files can be found below (Table \@ref(tab:processed-description-table) ) They vary in units, described in Table \@ref(tab:contaminant-units-table). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table \@ref(tab:fatty-acids-table)). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies.
+The basic structure of each of the raw datasets can be found in Table \@ref(tab:columm-description-table). The specific variables being investigated from  each of the processed files can be found below (Table \@ref(tab:processed-description-table) ). They vary in units, described in Table \@ref(tab:contaminant-units-table). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table \@ref(tab:fatty-acids-table)). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies.
 <br>
 <br>
 ```{r processed-description-table, echo=FALSE, message=FALSE}
@@ -414,6 +418,7 @@ Mercury_bylake_2010 <- mercury_2010_processed %>%
   summarise(Mean.Mercury = mean(Amount))
 
 Mercury_byfish_2010 <- mercury_2010_processed %>%
+  mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Scientific.Name, Common.Name, Family, Year) %>%
   summarise(Mean.Mercury = mean(Amount))
 
@@ -427,6 +432,7 @@ Mercury_bylake_2015 <- mercury_2015_processed %>%
   summarise(Mean.Mercury = mean(Amount))
 
 Mercury_byfish_2015 <- mercury_2015_processed %>%
+  mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Scientific.Name, Common.Name, Family, Year) %>%
   summarise(Mean.Mercury = mean(Amount))
 
@@ -440,6 +446,7 @@ Mercury_bylake_2020 <- mercury_2020_processed %>%
   summarise(Mean.Mercury = mean(Amount))
 
 Mercury_byfish_2020 <- mercury_2020_processed %>%
+  mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Scientific.Name, Common.Name, Family, Year) %>%
   summarise(Mean.Mercury = mean(Amount))
 
@@ -527,6 +534,7 @@ PCB_bylake_2010 <- PCB_2010_processed %>%
   summarise(Mean.PCBs = mean(Amount))
 
 PCB_byfish_2010 <- PCB_2010_processed %>%
+   mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Scientific.Name, Common.Name, Family, Year) %>%
   summarise(Mean.PCBs = mean(Amount))
 
@@ -540,6 +548,7 @@ PCB_bylake_2015 <- PCB_2015_processed %>%
   summarise(Mean.PCBs = mean(Amount))
 
 PCB_byfish_2015 <- PCB_2015_processed %>%
+   mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Scientific.Name, Common.Name, Family, Year) %>%
   summarise(Mean.PCBs = mean(Amount))
 
@@ -553,6 +562,7 @@ PCB_bylake_2020 <- PCB_2020_processed %>%
   summarise(Mean.PCBs = mean(Amount))
 
 PCB_byfish_2020 <- PCB_2020_processed %>%
+   mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Scientific.Name, Common.Name, Family, Year) %>%
   summarise(Mean.PCBs = mean(Amount))
 
@@ -717,6 +727,7 @@ PFAs_byfish_2010 <- PFA_2010_processed %>%
            Analyte == "Perfluorooctanesulfonate (PFOS)" | 
            Analyte == "Perfluorohexane sulfonate (PFHxS)" |
            Analyte == "Perfluorononanoate (PFNA)") %>%
+   mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Common.Name, Analyte, Year) %>%
   summarise(Mean.PFAs = mean(Amount))
 
@@ -742,6 +753,7 @@ PFAs_byfish_2015 <- PFA_2015_processed %>%
            Analyte == "Perfluorooctanesulfonate (PFOS)" | 
            Analyte == "Perfluorohexane sulfonate (PFHxS)" |
            Analyte == "Perfluorononanoate (PFNA)") %>%
+   mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Common.Name, Analyte, Year) %>%
   summarise(Mean.PFAs = mean(Amount))
 
@@ -764,6 +776,7 @@ totalPFAs_bylake_2020 <- PFA_2020_processed %>%
 PFAs_byfish_2020 <- PFA_2020_processed %>%
   filter(Analyte == "PFOA" | Analyte == "PFOS" | Analyte == "PFHxS" |
           Analyte == "PFNA"| Analyte == "HFPO-DA") %>%
+   mutate(Common.Name = str_to_lower(Common.Name)) %>%
   group_by(Common.Name, Analyte, Year) %>%
   summarise(Mean.PFAs = mean(Amount))
 
@@ -862,12 +875,11 @@ print(PFA_by_niche)
 
 \newpage
 
-
 # Analysis
 
 ## Question 1: Does average fish tissue contamination vary significantly between each lake within each sampling year?
 <br>
-For this question, we use an **ANOVA** (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (3) and one for each year (3). The results of the 9 ANOVAs are recorded in Table \@ref(tab:contaminant-anova-table) below. 
+For this question, we use an **ANOVA** (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (3) and one for each year (3). The results of the 9 ANOVAs are recorded in Table \@ref(tab:contaminant-anova-table) below. The degrees of freedom for each ANOVA is 4.
 <br>
 <p style="color: darkgray;">*Note: Because of the complex and incomplete Fatty Acid data, as well as its mixed effect on human health, we exclude Fatty Acids from this analysis*.</p>
 
@@ -963,6 +975,7 @@ We continue this analysis by performing a Tukey's HSD test in order to investiga
 <br>
 The results from the 2015 Mercury Tukey test reveal that Lake Erie, Huron, and Michigan are not statistically different, while Lake Ontario and Superior are statistically different from them and from each other (Figure \@ref(fig:mercury-tukey-plot) ). Similarly, for the 2015 PCBs, Lake Erie, Huron, and Michigan are not statistically different (Figure \@ref(fig:PCB-tukey-plot) ). However, Lake Ontario is statistically different from all other lakes, but Lake Superior is only different from Lake Ontario and Erie. Lastly, for PFAs, Lake Erie, Huron, Michigan, and Ontario were not statistically different; Lake Superior was not statistically different from Lake Huron or Lake Michigan (Figure \@ref(fig:PFA-tukey-plot) ). 
 <br> 
+<br> 
 From this analysis, it is apparent that Lakes Erie, Huron, and Michigan tend to have contaminant means that are not statistically different from each other, while Lakes Ontario and Superior more often had significantly different means from them.
 
 
@@ -991,6 +1004,7 @@ mercury.tukey.plot <- ggplot(Mercury_bylake_2015, aes(x = Lake, y = Mean.Mercury
                                "Lake Superior" = "darkblue")) + laketheme
 
 print(mercury.tukey.plot)
+
 
 ```
 
@@ -1026,33 +1040,307 @@ print(PFA.tukey.plot)
 
 ## Question 2: Are there trends in contaminant levels in each fish species over time?
 <br>
-To investigate the presence of potential linear trends over time, we use linear regressions on the data over time. Unfortunately, with only three sample years, there is not sufficient data for a time series. Instead, we search for meaningful results of linear regression models. **We focus only on fish species for which there is data for all three sample years.** We run 4 models, one for each contaminant, inputting "contaminant amount" as the dependent variable, "Year" as the dependent variable, and "Fish Species" as the grouping variable into the regression.
+To investigate the presence of potential  trends in each over time, we use **linear regressions**. Unfortunately, with only three sample years, there is not sufficient data for a time series. Instead, we search for meaningful results of linear regression models. **We focus only on fish species for which there is data for all three sample years.** We determined which fish had data for all three years using the results from our exploratory anaylses. 14 fish species qualified for this analysis (Brown Trout, Channel Catfish, Chinook Salmon, Coho Salmon, Freshwater Drum, Lake Trout, Lake Whitefish, Longnose Sucker, Rainbow Trout, Smallmouth Bass, Walleye, White Perch, White Sucker, and Yellow Perch). We run 3 models, one for each contaminant (again excluding Fatty Acids for the aforementioned reasons), inputting "contaminant amount" as the dependent variable, "Year" as the dependent variable, and "Fish Species" as the grouping variable into the regression.
 <br>
-For mercury, the only two fish that were sampled for all three years were the Walleye and the Smallmouth Bass. 
-```{r echo=FALSE, warning=FALSE, message=FALSE}
+For mercury, 14 fish species were repeatedly sampled in each of the study years. The mean mercury values for each species were plotted over time, with a line of best fit for each species (Figure \@ref(fig:mercury-fish-trend-plot)). Linear regressions were conducted for each species to assess whether mercury levels changed significantly over the years. However, **none** of the regressions indicated a significant relationship between year and mercury level (all p > 0.05), suggesting no statistically significant trends in mercury levels for these species over time.
+
+```{r mercury-fish-trend-plot, fig.align='center', fig.cap='Mean mercury levels over time of each fish species sampled in the Great Lakes', warning=FALSE, message=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 #mercury 
-Mercury_byfish_combined_threeyeardata <- Mercury_byfish_combined %>% filter(Common.Name %in% c("Walleye", "Smallmouth bass"))
+Mercury_byfish_combined_threeyeardata <- Mercury_byfish_combined %>% filter(Common.Name %in% c("Brown Trout", "Channel Catfish","Chinook Salmon","Coho Salmon","Freshwater Drum","Lake Trout","Lake Whitefish","Longnose Sucker", "Rainbow Trout", "Smallmouth Bass", "Walleye","White Perch","White Sucker","Yellow Perch")) #only fish with mercury data for all three years
+
 mercury_by_fish_plot <- ggplot(Mercury_byfish_combined_threeyeardata, aes(x = as.factor(Year), y = Mean.Mercury, color = Common.Name)) +
   geom_point() +
   geom_smooth(method = "lm", aes(group = Common.Name), se = FALSE) +
-  labs(title = "Mean Mercury Levels by Fish Species (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)", subtitle = "Figure 4.3") 
+  labs(title = "Mean Mercury Levels by Fish Species (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)") 
 print(mercury_by_fish_plot)
+```
+```{r mercury-fish-regressions, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 
 #separating the fish species
-# walleye
+
+# Brown Trout
+brown_trout_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Brown Trout")
+brown_trout_lm <- lm(Mean.Mercury ~ Year, data = brown_trout_data)
+summary(brown_trout_lm)
+#nonsig
+
+# Channel Catfish
+channel_catfish_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Channel Catfish")
+channel_catfish_lm <- lm(Mean.Mercury ~ Year, data = channel_catfish_data)
+summary(channel_catfish_lm)
+#nonsig
+
+# Chinook Salmon
+chinook_salmon_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Chinook Salmon")
+chinook_salmon_lm <- lm(Mean.Mercury ~ Year, data = chinook_salmon_data)
+summary(chinook_salmon_lm)
+#nonsig
+
+# Coho Salmon
+coho_salmon_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Coho Salmon")
+coho_salmon_lm <- lm(Mean.Mercury ~ Year, data = coho_salmon_data)
+summary(coho_salmon_lm)
+#nonsig
+
+# Freshwater Drum
+freshwater_drum_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Freshwater Drum")
+freshwater_drum_lm <- lm(Mean.Mercury ~ Year, data = freshwater_drum_data)
+summary(freshwater_drum_lm)
+#nonsig
+
+# Lake Trout
+lake_trout_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Lake Trout")
+lake_trout_lm <- lm(Mean.Mercury ~ Year, data = lake_trout_data)
+summary(lake_trout_lm)
+#nonsig
+
+# Lake Whitefish
+lake_whitefish_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Lake Whitefish")
+lake_whitefish_lm <- lm(Mean.Mercury ~ Year, data = lake_whitefish_data)
+summary(lake_whitefish_lm)
+#nonsig
+
+# Longnose Sucker
+longnose_sucker_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Longnose Sucker")
+longnose_sucker_lm <- lm(Mean.Mercury ~ Year, data = longnose_sucker_data)
+summary(longnose_sucker_lm)
+#nonsig
+
+# Rainbow Trout
+rainbow_trout_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Rainbow Trout")
+rainbow_trout_lm <- lm(Mean.Mercury ~ Year, data = rainbow_trout_data)
+summary(rainbow_trout_lm)
+#nonsig
+
+# Smallmouth Bass
+smallmouth_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Smallmouth Bass")
+smallmouth_lm <- lm(Mean.Mercury ~ Year, data = smallmouth_data)
+summary(smallmouth_lm)
+#nonsig
+
+# Walleye
 walleye_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Walleye")
-#walleye_lm <- lm(Mean.Mercury ~ Year, data = walleye_data)
-#summary(walleye_lm)
+walleye_lm <- lm(Mean.Mercury ~ Year, data = walleye_data)
+summary(walleye_lm)
+#nonsig
 
-# bass
-smallmouth_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Smallmouth bass")
-#smallmouth_lm <- lm(Mean.Mercury ~ Year, data = smallmouth_data)
-#summary(smallmouth_lm)
+# White Perch
+white_perch_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "White Perch")
+white_perch_lm <- lm(Mean.Mercury ~ Year, data = white_perch_data)
+summary(white_perch_lm)
+#nonsig
+
+# White Sucker
+white_sucker_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "White Sucker")
+white_sucker_lm <- lm(Mean.Mercury ~ Year, data = white_sucker_data)
+summary(white_sucker_lm)
+#nonsig
+
+# Yellow Perch
+yellow_perch_data <- subset(Mercury_byfish_combined_threeyeardata, Common.Name == "Yellow Perch")
+yellow_perch_lm <- lm(Mean.Mercury ~ Year, data = yellow_perch_data)
+summary(yellow_perch_lm)
+#nonsig
+
 ```
-The results of both regressions (walleye, p=0.1551; smallmouth, p= 0.8848) indicate that the trend between mercury in these fish over time is not statistically significant.
-
-## Question 3: Are different species significantly more vulnerable than others to different contaminants?
+<br> 
+This process is repeated for PCBs. The same 14 fish as mercury had data available for all three years (Figure \@ref(fig:PCB-fish-trend-plot)). Of all 14 fish, only one presented a p-value indicating a sigificant relationship between PCB level and year for that species. White Perch had a p-value of 0.04507 (p<0.5) and an adjusted R-squared value of 0.99.  
 <br>
+```{r PCB-fish-trend-plot, fig.align='center', fig.cap='Mean mercury levels over time of each fish species sampled in the Great Lakes', warning=FALSE, message=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+#PCB
+PCB_byfish_combined_threeyeardata <- PCB_byfish_combined %>% filter(Common.Name %in% c("Brown Trout", "Channel Catfish","Chinook Salmon","Coho Salmon","Freshwater Drum","Lake Trout","Lake Whitefish","Longnose Sucker", "Rainbow Trout", "Smallmouth Bass", "Walleye","White Perch","White Sucker","Yellow Perch")) #only fish with PCB data for all three years
+
+PCB_by_fish_plot <- ggplot(PCB_byfish_combined_threeyeardata, aes(x = as.factor(Year), y = Mean.PCBs, color = Common.Name)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(group = Common.Name), se = FALSE) +
+  labs(title = "Mean PCB Levels by Fish Species (2010-2020)", x = "Year", y = "Mean PCBs (µg/kg)") 
+print(PCB_by_fish_plot)
+```
+
+```{r PCB-fish-regressions, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
+# Brown Trout (PCB)
+brown_trout_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Brown Trout")
+brown_trout_PCB_lm <- lm(Mean.PCBs ~ Year, data = brown_trout_PCB_data)
+summary(brown_trout_PCB_lm)
+#nonsig
+
+# Channel Catfish (PCB)
+channel_catfish_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Channel Catfish")
+channel_catfish_PCB_lm <- lm(Mean.PCBs ~ Year, data = channel_catfish_PCB_data)
+summary(channel_catfish_PCB_lm)
+#nonsig
+
+# Chinook Salmon (PCB)
+chinook_salmon_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Chinook Salmon")
+chinook_salmon_PCB_lm <- lm(Mean.PCBs ~ Year, data = chinook_salmon_PCB_data)
+summary(chinook_salmon_PCB_lm)
+
+# Coho Salmon (PCB)
+coho_salmon_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Coho Salmon")
+coho_salmon_PCB_lm <- lm(Mean.PCBs ~ Year, data = coho_salmon_PCB_data)
+summary(coho_salmon_PCB_lm)
+
+# Freshwater Drum (PCB)
+freshwater_drum_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Freshwater Drum")
+freshwater_drum_PCB_lm <- lm(Mean.PCBs ~ Year, data = freshwater_drum_PCB_data)
+summary(freshwater_drum_PCB_lm)
+
+# Lake Trout (PCB)
+lake_trout_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Lake Trout")
+lake_trout_PCB_lm <- lm(Mean.PCBs ~ Year, data = lake_trout_PCB_data)
+summary(lake_trout_PCB_lm)
+
+# Lake Whitefish (PCB)
+lake_whitefish_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Lake Whitefish")
+lake_whitefish_PCB_lm <- lm(Mean.PCBs ~ Year, data = lake_whitefish_PCB_data)
+summary(lake_whitefish_PCB_lm)
+
+# Longnose Sucker (PCB)
+longnose_sucker_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Longnose Sucker")
+longnose_sucker_PCB_lm <- lm(Mean.PCBs ~ Year, data = longnose_sucker_PCB_data)
+summary(longnose_sucker_PCB_lm)
+
+# Rainbow Trout (PCB)
+rainbow_trout_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Rainbow Trout")
+rainbow_trout_PCB_lm <- lm(Mean.PCBs ~ Year, data = rainbow_trout_PCB_data)
+summary(rainbow_trout_PCB_lm)
+
+# Smallmouth Bass (PCB)
+smallmouth_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Smallmouth Bass")
+smallmouth_PCB_lm <- lm(Mean.PCBs ~ Year, data = smallmouth_PCB_data)
+summary(smallmouth_PCB_lm)
+
+# Walleye (PCB)
+walleye_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Walleye")
+walleye_PCB_lm <- lm(Mean.PCBs ~ Year, data = walleye_PCB_data)
+summary(walleye_PCB_lm)
+
+# White Perch (PCB)
+white_perch_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "White Perch")
+white_perch_PCB_lm <- lm(Mean.PCBs ~ Year, data = white_perch_PCB_data)
+summary(white_perch_PCB_lm)
+#SIGNIFICANT
+
+# White Sucker (PCB)
+white_sucker_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "White Sucker")
+white_sucker_PCB_lm <- lm(Mean.PCBs ~ Year, data = white_sucker_PCB_data)
+summary(white_sucker_PCB_lm)
+
+# Yellow Perch (PCB)
+yellow_perch_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Yellow Perch")
+yellow_perch_PCB_lm <- lm(Mean.PCBs ~ Year, data = yellow_perch_PCB_data)
+summary(yellow_perch_PCB_lm)
+```
+
+Finally, a plot is created for PFAs (Figure \@ref(fig:PFA-fish-trend-plot)). Since PFAs are divided into 6 separate compounds of interest, the mean was taken of each of these 6 compounds for each fish. In the future, a more detailed analysis by each PFA should be performed. Using mean PFA levels, both the Brown Trout (p=4.888e-05) and Walleye (p=0.02977) have a significant p value (p<0.05), indicating a relationship between Year and Mean PFA level for the species.
+
+```{r PFA-fish-trend-plot, fig.align='center', fig.cap='Mean PFA levels over time of each fish species sampled in the Great Lakes', warning=FALSE, message=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
+#PFA
+
+# mean values for each fish of each PFA combined
+PFA_byfish_2010_mean_values <- PFAs_byfish_2010 %>%
+  group_by(Common.Name, Year) %>%
+  summarise(mean_PFAs = mean(Mean.PFAs))
+
+PFA_byfish_2015_mean_values <- PFAs_byfish_2015 %>%
+  group_by(Common.Name, Year) %>%
+  summarise(mean_PFAs = mean(Mean.PFAs))
+
+PFA_byfish_2020_mean_values <- PFAs_byfish_2020 %>%
+  group_by(Common.Name, Year) %>%
+  summarise(mean_PFAs = mean(Mean.PFAs))
+
+PFA_by_fish_mean_values_combined <-
+  rbind(PFA_byfish_2010_mean_values,PFA_byfish_2015_mean_values,PFA_byfish_2020_mean_values)
+
+PFA_byfish_combined_threeyeardata <- PFA_by_fish_mean_values_combined %>% filter(Common.Name %in% c("brown trout", "channel catfish","chinook salmon","coho salmon","freshwater drum","lake trout","lake whitefish","longnose sucker", "rainbow trout", "smallmouth bass", "walleye","white perch","white sucker","yellow perch")) #only fish with PFA data for all three years
+
+PFA_by_fish_plot <- ggplot(PFA_byfish_combined_threeyeardata, aes(x = as.factor(Year), y = mean_PFAs, color = Common.Name)) +
+  geom_point() +
+  geom_smooth(method = "lm", aes(group = Common.Name), se = FALSE) +
+  labs(title = "Mean PFA Levels by Fish Species (2010-2020)", x = "Year", y = "Mean PFAs (µg/kg)") 
+print(PFA_by_fish_plot)
+
+```
+
+```{r PFA-fish-regressions, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
+brown_trout_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "brown trout")
+brown_trout_PFA_lm <- lm(mean_PFAs ~ Year, data = brown_trout_PFA_data)
+summary(brown_trout_PFA_lm)
+#SIG p: 4.888e-05
+
+# channel catfish 
+channel_catfish_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "channel catfish")
+channel_catfish_PFA_lm <- lm(mean_PFAs ~ Year, data = channel_catfish_PFA_data)
+summary(channel_catfish_PFA_lm)
+
+# chinook salmon 
+chinook_salmon_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "chinook salmon")
+chinook_salmon_PFA_lm <- lm(mean_PFAs ~ Year, data = chinook_salmon_PFA_data)
+summary(chinook_salmon_PFA_lm)
+
+# coho salmon 
+coho_salmon_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "coho salmon")
+coho_salmon_PFA_lm <- lm(mean_PFAs ~ Year, data = coho_salmon_PFA_data)
+summary(coho_salmon_PFA_lm)
+
+# freshwater drum 
+freshwater_drum_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "freshwater drum")
+freshwater_drum_PFA_lm <- lm(mean_PFAs ~ Year, data = freshwater_drum_PFA_data)
+summary(freshwater_drum_PFA_lm)
+
+# lake trout 
+lake_trout_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "lake trout")
+lake_trout_PFA_lm <- lm(mean_PFAs ~ Year, data = lake_trout_PFA_data)
+summary(lake_trout_PFA_lm)
+
+# lake whitefish 
+lake_whitefish_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "lake whitefish")
+lake_whitefish_PFA_lm <- lm(mean_PFAs ~ Year, data = lake_whitefish_PFA_data)
+summary(lake_whitefish_PFA_lm)
+
+# longnose sucker 
+longnose_sucker_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "longnose sucker")
+longnose_sucker_PFA_lm <- lm(mean_PFAs ~ Year, data = longnose_sucker_PFA_data)
+summary(longnose_sucker_PFA_lm)
+
+# rainbow trout 
+rainbow_trout_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "rainbow trout")
+rainbow_trout_PFA_lm <- lm(mean_PFAs ~ Year, data = rainbow_trout_PFA_data)
+summary(rainbow_trout_PFA_lm)
+
+# smallmouth bass 
+smallmouth_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "smallmouth bass")
+smallmouth_PFA_lm <- lm(mean_PFAs ~ Year, data = smallmouth_PFA_data)
+summary(smallmouth_PFA_lm)
+
+# walleye 
+walleye_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "walleye")
+walleye_PFA_lm <- lm(mean_PFAs ~ Year, data = walleye_PFA_data)
+summary(walleye_PFA_lm)
+#SIG p-value: 0.02977
+
+# white perch 
+white_perch_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "white perch")
+white_perch_PFA_lm <- lm(mean_PFAs ~ Year, data = white_perch_PFA_data)
+summary(white_perch_PFA_lm)
+
+# white sucker 
+white_sucker_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "white sucker")
+white_sucker_PFA_lm <- lm(mean_PFAs ~ Year, data = white_sucker_PFA_data)
+summary(white_sucker_PFA_lm)
+
+# yellow perch 
+yellow_perch_PFA_data <- subset(PFA_byfish_combined_threeyeardata, Common.Name == "yellow perch")
+yellow_perch_PFA_lm <- lm(mean_PFAs ~ Year, data = yellow_perch_PFA_data)
+summary(yellow_perch_PFA_lm)
+```
+
+From these regressions, we can conclude that there are no species for which year and Mercury level have a significant relationship; there is a significant relationship between year and PCB level only for White Perch; and there is a significant relationship between year and PFA level for Brown Trout and Walleye.
+
+
+## Question 3: Are different species significantly more vulnerable than others to different contaminants? *I THINK WE SHOULD CHANGE OR DELETE THIS QUESTION*
+
 
 
 
@@ -1060,6 +1348,10 @@ The results of both regressions (walleye, p=0.1551; smallmouth, p= 0.8848) indic
 
 # Summary and Conclusions
 variance between lakes means you probably cant just use braod and comprehensive management plans
+
+mercury level the samne between fish means there may not be biological differences that can protect certain fish form mercury bioaccumulation (non discriminatory contamination)
+
+require more data points for more confident anaylsis- motivation to continue NCCA
 
 \newpage
 
