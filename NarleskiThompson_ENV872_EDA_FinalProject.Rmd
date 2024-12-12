@@ -1,8 +1,8 @@
 ---
-title: "Fish Tissue Contamination and its Effects on Human and Ecosystem Health"
-subtitle: "An examination of trends in fish tissue composition in the Great Lakes"
+title: "Fish Tissue Contamination Trends in the Great Lakes"
+subtitle: "GitHub Repsitory: https://github.com/j-narleski/NarleskiThompson_ENV872_EDA_FinalProject"
 author: "Jaclyn Narleski and Victoria Thompson"
-date: "`r Sys.Date()`"
+date: "December 12, 2024"
 output:
   bookdown::html_document2:
     theme: cosmo
@@ -85,7 +85,7 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
 
-![Herring in the Great Lakes. All Rights to Paul Vecsei (9)](~/home/guest/EDEFinal/ProcessedData/fishimage_PaulVecsei.jpg)
+![Herring in the Great Lakes. All Rights to Paul Vecsei (9)](~/home/guest/EDEFinal/ProcessedData/fishimage_PaulVecsei.jpg) **fix this path**
 
 
 # Rationale and Research Questions
@@ -97,7 +97,7 @@ Between the fragile ecosystems that depend on fish to the entire human populatio
 
 <ol><b>
   <li>Does average fish tissue contamination vary significantly between each lake within each sampling year?</li>
-  <li>Does average fish tissue contamination of all lakes vary significantly between each sampling year?</li>
+  <li>Are there trends in contaminant levels in each fish species over time?</li>
   <li>How do contaminants vary depending on if fish is an open-sea or bottom dweller (niche)? </li>
 </b></ol>
 
@@ -131,13 +131,16 @@ kable(contaminants, caption = "Description of the contaminants used in this proj
 The datasets used in this analysis were sourced from the Environmental Protection Agency (EPA) website. They were selected from available National Coastal Condition Assessments (NCCA), which are surveys designed to assess long-term conditions of nearshore waters along the coasts of the Great Lakes. Our data specifically involves the data collected from Fish Fillet Tissue studies, where samples of fish muscle from commonly caught recreational fish species are taken and analyzed for mercury, PFAs (per- & polyfluoroalkl substances), PCB (polychlorinated biphenyls) Congeners & Aroclors, and Omega-3 & Omega-6 fatty acids. The EPA uses the results from these studies to evaluate the water quality of the Great Lakes and more specifically, determine the health impacts humans may have from consuming fish caught in the Great Lakes.
 
 Fish contaminant data is collected using the following procedures, per the 2020 NCCA Field Operations Manual:
-- Sites are randomly selected along U.S. coasts of the Great Lakes
-- Crews collect fish at all NCCA sites, yielding a minimum total of 300g total mass per target species
-- Fish are identified, measured, labelled, frozen, and brough to a lab
-- Specimens are cleaned to prevent contamination with non-marine chemicals
-- Fish are filleted (scales are removed, but skin and belly are left intact)
-- A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish
-
+<br>
+<ol>
+  <li>Sites are randomly selected along U.S. coasts of the Great Lakes</li>
+  <li>Crews collect fish at all NCCA sites, yielding a minimum total of 300g total mass per target species</li>
+  <li>Fish are identified, measured, labelled, frozen, and brough to a lab </li>
+  <li>Specimens are cleaned to prevent contamination with non-marine chemicals</li>
+  <li>Fish are filleted (scales are removed, but skin and belly are left intact)</li>
+  <li>A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish</li>
+</ol>
+<br>
 The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table \@ref(tab:columm-description-table) ). 
 
 ```{r columm-description-table, echo=FALSE, message=FALSE}
@@ -171,12 +174,11 @@ kable(
 
 ```
 
-<br>
 <p style="color: darkgray;">*adapted from 2020 GLHHFTS Fish Tissue Data Dictionary for Mercury, PCBs, and PFAS Results November 2023*.</p>
 
 ## Dataset Wrangling Procedures
 <br>
-Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each. [3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table \@ref(tab:columm-description-table) were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
+Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each.[3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table \@ref(tab:columm-description-table) were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
 <br>
 <br>
  
@@ -252,6 +254,7 @@ fatty_acids <- data.frame(
   Type = c("Omega-3", "Omega-3", "Omega-3", "Omega-3", "Omega-3", "Omega-6"),
   Abbreviation = c("ALA", "DHA", "DPA", "EPA", "ETE", "LA")
 )
+names(fatty_acids) <- c("Fatty Acid", "Type", "Abbreviation")
 
 # Generate the table
 kable(
@@ -711,7 +714,7 @@ print(fattyacid_by_fish)
 
 ## PFAs
 
-Like Fatty Acids, there are multiple PFAs (Per- and Polyfluoroalkyl Substances) that were measured in the sampling. Of the ones included, we filtered out four specifically, due to their known negative effect on human health (Perfluorooctanoate (PFOA), Perfluorooctanesulfonate (PFOS), Perfluorohexane sulfonate (PFHxS),and Perfluorononanoate (PFNA)). They are also specifically monitored by the EPA across other projects, and have clear levels where they become unsafe for consumption [6]. We used mean PFA values for each lake, (Figure \@ref(fig:pfa-exp-lake) ), each fish species (Figure \@ref(fig:pfa-exp-fish) ), and for each niche (Figure \@ref(fig:pfa-exp-niche) ).
+Like Fatty Acids, there are multiple PFAs (Per- and Polyfluoroalkyl Substances) that were measured in the sampling. Of the ones included, we filtered out four specifically, due to their known negative effect on human health (Perfluorooctanoate (PFOA), Perfluorooctanesulfonate (PFOS), Perfluorohexane sulfonate (PFHxS),and Perfluorononanoate (PFNA)). They are also specifically monitored by the EPA across other projects, and have clear levels where they become unsafe for consumption.[6] We used mean PFA values for each lake, (Figure \@ref(fig:pfa-exp-lake) ), each fish species (Figure \@ref(fig:pfa-exp-fish) ), and for each niche (Figure \@ref(fig:pfa-exp-niche) ).
 
 ```{r pfa-exp, echo=FALSE, warning=FALSE, message=FALSE}
 
@@ -883,7 +886,7 @@ print(PFA_by_niche)
 
 ## Question 1: Does average fish tissue contamination vary significantly between each lake within each sampling year?
 <br>
-For this question, we use an **ANOVA** (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform twelve ANOVAs, one for each of the contaminants (3) and one for each year (3). The results of the 9 ANOVAs are recorded in Table \@ref(tab:contaminant-anova-table) below. The degrees of freedom for each ANOVA is 4.
+For this question, we use an **ANOVA** (Analysis of Variance) to compare the means contaminants of fish sourced from each lake to determine if there are statistical differences between them. We test the **null hypothesis that there is no effect of lake on contaminant levels** (i.e. there is not a statistically significant difference between them). Since we are focusing on one categorical independent variable (the lakes), we employ a one-way ANOVA. We perform nine ANOVAs, one for each of the contaminants (3) and one for each year (3). The results of the 9 ANOVAs are recorded in Table \@ref(tab:contaminant-anova-table) below. The degrees of freedom for each ANOVA is 4.
 <br>
 <p style="color: darkgray;">*Note: Because of the complex and incomplete Fatty Acid data, as well as its mixed effect on human health, we exclude Fatty Acids from this analysis*.</p>
 
@@ -977,10 +980,9 @@ summary(PFA_bylake_2020_AOV)
 ```
 We continue this analysis by performing a Tukey's HSD test in order to investigate which lakes specifically differ from each other within each ANOVA. We assess only ANOVAs that were significant (ie. excluding Mercury 2020). Further, to maintain a reasonable analysis size, and because it is the most recent year with statistically different means for all three contaminants, we perform a Tukey test only on the 2015 ANOVAs. 
 <br>
+<br>
 The results from the 2015 Mercury Tukey test reveal that Lake Erie, Huron, and Michigan are not statistically different, while Lake Ontario and Superior are statistically different from them and from each other (Figure \@ref(fig:mercury-tukey-plot) ). Similarly, for the 2015 PCBs, Lake Erie, Huron, and Michigan are not statistically different (Figure \@ref(fig:PCB-tukey-plot) ). However, Lake Ontario is statistically different from all other lakes, but Lake Superior is only different from Lake Ontario and Erie. Lastly, for PFAs, Lake Erie, Huron, Michigan, and Ontario were not statistically different; Lake Superior was not statistically different from Lake Huron or Lake Michigan (Figure \@ref(fig:PFA-tukey-plot) ). 
-<br> 
-<br> 
-From this analysis, it is apparent that Lakes Erie, Huron, and Michigan tend to have contaminant means that are not statistically different from each other, while Lakes Ontario and Superior more often had significantly different means from them.
+
 
 
 ```{r tukey, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
@@ -1041,12 +1043,16 @@ PFA.tukey.plot <- ggplot(PFA_bylake_2015_mean_values, aes(x = Lake, y = mean_PFA
 
 print(PFA.tukey.plot)
 ```
-
+<br> 
+<br> 
+From this analysis, it is apparent that Lakes Erie, Huron, and Michigan tend to have contaminant means that are not statistically different from each other, while Lakes Ontario and Superior more often had significantly different means from them.
+<br> 
+<br> 
 ## Question 2: Are there trends in contaminant levels in each fish species over time?
 <br>
 To investigate the presence of potential  trends in each over time, we use **linear regressions**. Unfortunately, with only three sample years, there is not sufficient data for a time series. Instead, we search for meaningful results of linear regression models. **We focus only on fish species for which there is data for all three sample years.** We determined which fish had data for all three years using the results from our exploratory anaylses. 14 fish species qualified for this analysis (Brown Trout, Channel Catfish, Chinook Salmon, Coho Salmon, Freshwater Drum, Lake Trout, Lake Whitefish, Longnose Sucker, Rainbow Trout, Smallmouth Bass, Walleye, White Perch, White Sucker, and Yellow Perch). We run 3 models, one for each contaminant (again excluding Fatty Acids for the aforementioned reasons), inputting "contaminant amount" as the dependent variable, "Year" as the dependent variable, and "Fish Species" as the grouping variable into the regression.
 <br>
-For mercury, 14 fish species were repeatedly sampled in each of the study years. The mean mercury values for each species were plotted over time, with a line of best fit for each species (Figure \@ref(fig:mercury-fish-trend-plot)). Linear regressions were conducted for each species to assess whether mercury levels changed significantly over the years. However, **none** of the regressions indicated a significant relationship between year and mercury level (all p > 0.05), suggesting no statistically significant trends in mercury levels for these species over time.
+The mean mercury values for each species were plotted over time, with a line of best fit for each species (Figure \@ref(fig:mercury-fish-trend-plot)). Linear regressions were conducted for each species to assess whether mercury levels changed significantly over the years. However, **none** of the regressions indicated a significant relationship between year and mercury level (all p > 0.05), suggesting no statistically significant trends in mercury levels for these species over time.
 
 ```{r mercury-fish-trend-plot, fig.align='center', fig.cap='Mean mercury levels over time of each fish species sampled in the Great Lakes', warning=FALSE, message=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 #mercury 
@@ -1148,7 +1154,7 @@ summary(yellow_perch_lm)
 
 ```
 <br> 
-This process is repeated for PCBs. The same 14 fish as mercury had data available for all three years (Figure \@ref(fig:PCB-fish-trend-plot)). Of all 14 fish, only one presented a p-value indicating a sigificant relationship between PCB level and year for that species. White Perch had a p-value of 0.04507 (p<0.5) and an adjusted R-squared value of 0.99.  
+This process is repeated for PCBs. The same 14 fish as mercury had data available for all three years (Figure \@ref(fig:PCB-fish-trend-plot)). Of all 14 fish, only one presented a p-value indicating a significant relationship between PCB level and year for that species. **White Perch** had a p-value of 0.04507 (p<0.5) and an adjusted R-squared value of 0.99.  
 <br>
 ```{r PCB-fish-trend-plot, fig.align='center', fig.cap='Mean mercury levels over time of each fish species sampled in the Great Lakes', warning=FALSE, message=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 #PCB
@@ -1236,7 +1242,7 @@ yellow_perch_PCB_lm <- lm(Mean.PCBs ~ Year, data = yellow_perch_PCB_data)
 summary(yellow_perch_PCB_lm)
 ```
 
-Finally, a plot is created for PFAs (Figure \@ref(fig:PFA-fish-trend-plot)). Since PFAs are divided into 6 separate compounds of interest, the mean was taken of each of these 6 compounds for each fish. In the future, a more detailed analysis by each PFA should be performed. Using mean PFA levels, both the Brown Trout (p=4.888e-05) and Walleye (p=0.02977) have a significant p value (p<0.05), indicating a relationship between Year and Mean PFA level for the species.
+Finally, a plot is created for PFAs (Figure \@ref(fig:PFA-fish-trend-plot)). Since PFAs are divided into 6 separate compounds of interest, the mean was taken of each of these 6 compounds for each fish. In the future, a more detailed analysis by each PFA should be performed. Using mean PFA levels, both the **Brown Trout** (p=4.888e-05) and **Walleye** (p=0.02977) have a significant p value (p<0.05), indicating a relationship between Year and Mean PFA level for the species.
 
 ```{r PFA-fish-trend-plot, fig.align='center', fig.cap='Mean PFA levels over time of each fish species sampled in the Great Lakes', warning=FALSE, message=FALSE, echo=FALSE, warning=FALSE, message=FALSE}
 #PFA
@@ -1345,7 +1351,8 @@ From these regressions, we can conclude that there are no species for which year
 
 ## Question 3: How do contaminants vary depending on if fish is an open-sea or bottom dweller (niche)?
 <br>
-To continue our investigation of what may make certain fish more susceptible to contamination, another factor aside from species is the fish niche. In NCCA data collection, there were two options for fish niche: "BD" (Benthic-Demersal- i.e. bottom dweller) and"P" (Pelagic- i.e. open sea). We compare the mean contaminant amounts between BD and P fish across each sampling year using an **ANOVA**. The results of the ANOVA are summarized in Table \@ref(tab:contaminant-anova-niche-table)
+To continue our investigation of what may make certain fish more susceptible to contamination, another factor aside from species is the fish niche. In NCCA data collection, there were two options for fish niche: "BD" (Benthic-Demersal- i.e. bottom dweller) and"P" (Pelagic- i.e. open sea). We compare the mean contaminant amounts between BD and P fish across each sampling year using an **ANOVA**. The results of the ANOVA are summarized in Table \@ref(tab:contaminant-anova-niche-table) . 
+
 ```{r niche-anovas, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 #Mercury 2010
 mercury_2010_processed$Niche <- as.factor(mercury_2010_processed$Lake)
@@ -1403,7 +1410,7 @@ summary(PFA_byniche_2020_AOV)
 
 ```
 
-```{r contaminant_anova_niche_table, echo=FALSE, message=FALSE}
+```{r contaminant-anova-niche-table, echo=FALSE, message=FALSE}
 contaminant_anova_niche <- data.frame(
   Contaminant = c(
     "Mercury", "Mercury", "Mercury", 
