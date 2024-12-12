@@ -94,7 +94,7 @@ Between the fragile ecosystems that depend on fish to the entire human populatio
 <ol><b>
   <li>Does average fish tissue contamination vary significantly between each lake within each sampling year?</li>
   <li>Does average fish tissue contamination of all lakes vary significantly between each sampling year?</li>
-  <li>Are there trends in contaminant levels in each fish species over time?</li>
+  <li>How do contaminants vary depending on if fish is an open-sea or bottom dweller (niche)? </li>
 </b></ol>
 
 ```{r contaminant-table, echo=FALSE, message=FALSE}
@@ -1339,9 +1339,10 @@ summary(yellow_perch_PFA_lm)
 From these regressions, we can conclude that there are no species for which year and Mercury level have a significant relationship; there is a significant relationship between year and PCB level only for White Perch; and there is a significant relationship between year and PFA level for Brown Trout and Walleye.
 
 
-## Question 3: How do contaminants vary depending on if fish is a predator or bottom dweller (niche)?
-
-```{r}
+## Question 3: How do contaminants vary depending on if fish is an open-sea or bottom dweller (niche)?
+<br>
+To continue our investigation of what may make certain fish more susceptible to contamination, another factor aside from species is the fish niche. In NCCA data collection, there were two options for fish niche: "BD" (Benthic-Demersal- i.e. bottom dweller) and"P" (Pelagic- i.e. open sea). We compare the mean contaminant amounts between BD and P fish across each sampling year using an **ANOVA**. The results of the ANOVA are summarized in Table \@ref(tab:contaminant-anova-niche-table)
+```{r niche-anovas, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 #Mercury 2010
 mercury_2010_processed$Niche <- as.factor(mercury_2010_processed$Lake)
 mercury_byniche_2010_AOV <- aov(Amount ~ Niche, data = mercury_2010_processed)
@@ -1398,16 +1399,50 @@ summary(PFA_byniche_2020_AOV)
 
 ```
 
+```{r contaminant_anova_niche_table, echo=FALSE, message=FALSE}
+contaminant_anova_niche <- data.frame(
+  Contaminant = c(
+    "Mercury", "Mercury", "Mercury", 
+    "PCB", "PCB", "PCB", 
+    "PFA", "PFA", "PFA"
+  ),
+  Year = c(2010, 2015, 2020, 2010, 2015, 2020, 2010, 2015, 2020),
+  `F Value` = c(6.397,25.97,14.03,1.912,13.52,6.196,3.07,7.912,1.83),
+  `P-value` = c(8.74e-05,1.03e-06,0.000249,0.169,0.000329,0.0138,0.0799,0.00496,0.176),
+  `Significant? (p < 0.05)` = c(
+    "<span style='color:green'>YES</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:green'>YES</span>", "<span style='color:red'>NO</span>", 
+    "<span style='color:green'>YES</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:red'>NO</span>", "<span style='color:green'>YES</span>", 
+    "<span style='color:red'>NO</span>"
+  )
+)
 
+names(contaminant_anova_niche) <- c("Contaminant", "Year", "F Value", "P-value", "Significant? (p<0.05)")
 
+kable(
+  contaminant_anova_niche, 
+  caption = "ANOVA results of mean contaminant levels found in fish samples from both Niches from 3 sampling years.", 
+  escape = FALSE
+)
+```
+<br>
+Since there are only two means to compare, a Tukey test is not necessary. All ANOVAs that indicate a difference between means indicate that the mean level of contamination of Benthic and Pelagic fish are significantly different. Per the results of our prior exploratory analysis, all Pelagic fish for all contaminants had higher levels of contamination. 
+<br>
+<br>
+For Mercury, the p-values for all years (p=8.74e-05, p=1.003e-06,2.49e-04; p<0.05) indicate that Pelagic fish had significantly higher contamination than Benthic fish. For PCBs, only 2015 and 2020 were significant (p=3.29e-04, p=1.38e-02; p<0.05); for PFAs, there was only one year for which the difference was significant (p=4.96e-03; p<0.05). 
 \newpage
 
 # Summary and Conclusions
+<br>
+Contamination of fish tissue in the Great Lakes
+
 variance between lakes means you probably cant just use braod and comprehensive management plans
 
 mercury level the samne between fish means there may not be biological differences that can protect certain fish form mercury bioaccumulation (non discriminatory contamination)
 
 require more data points for more confident anaylsis- motivation to continue NCCA
+all findings should be consdiered in teh context that the sample size os very small
 
 \newpage
 
