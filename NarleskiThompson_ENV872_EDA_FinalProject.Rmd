@@ -84,12 +84,13 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
 
-Herring in the Great Lakes. All Rights to Paul Vecsei (9)
+
 ```{r, out.width="70%", out.height="70%", fig.align='center', echo = FALSE, message = FALSE}
-knitr::include_graphics("~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/fishimage_PaulVecsei.jpg")
+knitr::include_graphics(here("ProcessedData", "fishimage_PaulVecsei.jpg"))
 ```
-
-
+<div style="text-align: center; color: darkgray;">
+  Herring in the Great Lakes. All Rights to Paul Vecsei (9)
+</div>
 
 # Rationale and Research Questions
 The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
@@ -144,27 +145,41 @@ Fish contaminant data is collected using the following procedures, per the 2020 
   <li>A variety of lab procedures are performed in accordance with EPA guidelines to determine the lipid content, concentrations of metals, pesticides, and PCBs in each fish</li>
 </ol>
 <br>
-The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each is described below (Table \@ref(tab:columm-description-table) ). 
+The Environmental Protection Agency has conducted periodic studies over the past 15 years assessing the coastal conditions of marine and the Great Lakes shores. We focus on data from 2010, 2015, and 2020. The basic structure of each raw data file is described below (Table \@ref(tab:columm-description-table) ). 
 
 ```{r columm-description-table, echo=FALSE, message=FALSE}
 
 column_descriptions <- data.frame(
   `Column Name` = c(
-    "EPA Region", "State", "Lake", "Site ID", 
-    "EPA Sample ID", "Tissue Type", "% Lipids", 
-    "Method", "Analyte", "Amount"
+    "EPA Region", "State", "Lake Name", "Site ID", 
+    "EPA Sample ID", "Species ID", "Scientific Name", 
+    "Common Name", "Family", "Niche", "Analyte", 
+    "Abbreviation", "CAS Number", "Amount", 
+    "Unit.1", "Unit.2", "MDL", "QL", 
+    "Lab Flag", "SCC Code", "Comment"
   ),
   Description = c(
     "The EPA Region in which the sample was collected",
     "2-letter abbreviation for the state in which the sample was collected",
     "The Great Lake the sample is from",
     '"NGL" + site selection year + state + 4-digit site location',
-    "6-digit code assigned by the EPA",
-    "The type of fish tissue used for analysis; we use only fillet data",
-    "The lipid content of the sample, measured independently of the chemical analysis",
-    "EPA-standardized method of chemical analysis",
-    "The chemical of interest in each dataset",
-    "Amount of chemical detected in the sample"
+    "Individual numeric code assigned to each fish species",
+    "Taxonomic name of each species",
+    "Taxonomic family of each species",
+    "Common name of each species",
+    "Taxonomic family of each species",
+    'Codified ecological niche of the fish sampled; “BD” is “Benthic-Demersal” & “P” is “Pelagic”',
+    "The contaminant being measured",
+    "The abbreviation for the contaminant being measured",
+    "A unique identifier assigned to chemical substances by the Chemical Abstracts Service",
+    "Amount of contaminant",
+    "The original unit the chemical was measured in ('ng/g' for Mercury, PFA, PCB; 'mg/g' for Fatty Acids)",
+    "The amount of chemical converted to common units ('ppb' for Mercury, PFA, PCB; 'ug/g' for Fatty Acids)",
+    "Method Detection Limit - the minimum concentration of a substance that can be reliably detected and reported with 99% confidence",
+    "Quantification Limit - the lowest concentration that can be reliably measured within a certain level of precision and accuracy",
+    "Unique identifier for the lab used",
+    "Code for the container the fish was stored in between catching and processing",
+    "Comment on results input by researcher"
   )
 )
 
@@ -195,7 +210,7 @@ variable_descriptions <- data.frame(
   Variable = c(
     "State", "Lake", "Scientific.Name", "Common.Name", 
     "Family", "Niche", "Method", "Analyte", 
-    "Amount", "Unit.1", "Unit.2"
+    "Amount", "Unit.1", "Unit.2", "Year"
   ),
   Description = c(
     "2-letter abbreviation for the state in which the sample was collected",
@@ -208,7 +223,8 @@ variable_descriptions <- data.frame(
     "The chemical of interest in each dataset",
     "Amount of chemical detected in the sample",
     "The original unit the chemical was measured in. See Table 3.3",
-    "The amount of chemical converted to common units. Only for some contaminants. See Table 3.3"
+    "The amount of chemical converted to common units. Only for some contaminants. See Table 3.3",
+    "Column added manually to assign sample year to each result"
   )
 )
 
