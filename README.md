@@ -39,9 +39,13 @@ All data in the repository was sourced from https://www.epa.gov/choose-fish-and-
 Some supplementary data was pulled in from the 2020 NCCA Quality Assurance Report (Appendix A). in order to map the sites: chrome-extension://efaidnbmnnnibpcajpcglclefindmkaj/https://www.epa.gov/system/files/documents/2024-04/glhhffts-qa-fish-sample-preparation-2020.pdf. The data was scraped from the pdf into an excel sheet and input as a .csv file.
 
 ## Folder structure, file formats, and naming conventions
-Folders include "RawData" and "ProcessedData". Data files are all downloaded/processed into csv format. All Raw data is named Year_Contaminant_Raw.csv. All Processed data is named Year_Contaminant_Processed.csv. 
+The folders in this project are “Data”, “Output”, and “Code”.
+
+Within “Data” are two subfolders, "RawData" and "ProcessedData". Data files are all downloaded/processed into csv format. All Raw data is named Year_Contaminant_Raw.csv. All Processed data is named Year_Contaminant_Processed.csv. 
 
 The exception to this convention is the supplemental spatial data, which is called 2020sitelocations.csv and was extracted manually from the 2020 NCCA Quality Assurance Report (see above). The spatial dataset for counties is named cb_2018_us_county_20m.(file type), with the various spatial file types required for mapping. These are all within the Raw Data file, as they were not changed from their imported values. 
+
+“Output” contains the knit html file with the same naming conventions as the project repository (NarleskiThompson_ENV872_EDA_FinalProject.html). “Code” contains the raw R script, named with the same naming conventions as the project repository (NarleskiThompson_ENV872_EDA_FinalProject.Rmd).
 
 ## Metadata
 For the raw data files from NCCA, the columns are as follows: 
