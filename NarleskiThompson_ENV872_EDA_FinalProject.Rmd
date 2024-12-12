@@ -64,29 +64,29 @@ theme_set(laketheme)
 # Load your datasets
 
 # 2010 data
-fattyacids_2010_raw <- read.csv("RawData/2010_FattyAcids_Raw.csv")
-mercury_2010_raw <- read.csv("RawData/2010_Mercury_Raw.csv")
-PCB_2010_raw <- read.csv("RawData/2010_PCBs_Raw.csv")
-PFA_2010_raw <- read.csv("RawData/2010_PFAs_Raw.csv")
+fattyacids_2010_raw <- read.csv("Data/RawData/2010_FattyAcids_Raw.csv")
+mercury_2010_raw <- read.csv("Data/RawData/2010_Mercury_Raw.csv")
+PCB_2010_raw <- read.csv("Data/RawData/2010_PCBs_Raw.csv")
+PFA_2010_raw <- read.csv("Data/RawData/2010_PFAs_Raw.csv")
 
 # 2015 data
-fattyacids_2015_raw <- read.csv("RawData/2015_FattyAcids_Raw.csv")
-mercury_2015_raw <- read.csv("RawData/2015_Mercury_Raw.csv")
-PCB_2015_raw <- read.csv("RawData/2015_PCBs_Raw.csv")
-PFA_2015_raw <- read.csv("RawData/2015_PFAs_Raw.csv")
+fattyacids_2015_raw <- read.csv("Data/RawData/2015_FattyAcids_Raw.csv")
+mercury_2015_raw <- read.csv("Data/RawData/2015_Mercury_Raw.csv")
+PCB_2015_raw <- read.csv("Data/RawData/2015_PCBs_Raw.csv")
+PFA_2015_raw <- read.csv("Data/RawData/2015_PFAs_Raw.csv")
 
 # 2020 data
-fattyacids_2020_raw <- read.csv("RawData/2020_FattyAcids_Raw.csv")
-mercury_2020_raw <- read.csv("RawData/2020_Mercury_Raw.csv")
-PCB_2020_raw <- read.csv("RawData/2020_PCBs_Raw.csv")
-PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
+fattyacids_2020_raw <- read.csv("Data/RawData/2020_FattyAcids_Raw.csv")
+mercury_2020_raw <- read.csv("Data/RawData/2020_Mercury_Raw.csv")
+PCB_2020_raw <- read.csv("Data/RawData/2020_PCBs_Raw.csv")
+PFA_2020_raw <- read.csv("Data/RawData/2020_PFAs_Raw.csv")
 
 ```
 
 
 
 ```{r, out.width="70%", out.height="70%", fig.align='center', echo = FALSE, message = FALSE}
-knitr::include_graphics(here("ProcessedData", "fishimage_PaulVecsei.jpg"))
+knitr::include_graphics(here("Data/ProcessedData", "fishimage_PaulVecsei.jpg"))
 ```
 <div style="text-align: center; color: darkgray;">
   Herring in the Great Lakes. All Rights to Paul Vecsei (9)
@@ -317,14 +317,14 @@ mercury_2010_processed <- mercury_2010_raw %>%
   rename(Lake = Lake.Name)
 
 write.csv(mercury_2010_processed, 
-"~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_Mercury_Processed.csv")
+"~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2010_Mercury_Processed.csv")
 
 mercury_2015_processed <- mercury_2015_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2) %>%
   mutate(Year = rep(2015, nrow(mercury_2015_raw)))
 
-write.csv(mercury_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_Mercury_Processed.csv")
+write.csv(mercury_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2015_Mercury_Processed.csv")
 
 mercury_2020_processed <- mercury_2020_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
@@ -332,7 +332,7 @@ mercury_2020_processed <- mercury_2020_raw %>%
   mutate(Year = rep(2020, nrow(mercury_2020_raw)))
 
 write.csv(mercury_2020_processed, 
-"~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_Mercury_Processed.csv")
+"~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2020_Mercury_Processed.csv")
 
 # Wrangle PFAs data and write in as csvs
 
@@ -342,14 +342,14 @@ PFA_2010_processed <- PFA_2010_raw %>%
   mutate(Year = rep(2010, nrow(PFA_2010_raw)), Amount = coalesce(Amount, 0)) %>%
   rename(Lake = Lake.Name)
 
-write.csv(PFA_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_PFAs_Processed.csv")
+write.csv(PFA_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2010_PFAs_Processed.csv")
 
 PFA_2015_processed <- PFA_2015_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2) %>%
   mutate(Year = rep(2015, nrow(PFA_2015_raw)), Amount = coalesce(Amount, 0))
 
-write.csv(PFA_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_PFAs_Processed.csv")
+write.csv(PFA_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2015_PFAs_Processed.csv")
 
 PFA_2020_processed <- PFA_2020_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
@@ -357,7 +357,7 @@ PFA_2020_processed <- PFA_2020_raw %>%
   mutate(Year = rep(2020, nrow(PFA_2020_raw)), Amount = coalesce(Amount, 0)) %>%
   rename(Analyte = Chemical)
 
-write.csv(PFA_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_PFAs_Processed.csv")
+write.csv(PFA_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2020_PFAs_Processed.csv")
 
 # Wrangle PCB data and write in as csvs
 
@@ -369,7 +369,7 @@ PCB_2010_processed <- PCB_2010_raw %>%
   rename(Lake = Lake.Name,
          Scientific.Name = Species.Name)
 
-write.csv(PCB_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_PCBs_Processed.csv")
+write.csv(PCB_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2010_PCBs_Processed.csv")
 
 PCB_2015_processed <- PCB_2015_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
@@ -377,7 +377,7 @@ PCB_2015_processed <- PCB_2015_raw %>%
   filter(Analyte == "Total PCBs") %>%
   mutate(Year = 2015)
 
-write.csv(PCB_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_PCBs_Processed.csv")
+write.csv(PCB_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2015_PCBs_Processed.csv")
 
 PCB_2020_processed <- PCB_2020_raw %>%
   select(State, Lake, Scientific.Name, Common.Name, Family, Niche,
@@ -385,7 +385,7 @@ PCB_2020_processed <- PCB_2020_raw %>%
   filter(Analyte == "Total PCBs") %>%
   mutate(Year = 2020)
 
-write.csv(PCB_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_PCBs_Processed.csv")
+write.csv(PCB_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2020_PCBs_Processed.csv")
 
 # Wrangle fatty acid data and write in as csvs
 
@@ -395,21 +395,21 @@ fattyacids_2010_processed <- fattyacids_2010_raw %>%
   mutate(Year = 2010, Amount = coalesce(Amount, 0)) %>%
   rename(Lake = Lake.Name)
 
-write.csv(fattyacids_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2010_FattyAcids_Processed.csv")
+write.csv(fattyacids_2010_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2010_FattyAcids_Processed.csv")
 
 fattyacids_2015_processed <- fattyacids_2015_raw %>%
    select(State, Lake, Species.ID, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Unit.1, Unit.2) %>%
   mutate(Year = 2015, Amount = coalesce(Amount, 0))
 
-write.csv(fattyacids_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2015_FattyAcids_Processed.csv")
+write.csv(fattyacids_2015_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2015_FattyAcids_Processed.csv")
 
 fattyacids_2020_processed <- fattyacids_2020_raw %>%
    select(State, Lake, Species.ID, Scientific.Name, Common.Name, Family, Niche,
          Analyte, Amount, Units) %>%
   mutate(Year = 2020, Amount = coalesce(Amount, 0))
 
-write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/2020_FattyAcids_Processed.csv")
+write.csv(fattyacids_2020_processed, "~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/2020_FattyAcids_Processed.csv")
 
 ```
 
@@ -421,7 +421,7 @@ Before beginning analysis aimed at answering our research questions, we explore 
 
 ```{r site-map, echo=FALSE, fig.align='center', fig.cap='Map of nearshore sampling sites used for NCCA 2020', warning=FALSE, message=FALSE}
 #site map
-sampling_sites <- read_csv("RawData/2020sitelocationsv6.csv")
+sampling_sites <- read_csv("Data/RawData/2020sitelocationsv6.csv")
 sampling_sites_clean <- sampling_sites %>% select('Lake','State','SITEID', 'Latitude', 'Longitude')
 sampling_sites_clean$Latitude <- as.numeric(sampling_sites_clean$Latitude)
 sampling_sites_clean$Longitude<- as.numeric(sampling_sites_clean$Longitude)
@@ -431,7 +431,7 @@ sampling_sites_sf <- st_as_sf(
   coords = c("Longitude", "Latitude"), 
   crs = 4326)
 
-states_sf <- st_read(here('RawData/cb_2018_us_county_20m.shp'), quiet=TRUE) %>%
+states_sf <- st_read(here('Data/RawData/cb_2018_us_county_20m.shp'), quiet=TRUE) %>%
   filter(STATEFP %in% c("26", "36", "39", "42", "55", "27"))
 
 map <- ggplot() +
