@@ -35,8 +35,6 @@ library(bookdown) #allows for autoreferencing
 library(knitr) #allows for autoreferencing
 library(stringr) #allows for fix to capitalization of fish names
 
-
-
 # Check working directory
 here()
 
@@ -85,7 +83,7 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
 
-![Herring in the Great Lakes. All Rights to Paul Vecsei (9)](~/home/guest/EDEFinal/ProcessedData/fishimage_PaulVecsei.jpg) **fix this path**
+![Herring in the Great Lakes. All Rights to Paul Vecsei (9)](~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/fishimage_PaulVecsei.jpg) **fix this path**
 
 
 # Rationale and Research Questions
