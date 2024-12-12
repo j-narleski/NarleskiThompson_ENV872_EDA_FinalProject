@@ -384,10 +384,14 @@ display: none;
 <li><a href="#question-3-how-do-contaminants-vary-depending-on-if-fish-is-an-open-sea-or-bottom-dweller-niche" id="toc-question-3-how-do-contaminants-vary-depending-on-if-fish-is-an-open-sea-or-bottom-dweller-niche"><span class="toc-section-number">4.3</span> Question 3: How do contaminants vary depending on if fish is an open-sea or bottom dweller (niche)?</a></li>
 </ul></li>
 <li><a href="#summary-and-conclusions" id="toc-summary-and-conclusions"><span class="toc-section-number">5</span> Summary and Conclusions</a></li>
-<li><a href="#references---i-have-to-make-these-apa-still-but-just-links-for-now" id="toc-references---i-have-to-make-these-apa-still-but-just-links-for-now"><span class="toc-section-number">6</span> References - i have to make these APA still but just links for now</a></li>
+<li><a href="#references" id="toc-references"><span class="toc-section-number">6</span> References</a></li>
 </ul>
 </div>
 
+<div class="float">
+<img src="~/EDEFinal/RawData/fishimage_PaulVecsei.jpg" alt="Herring in the Great Lakes. All Rights to Paul Vecsei (8)" />
+<div class="figcaption">Herring in the Great Lakes. All Rights to Paul Vecsei (8)</div>
+</div>
 <div id="rationale-and-research-questions" class="section level1" number="1">
 <h1><span class="header-section-number">1</span> Rationale and Research Questions</h1>
 <p>The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.</p>
@@ -917,100 +921,6 @@ Figure 4.6: Mean PFA levels over time of each fish species sampled in the Great 
 <h2><span class="header-section-number">4.3</span> Question 3: How do contaminants vary depending on if fish is an open-sea or bottom dweller (niche)?</h2>
 <p><br>
 To continue our investigation of what may make certain fish more susceptible to contamination, another factor aside from species is the fish niche. In NCCA data collection, there were two options for fish niche: “BD” (Benthic-Demersal- i.e. bottom dweller) and”P” (Pelagic- i.e. open sea). We compare the mean contaminant amounts between BD and P fish across each sampling year using an <strong>ANOVA</strong>. The results of the ANOVA are summarized in Table <a href="#tab:contaminant-anova-niche-table"><strong>??</strong></a></p>
-<pre class="r"><code>#Mercury 2010
-mercury_2010_processed$Niche &lt;- as.factor(mercury_2010_processed$Lake)
-mercury_byniche_2010_AOV &lt;- aov(Amount ~ Niche, data = mercury_2010_processed)
-summary(mercury_byniche_2010_AOV)</code></pre>
-<pre><code>##              Df  Sum Sq Mean Sq F value   Pr(&gt;F)    
-## Niche         4  456780  114195   6.397 8.74e-05 ***
-## Residuals   152 2713210   17850                     
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p = 8.74e-05 (SIG)
-
-#Mercury 2015
-mercury_2015_processed$Niche &lt;- as.factor(mercury_2015_processed$Niche)
-mercury_byniche_2015_AOV &lt;- aov(Amount ~ Niche, data = mercury_2015_processed)
-summary(mercury_byniche_2015_AOV)</code></pre>
-<pre><code>##              Df  Sum Sq Mean Sq F value   Pr(&gt;F)    
-## Niche         1  295931  295931   25.97 1.03e-06 ***
-## Residuals   150 1709523   11397                     
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p = 1.03e-06
-
-#Mercury 2020
-mercury_2020_processed$Niche &lt;- as.factor(mercury_2020_processed$Niche)
-mercury_byniche_2020_AOV &lt;- aov(Amount ~ Niche, data = mercury_2020_processed)
-summary(mercury_byniche_2020_AOV)</code></pre>
-<pre><code>##              Df  Sum Sq Mean Sq F value   Pr(&gt;F)    
-## Niche         1  313297  313297   14.03 0.000249 ***
-## Residuals   163 3639815   22330                     
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p =  0.000249 (SIG)
-
-#PCB 2010
-PCB_2010_processed$Niche &lt;- as.factor(PCB_2010_processed$Niche)
-PCB_byniche_2010_AOV &lt;- aov(Amount ~ Niche, data = PCB_2010_processed)
-summary(PCB_byniche_2010_AOV)</code></pre>
-<pre><code>##              Df   Sum Sq Mean Sq F value Pr(&gt;F)
-## Niche         1   253417  253417   1.912  0.169
-## Residuals   155 20546342  132557</code></pre>
-<pre class="r"><code>  #p = 0.169 (NOT SIG)
-
-#PCB 2015
-PCB_2015_processed$Niche &lt;- as.factor(PCB_2015_processed$Niche)
-PCB_byniche_2015_AOV &lt;- aov(Amount ~ Niche, data = PCB_2015_processed)
-summary(PCB_byniche_2015_AOV)</code></pre>
-<pre><code>##              Df  Sum Sq Mean Sq F value   Pr(&gt;F)    
-## Niche         1  701514  701514   13.52 0.000329 ***
-## Residuals   150 7785752   51905                     
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p = 0.00111 (SIG)
-
-#PCB 2020
-PCB_2020_processed$Niche &lt;- as.factor(PCB_2020_processed$Niche)
-PCB_byniche_2020_AOV &lt;- aov(Amount ~ Niche, data = PCB_2020_processed)
-summary(PCB_byniche_2020_AOV)</code></pre>
-<pre><code>##              Df  Sum Sq Mean Sq F value Pr(&gt;F)  
-## Niche         1  244743  244743   6.196 0.0138 *
-## Residuals   163 6438289   39499                 
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p = 0.0138 (SIG)
-
-#PFA 2010
-PFA_2010_processed$Niche &lt;- as.factor(PFA_2010_processed$Niche )
-PFA_byniche_2010_AOV &lt;- aov(Amount ~ Niche, data = PFA_2010_processed)
-summary(PFA_byniche_2010_AOV)</code></pre>
-<pre><code>##               Df Sum Sq Mean Sq F value Pr(&gt;F)  
-## Niche          1    176  175.97    3.07 0.0799 .
-## Residuals   2039 116869   57.32                 
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p = 0.0799 (NOT SIG)
-
-#PFA 2015
-PFA_2015_processed$Niche &lt;- as.factor(PFA_2015_processed$Niche )
-PFA_byniche_2015_AOV &lt;- aov(Amount ~ Niche, data = PFA_2015_processed)
-summary(PFA_byniche_2015_AOV)</code></pre>
-<pre><code>##               Df Sum Sq Mean Sq F value  Pr(&gt;F)   
-## Niche          1    289  288.98   7.912 0.00496 **
-## Residuals   1974  72097   36.52                   
-## ---
-## Signif. codes:  0 &#39;***&#39; 0.001 &#39;**&#39; 0.01 &#39;*&#39; 0.05 &#39;.&#39; 0.1 &#39; &#39; 1</code></pre>
-<pre class="r"><code>  #p = 0.00496 (SIG)
-
-#PFA 2020
-PFA_2020_processed$Niche &lt;- as.factor(PFA_2020_processed$Niche)
-PFA_byniche_2020_AOV &lt;- aov(Amount ~ Niche, data = PFA_2020_processed)
-summary(PFA_byniche_2020_AOV)</code></pre>
-<pre><code>##               Df Sum Sq Mean Sq F value Pr(&gt;F)
-## Niche          1     12  12.184    1.83  0.176
-## Residuals   6598  43924   6.657</code></pre>
-<pre class="r"><code>  #p = 0.176 (NOT SIG)</code></pre>
 <table>
 <caption>(#tab:contaminant_anova_niche_table)ANOVA results of mean contaminant levels found in fish samples from both Niches from 3 sampling years.</caption>
 <colgroup>
@@ -1098,20 +1008,29 @@ summary(PFA_byniche_2020_AOV)</code></pre>
 <p><br>
 Since there are only two means to compare, a Tukey test is not necessary. All ANOVAs that indicate a difference between means indicate that the mean level of contamination of Benthic and Pelagic fish are significantly different. Per the results of our prior exploratory analysis, all Pelagic fish for all contaminants had higher levels of contamination.
 <br>
-For Mercury, the p-values for all years (p=8.74e-05, p=1.003e-06,2.49e-04; p&lt;0.05) indicate that Pelagic fish had significantly higher contaminantion than Benthic fish. For PCBs, only 2015 and 2020 were significant (p=3.29e-04, p=1.38e-02; p&lt;0.05); for PFAs, there was only one year for which the difference was significant (p=4.96e-03; p&lt;0.05).
+<br>
+For Mercury, the p-values for all years (p=8.74e-05, p=1.003e-06,2.49e-04; p&lt;0.05) indicate that Pelagic fish had significantly higher contamination than Benthic fish. For PCBs, only 2015 and 2020 were significant (p=3.29e-04, p=1.38e-02; p&lt;0.05); for PFAs, there was only one year for which the difference was significant (p=4.96e-03; p&lt;0.05).
 </p>
 </div>
 </div>
 <div id="summary-and-conclusions" class="section level1" number="5">
 <h1><span class="header-section-number">5</span> Summary and Conclusions</h1>
-<p>variance between lakes means you probably cant just use braod and comprehensive management plans</p>
-<p>mercury level the samne between fish means there may not be biological differences that can protect certain fish form mercury bioaccumulation (non discriminatory contamination)</p>
-<p>require more data points for more confident anaylsis- motivation to continue NCCA
-all findings should be consdiered in teh context that the sample size os very small</p>
+<p><br>
+The data collected through the NCCA surveys provide crucial insight into the contamination of fish tissue in the Great Lakes. Using this data, we were able to determine that the levels of contaminants are not evenly distributed across the Great Lakes, as there is significant differences between mean contaminant levels in most cases. Further, certain lakes tend to have contaminant means that are not statistically different from each other (Lakes Erie, Huron, and Michigan), while Lakes Ontario and Superior tend to be statistically different than other lakes. This may be a result of geographic differences in the lakes, or national-level regulations that apply to the lakes that are shared between the U.S. and Canada.
+The variance between lakes indicates that broad and comprehensive management plans for all of the lakes may not be the best solution for addressing this contamination. Management plans should be tailored to each individual lake, with special attention taken towards the lakes that tend to behave differently.
+<br>
+<br>
+For our second research question, we found that there are certain fish species that have significnat trends in contaminantion over time, but the number of fish species that do not have significant trends outnumber the ones that do. For Mercury, there were no significant trends, which may be attributed to the capacity for non-discriminatory contamination of this chemical. Mercury may be a threat to all fish, as there may not be any biological differences that can protect certain fish from it. We did find significant relationships between year and White Perch (PCBs), Brown Trout (PFAs), and Walleye (PFAs). For these species, the trends were downward- that is, the amount of contamination is decreasing over time. While more data would be required to support this claim, it is possible that these species are adapting in some way to reduce their contamination levels, potentially through changes in habitat, feeding behaviors, or physiological mechanisms.
+<br>
+<br>
+Lastly, we found that, in most cases sampled, Pelagic fish had significantly higher means of contamination. Pelagic fish primarily reside and hunt in the open sea; recognizing that these fish have higher levels of contaminants may point researchers towards further investigations into environmental factors that contribute to this contamination. Specifically, it may suggest a closer examination of oceanic pollution sources such as industrial discharge, agricultural runoff, or plastic waste (specifically for PFAs) that could be affecting these species.Further, pelagic fish tend to be predators, which indicates the potential consequences of biomagnification, where contaminants ncrease in concentration as they move up the food chain [8].
+<br>
+<br>
+Processing this data revealed a lot about data collected in the field, and the importance of formatting consistency for long-term data sets. While some trends and relationships were found to be significant in our analysis, more data points are required for more confidence. This should be motivation to the EPA to continue the NCCA program, as the current sample size is very small. However, if the trends we found are any indication, the contamination of fish should absolutely continue to be monitored over time, especially given the potential long-term impacts on aquatic ecosystems and human health.</p>
 <div style="page-break-after: always;"></div>
 </div>
-<div id="references---i-have-to-make-these-apa-still-but-just-links-for-now" class="section level1" number="6">
-<h1><span class="header-section-number">6</span> References - i have to make these APA still but just links for now</h1>
+<div id="references" class="section level1" number="6">
+<h1><span class="header-section-number">6</span> References</h1>
 <p>[1]The Great Lakes. (n.d.). National Wildlife Federation. Retrieved December 8, 2024, from <a href="https://www.nwf.org/Home/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes" class="uri">https://www.nwf.org/Home/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes</a>
 <br>
 [2] US EPA, O. (2020, June 11). National Coastal Condition Assessment—Great Lakes Human Health Fish Tissue Studies [Overviews and Factsheets]. <a href="https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-" class="uri">https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-</a>
@@ -1121,9 +1040,14 @@ condition-assessment-great-lakes-human-health
 <br>
 [4] EPA. (2020, June 15). Quality Assurance Project Plan for National Coastal Condition Assessment (NCCA) 2020 Great Lakes Human Health Fish Sample Preparation.
 <br>
-[5] <a href="https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/" class="uri">https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/</a>
-[6] <a href="https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas" class="uri">https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas</a>
-[7] <a href="https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/" class="uri">https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/</a></p>
+[5] Contaminants in Fish. (2021, April 5). Indiana Department of Health. <a href="https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/" class="uri">https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/</a>
+<br>
+[6] US EPA, O. (2021, November 16). Per- and Polyfluoroalkyl Substances (PFAS) [Reports and Assessments]. <a href="https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas" class="uri">https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas</a>
+<br>
+[7] Excess omega-3 fatty acids could lead to negative health effects. (n.d.). Oregon State University College of Health. Retrieved December 12, 2024, from <a href="https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/" class="uri">https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/</a>
+<br>
+[8] US Department of Commerce, N. O. and A. A. (n.d.). What are pelagic fish? Retrieved December 12, 2024, from <a href="https://oceanservice.noaa.gov/facts/pelagic.html" class="uri">https://oceanservice.noaa.gov/facts/pelagic.html</a>
+[9] Fighting for Our Fisheries. (n.d.). The Nature Conservancy. Retrieved December 12, 2024, from <a href="https://www.nature.org/en-us/about-us/where-we-work/priority-landscapes/great-lakes/stories-in-the-great-lakes/great-lakes-fisheries/" class="uri">https://www.nature.org/en-us/about-us/where-we-work/priority-landscapes/great-lakes/stories-in-the-great-lakes/great-lakes-fisheries/</a></p>
 </div>
 
 

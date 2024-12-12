@@ -84,6 +84,10 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 
 ```
 
+
+![Herring in the Great Lakes. All Rights to Paul Vecsei (9)](~/home/guest/EDEFinal/ProcessedData/fishimage_PaulVecsei.jpg)
+
+
 # Rationale and Research Questions
 The Great Lakes, which collectively represent the largest surface freshwater system on Earth, are critical ecological and economic resources for millions of people. These lakes support diverse aquatic life, serve as a source of drinking water, provide recreational opportunities, and underpin industries such as fishing. However, over the past century, the Great Lakes have been threatened by environmental stressors, including pollution from industrial waste, agricultural runoff, and urban development.[1] The contaminants affecting these ecosystems pose serious risks to both aquatic life and human health.
 
@@ -1435,18 +1439,21 @@ For Mercury, the p-values for all years (p=8.74e-05, p=1.003e-06,2.49e-04; p<0.0
 
 # Summary and Conclusions
 <br>
-Contamination of fish tissue in the Great Lakes
-
-variance between lakes means you probably cant just use braod and comprehensive management plans
-
-mercury level the samne between fish means there may not be biological differences that can protect certain fish form mercury bioaccumulation (non discriminatory contamination)
-
-require more data points for more confident anaylsis- motivation to continue NCCA
-all findings should be consdiered in teh context that the sample size os very small
+The data collected through the NCCA surveys provide crucial insight into the contamination of fish tissue in the Great Lakes. Using this data, we were able to determine that the levels of contaminants are not evenly distributed across the Great Lakes, as there is significant differences between mean contaminant levels in most cases. Further, certain lakes tend to have contaminant means that are not statistically different from each other (Lakes Erie, Huron, and Michigan), while Lakes Ontario and Superior tend to be statistically different than other lakes. This may be a result of geographic differences in the lakes, or national-level regulations that apply to the lakes that are shared between the U.S. and Canada.
+The variance between lakes indicates that broad and comprehensive management plans for all of the lakes may not be the best solution for addressing this contamination. Management plans should be tailored to each individual lake, with special attention taken towards the lakes that tend to behave differently.
+<br>
+<br> 
+For our second research question, we found that there are certain fish species that have significnat trends in contaminantion over time, but the number of fish species that do not have significant trends outnumber the ones that do. For Mercury, there were no significant trends, which may be attributed to the capacity for non-discriminatory contamination of this chemical. Mercury may be a threat to all fish, as there may not be any biological differences that can protect certain fish from it. We did find significant relationships between year and White Perch (PCBs), Brown Trout (PFAs), and Walleye (PFAs). For these species, the trends were downward- that is, the amount of contamination is decreasing over time. While more data would be required to support this claim, it is possible that these species are adapting in some way to reduce their contamination levels, potentially through changes in habitat, feeding behaviors, or physiological mechanisms. 
+<br>
+<br> 
+Lastly, we found that, in most cases sampled, Pelagic fish had significantly higher means of contamination. Pelagic fish primarily reside and hunt in the open sea; recognizing that these fish have higher levels of contaminants may point researchers towards further investigations into environmental factors that contribute to this contamination. Specifically, it may suggest a closer examination of oceanic pollution sources such as industrial discharge, agricultural runoff, or plastic waste (specifically for PFAs) that could be affecting these species.Further, pelagic fish tend to be predators, which indicates the potential consequences of biomagnification, where contaminants ncrease in concentration as they move up the food chain [8].
+<br>
+<br> 
+Processing this data revealed a lot about data collected in the field, and the importance of formatting consistency for long-term data sets. While some trends and relationships were found to be significant in our analysis, more data points are required for more confidence. This should be motivation to the EPA to continue the NCCA program, as the current sample size is very small. However, if the trends we found are any indication, the contamination of fish should absolutely continue to be monitored over time, especially given the potential long-term impacts on aquatic ecosystems and human health. 
 
 \newpage
 
-# References - i have to make these APA still but just links for now
+# References
 [1]The Great Lakes. (n.d.). National Wildlife Federation. Retrieved December 8, 2024, from https://www.nwf.org/Home/Educational-Resources/Wildlife-Guide/Wild-Places/Great-Lakes
 <br>
 [2] US EPA, O. (2020, June 11). National Coastal Condition Assessment—Great Lakes Human Health Fish Tissue Studies [Overviews and Factsheets]. https://www.epa.gov/choose-fish-and-shellfish-wisely/national-coastal-
@@ -1456,7 +1463,15 @@ condition-assessment-great-lakes-human-health
 <br>
 [4] EPA. (2020, June 15). Quality Assurance Project Plan for  National Coastal Condition Assessment (NCCA)  2020 Great Lakes Human Health Fish Sample Preparation.
 <br>
-[5] https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/
-[6] https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas
-[7] https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/
+[5] Contaminants in Fish. (2021, April 5). Indiana Department of Health. https://www.in.gov/health/eph/fish-consumption-advisory/contaminants-in-fish/
+<br>
+[6] US EPA, O. (2021, November 16). Per- and Polyfluoroalkyl Substances (PFAS) [Reports and Assessments]. https://www.epa.gov/sdwa/and-polyfluoroalkyl-substances-pfas
+<br>
+[7] Excess omega-3 fatty acids could lead to negative health effects. (n.d.). Oregon State University College of Health. Retrieved December 12, 2024, from https://synergies.oregonstate.edu/2013/excess-omega-3-fatty-acids-lead-negative-health-effects/
+<br>
+[8] US Department of Commerce, N. O. and A. A. (n.d.). What are pelagic fish? Retrieved December 12, 2024, from https://oceanservice.noaa.gov/facts/pelagic.html
+<br>
+[9] Fighting for Our Fisheries. (n.d.). The Nature Conservancy. Retrieved December 12, 2024, from https://www.nature.org/en-us/about-us/where-we-work/priority-landscapes/great-lakes/stories-in-the-great-lakes/great-lakes-fisheries/
+
+
 
