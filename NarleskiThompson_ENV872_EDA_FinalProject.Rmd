@@ -45,7 +45,8 @@ laketheme <- theme(
   plot.title = element_text(
     hjust = 0.5, size = 12, color = "darkcyan", 
     face = "bold"),
-  axis.title = element_text(size = 10, color = "darkcyan"),
+  axis.title = element_text(size = 10, color = "darkcyan", face = "bold"),
+  axis.title.x = element_text(margin = margin(t=10)),
   panel.grid.major = element_line(
     color = "aquamarine4", linetype = 2, size = 0.25),
   panel.grid.minor = element_line(
@@ -1011,7 +1012,7 @@ print(mercury.tukey.plot)
 
 
 ```
-
+<br>
 ```{r PCB-tukey-plot, fig.align='center', fig.cap='Results of Tukey HSD test performed on ANOVA of PCB levels in sampled fish from each of the Great Lakes.', warning=FALSE, message=FALSE, echo=FALSE}
 
 PCB.tukey.plot <- ggplot(PCB_bylake_2015, aes(x = Lake, y = Mean.PCBs, fill = Lake)) +
@@ -1026,7 +1027,7 @@ PCB.tukey.plot <- ggplot(PCB_bylake_2015, aes(x = Lake, y = Mean.PCBs, fill = La
 
 print(PCB.tukey.plot)
 ```
-
+<br>
 ```{r PFA-tukey-plot, fig.align='center', fig.cap='Results of Tukey HSD test performed on ANOVA of PFA levels in sampled fish from each of the Great Lakes.', warning=FALSE, message=FALSE, echo = FALSE}
 
 PFA.tukey.plot <- ggplot(PFA_bylake_2015_mean_values, aes(x = Lake, y = mean_PFAs, fill = Lake)) +
@@ -1062,6 +1063,7 @@ mercury_by_fish_plot <- ggplot(Mercury_byfish_combined_threeyeardata, aes(x = as
   labs(title = "Mean Mercury Levels by Fish Species (2010-2020)", x = "Year", y = "Mean Mercury (µg/kg)") 
 print(mercury_by_fish_plot)
 ```
+<br>
 ```{r mercury-fish-regressions, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 
 #separating the fish species
@@ -1164,7 +1166,7 @@ PCB_by_fish_plot <- ggplot(PCB_byfish_combined_threeyeardata, aes(x = as.factor(
   labs(title = "Mean PCB Levels by Fish Species (2010-2020)", x = "Year", y = "Mean PCBs (µg/kg)") 
 print(PCB_by_fish_plot)
 ```
-
+<br>
 ```{r PCB-fish-regressions, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 # Brown Trout (PCB)
 brown_trout_PCB_data <- subset(PCB_byfish_combined_threeyeardata, Common.Name == "Brown Trout")
