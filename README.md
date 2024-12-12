@@ -45,21 +45,27 @@ The exception to this convention is the supplemental spatial data, which is call
 
 ## Metadata
 For the raw data files from NCCA, the columns are as follows: 
-- EPA Region: The EPA Region in which the sample was collected
-- State: 2-letter abbreviation for the state in which the sample was collected
-- Lake: The Great Lake the sample is from
-- Site ID: “NGL” + site selection year + state + 4-digit site location
-- EPA Sample: ID	6-digit code assigned by the EPA
-- Scientific.Name:	Taxonomic name of fish sampled
-- Common.Name: Common name of fish sampled
-- Family:	Taxonomic family of fish sampled
-- Tissue Type: The type of fish tissue used for analysis; we use only fillet data
-- % Lipids: The lipid content of the sample, measured independently of the chemical analysis
-- Method: EPA-standardized method of chemical analysis
-- Analyte: The chemical of interest in each dataset
-- Amount: Amount of chemical detected in the sample
+- EPA Region = The EPA Region in which the sample was collected
+- State = 2-letter abbreviation for the state in which the sample was collected
+- Lake Name = The Great Lake the sample is from
+- Site ID = “NGL” + site selection year + state + 4-digit site location
+- EPA Sample ID = Individual numeric code assigned to each fish species
+- Species ID = Taxonomic name of each species
+- Scientific Name = Taxonomic family of each species
+- Common Name = Taxonomic family of each species
+- Family = Taxonomic family of each species
+- Niche = Codified ecological niche of the fish sampled; “BD” is “Benthic-Demersal” & “P” is “Pelagic”
+- Analyte = The contaminant being measured
+- Abbreviation = The abbreviation for the contaminant being measured
+- CAS Number = A unique identifier assigned to chemical substances by the Chemical Abstracts Service
+- Amount = Amount of contaminant
 - Unit.1:	The original unit the chemical was measured in ("ng/g (nanograms per gram)" for Mercury, PFA, PCB. "mg/g (milligrams per gram)" for Fatty Acids) 
 - Unit.2:	The amount of chemical converted to common units. Only for some contaminants ("ppb (parts per billion)" for Mercury, PFA, PCB. "ug/g (micrograms per gram)" for Fatty Acids)
+- MDL = Method Detection Limit - the minimum concentration of a substance that can be reliably detected and reported with 99% confidence
+- QL = Quantification Limit - the lowest concentration that can be reliably measured within a certain level of precision and accuracy
+- Lab Flag = Unique identifier for the lab used
+- SCC Code = Code for the container the fish was stored in between catching and processing
+- Comment = Comment on results input by researcher
 
     
 For the processed data files from NCCA, the columns are as follows: 
@@ -72,7 +78,9 @@ For the processed data files from NCCA, the columns are as follows:
 - Method:	EPA-standardized method of chemical analysis
 - Analyte:	The chemical of interest in each dataset
 - Amount:	Amount of chemical detected in the sample
-- Unit.1:	The original unit the chemical was measured in
+- Unit.1:	The original unit the chemical was measured in ("ng/g (nanograms per gram)" for Mercury, PFA, PCB. "mg/g (milligrams per gram)" for Fatty Acids) 
+- Unit.2:	The amount of chemical converted to common units. Only for some contaminants ("ppb (parts per billion)" for Mercury, PFA, PCB. "ug/g (micrograms per gram)" for Fatty Acids)
+- Year: Column added manually to assign sample year to each result
 
 For the site mapping data, the columns are as follows:
 - LAKE: The Great Lake the sample is from
