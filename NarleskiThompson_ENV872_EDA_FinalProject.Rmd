@@ -84,7 +84,11 @@ PFA_2020_raw <- read.csv("RawData/2020_PFAs_Raw.csv")
 ```
 
 
-![Herring in the Great Lakes. All Rights to Paul Vecsei (9)](~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/fishimage_PaulVecsei.jpg) **fix this path**
+Herring in the Great Lakes. All Rights to Paul Vecsei (9)
+```{r, out.width="70%", out.height="70%", fig.align='center', echo = FALSE, message = FALSE}
+knitr::include_graphics("~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/ProcessedData/fishimage_PaulVecsei.jpg")
+```
+
 
 
 # Rationale and Research Questions
@@ -177,13 +181,13 @@ kable(
 
 ## Dataset Wrangling Procedures
 <br>
-Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each.[3] Each of the 4 separate contaminant data files were loaded into R as raw .xlsx files. The columns from Table \@ref(tab:columm-description-table) were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. **ADD MORE HERE- jaclyn can write about the issues/solutions to the weird datasets**
+Each of the 5-year publications from the EPA contains 4 separate data files arranged by contaminant (Mercury, PFAS, PCBs, Fatty Acids). There are also 3 metadata files and 3 quality assurance reports for each.[3] It's important to note that the data files contained two .xlsx sheets - one containing sample measurements associated with each lake and the other, fish species and their niches - see these were combined manually. Each of the 4 separate contaminant data files were then loaded into R as raw .xlsx files. The columns from Table \@ref(tab:columm-description-table) were selected from the raw file, and a new column was added for the collection year. This was repeated for all 12 datasets (4 contaminants for each of 3 years). There are slight variations in the dataset formatting between years, leading to differences in the pipe function to account for them. For example, some columns are renamed as to all have a consistent naming conventions. Any NA values for the amount of contaminants recorded were converted to 0 to make analysis easier. Each wrangled dataset was reassigned to a "processed" .csv file for analysis. 
 <br>
 <br>
  
 ## Summary of Data Structure
 <br>
-The basic structure of each of the raw datasets can be found in Table \@ref(tab:columm-description-table). The specific variables being investigated from  each of the processed files can be found below (Table \@ref(tab:processed-description-table) ). They vary in units, described in Table \@ref(tab:contaminant-units-table). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table \@ref(tab:fatty-acids-table)). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies.
+The basic structure of each of the raw datasets can be found in Table \@ref(tab:columm-description-table). The specific variables being investigated from  each of the processed files can be found below (Table \@ref(tab:processed-description-table) ). They vary in units, described in Table \@ref(tab:contaminant-units-table). Additionally, while the total fatty acid content was combined, the types that were used for our specific study found in the data are listed along with their abbreviations (Table \@ref(tab:fatty-acids-table)). This is due to the fact that some of the analytes in the 2015 and 2020 fatty acid studies were not measured in the 2010 study, and do not have nearly as much research and information on their impacts in comparison to the other analytes found in all 3 studies. This went for the PFA content as well - the research behind PFAs is ongoing; however, this past year the EPA has recently implemented standards for specific PFAs (listed below) (Table \@ref(tab:pfas-table)) in drinking water since they are now a cause for concern.
 <br>
 <br>
 ```{r processed-description-table, echo=FALSE, message=FALSE}
@@ -241,6 +245,29 @@ kable(
   caption = "Units of measurement for each contaminant."
 )
 ```
+
+```{r pfas-table, echo=FALSE, message=FALSE}
+
+pfas <- data.frame(
+  PFA = c(
+     "Perfluorooctanoate", "Perfluorooctanesulfonate", 
+     "Perfluorohexane sulfonate", "Perfluorononanoate", 
+     "Hexafluoropropylene oxide dimer acid" 
+     ),
+   Abbreviation = c("PFOA", "PFOS", "PFHxS", "PFNA", "HFPO-DA"),
+   `Maximum Contaminant Level (MCL)` = c("4.0 ppt", "4.0 ppt", "10 ppt", 
+                                         "10 ppt", "10 ppt")
+)
+names(pfas) <- c("PFA", "Abbreviation", "Maximum Contaminant Level (MCL)")
+
+# Generate the table
+kable(
+  pfas, 
+  caption = "Types of PFAs, their abbreviations, and the maximum contaminant level allowed in drinking water."
+)
+
+```
+
 
 ```{r fatty-acids-table, echo=FALSE, message=FALSE}
 
@@ -475,7 +502,7 @@ Mercury_byniche_combined <-
 
 ```
 
-```{r mercury-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels in each of the Great Lakes', warning=FALSE, message=FALSE}
+```{r mercury-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean mercury levels in each of the Great Lakes', warning=FALSE, message=FALSE}
 # Creating plot by LAKE
 mercury_by_lake <- ggplot(
   Mercury_bylake_combined, aes(
@@ -492,7 +519,7 @@ mercury_by_lake <- ggplot(
 print(mercury_by_lake)
 ```
 
-```{r mercury-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels in each sampled fish species', warning=FALSE, message=FALSE}
+```{r mercury-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean mercury levels in each sampled fish species', warning=FALSE, message=FALSE}
 
 # Creating plot by FISH SPECIES
 mercury_by_fish <- ggplot(
@@ -507,7 +534,7 @@ mercury_by_fish <- ggplot(
 print(mercury_by_fish)
 ```
 
-```{r mercury-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
+```{r mercury-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
 
 # Creating plot by FISH NICHE
 mercury_by_niche <- ggplot(
@@ -591,7 +618,7 @@ PCB_byniche_combined <-
 
 ```
 
-```{r pcb-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PCB levels in each of the Great Lakes', warning=FALSE, message=FALSE}
+```{r pcb-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean PCB levels in each of the Great Lakes', warning=FALSE, message=FALSE}
 PCB_by_lake <- ggplot(
   PCB_bylake_combined, aes(
     x = as.factor(Year), y = Mean.PCBs, fill = Lake)) +
@@ -609,7 +636,7 @@ print(PCB_by_lake)
 
 ```
 
-```{r pcb-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PCB levels in each sampled fish species', warning=FALSE, message=FALSE}
+```{r pcb-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean PCB levels in each sampled fish species', warning=FALSE, message=FALSE}
 
 PCB_by_fish <- ggplot(
   PCB_byfish_combined, aes(
@@ -624,7 +651,7 @@ print(PCB_by_fish)
 
 ```
 
-```{r pcb-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
+```{r pcb-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean mercury levels by fish niche', warning=FALSE, message=FALSE}
 
 PCB_by_niche <- ggplot(
   PCB_byniche_combined, aes(
@@ -645,7 +672,7 @@ print(PCB_by_niche)
 When exploring the fatty acid data, problems arose with the fact that multiple fatty acids were tested for per sample. Further, most fatty acids are actually beneficial to human health, so to study all of them would be out of our project's scope. Instead, we focus on the subset of fatty acids within the Omega-3 family, as there is clear evidence of negative consequences to human health from consuming fish with excessive Omega-3s [7]. This includes Linoleic acid, Docosahexaenoic acid, Docosapentaenoic acid, Eicosadienoic acid, and Eicosatrienoic acid. In order to make the exploration managable, and also to focus on the direct threat to human health via fish consumption, fatty acids are only grouped by fish species (Figure \@ref(fig:fatty-exp-fish) ), and not lake or niche. 
 <br>
 
-```{r fatty-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean fatty acid levels by fish species', warning=FALSE, message=FALSE}
+```{r fatty-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean fatty acid levels by fish species', warning=FALSE, message=FALSE}
 
 # Sum up fatty acids by fish
 
@@ -796,7 +823,7 @@ PFAs_byniche_2020 <- PFA_2020_processed %>%
 
 ```
 
-```{r pfa-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of total PFA levels by lake', warning=FALSE, message=FALSE}
+```{r pfa-exp-lake, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of total PFA levels by lake', warning=FALSE, message=FALSE}
 
 #combined by lake 
 PFA_bylake_combined <- 
@@ -842,7 +869,7 @@ print(PFA_by_lake)
 
 ```
 
-```{r pfa-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PFA levels by fish species', warning=FALSE, message=FALSE}
+```{r pfa-exp-fish, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean PFA levels by fish species', warning=FALSE, message=FALSE}
 # Combined by fish species
 PFA_byfish_combined <-
   rbind(PFAs_byfish_2010, PFAs_byfish_2015, PFAs_byfish_2020) %>%
@@ -861,7 +888,7 @@ print(PFA_by_fish)
 
 ```
 
-```{r pfa-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exloratory analysis of mean PFA levels by fish niche', warning=FALSE, message=FALSE}
+```{r pfa-exp-niche, echo=FALSE, fig.align='center', fig.cap='Exploratory analysis of mean PFA levels by fish niche', warning=FALSE, message=FALSE}
 # Combined by niche
 PFA_byniche_combined <-
   rbind(PFAs_byniche_2010, PFAs_byniche_2015, PFAs_byniche_2020)
@@ -917,7 +944,7 @@ kable(
 )
 ```
 
-The results of the ANOVAs indicate that for all contaminants except Mercury in 2020, the mean contaminant level between lakes varied significantly (p<0.05). This suggests that the levels of contaminants are not evenly distributed across the Great Lakes, potentially due to differences in environmental conditions, pollutant sources, or other ecological factors. The lack of significant variation in Mercury levels in 2020 may indicate more consistent exposure across lakes for this contaminant during that year. 
+The results of the ANOVAs indicate that for all contaminants, except Mercury in 2020, the mean contaminant level between lakes varied significantly (p<0.05). This suggests that the levels of contaminants are not evenly distributed across the Great Lakes, potentially due to differences in environmental conditions, pollutant sources, or other ecological factors. The lack of significant variation in Mercury levels in 2020 may indicate more consistent exposure across lakes for this contaminant during that year. 
 <br>
 ```{r anovas, echo=FALSE, warning=FALSE, message=FALSE, include = FALSE}
 
@@ -996,6 +1023,7 @@ PFA_bylake_2015_AOV.groups$groups
 
 
 ```
+
 ```{r mercury-tukey-plot, fig.align='center', fig.cap='Results of Tukey HSD test performed on ANOVA of Mercury levels in sampled fish from each of the Great Lakes.', warning=FALSE, message=FALSE, echo = FALSE}
 
 mercury.tukey.plot <- ggplot(Mercury_bylake_2015, aes(x = Lake, y = Mean.Mercury, fill = Lake)) +
@@ -1447,13 +1475,13 @@ For Mercury, the p-values for all years (p=8.74e-05, p=1.003e-06,2.49e-04; p<0.0
 # Summary and Conclusions
 <br>
 The data collected through the NCCA surveys provide crucial insight into the contamination of fish tissue in the Great Lakes. Using this data, we were able to determine that the levels of contaminants are not evenly distributed across the Great Lakes, as there is significant differences between mean contaminant levels in most cases. Further, certain lakes tend to have contaminant means that are not statistically different from each other (Lakes Erie, Huron, and Michigan), while Lakes Ontario and Superior tend to be statistically different than other lakes. This may be a result of geographic differences in the lakes, or national-level regulations that apply to the lakes that are shared between the U.S. and Canada.
-The variance between lakes indicates that broad and comprehensive management plans for all of the lakes may not be the best solution for addressing this contamination. Management plans should be tailored to each individual lake, with special attention taken towards the lakes that tend to behave differently.
+The variance between lakes indicates that broad and comprehensive management plans for all of the lakes may not be the best solution for addressing this contamination. Management plans should be tailored to each individual lake, with special attention taken towards the lakes that tend to behave differently. Since the Great Lakes do act as drinking water sources for many communities, it is important that contaminant levels are continuously monitored and mitigated when necessary.
 <br>
 <br> 
-For our second research question, we found that there are certain fish species that have significnat trends in contaminantion over time, but the number of fish species that do not have significant trends outnumber the ones that do. For Mercury, there were no significant trends, which may be attributed to the capacity for non-discriminatory contamination of this chemical. Mercury may be a threat to all fish, as there may not be any biological differences that can protect certain fish from it. We did find significant relationships between year and White Perch (PCBs), Brown Trout (PFAs), and Walleye (PFAs). For these species, the trends were downward- that is, the amount of contamination is decreasing over time. While more data would be required to support this claim, it is possible that these species are adapting in some way to reduce their contamination levels, potentially through changes in habitat, feeding behaviors, or physiological mechanisms. 
+For our second research question, we found that there are certain fish species that have significnat trends in contaminantion over time, but the number of fish species that do not have significant trends outnumber the ones that do. For Mercury, there were no significant trends, which may be attributed to the capacity for non-discriminatory contamination of this chemical. Mercury may be a threat to all fish, as there may not be any biological differences that can protect certain fish from it. We did find significant relationships between year and White Perch (PCBs), Brown Trout (PFAs), and Walleye (PFAs). For these species, the trends were downward- that is, the amount of contamination is decreasing over time. While more data would be required to support this claim, it is possible that these species are adapting in some way to reduce their contamination levels, potentially through changes in habitat, feeding behaviors, or physiological mechanisms. Continued analysis is needed, especially in consideration of recreational fishing and consumption of fish that would pass on contaminants to the general public.
 <br>
 <br> 
-Lastly, we found that, in most cases sampled, Pelagic fish had significantly higher means of contamination. Pelagic fish primarily reside and hunt in the open sea; recognizing that these fish have higher levels of contaminants may point researchers towards further investigations into environmental factors that contribute to this contamination. Specifically, it may suggest a closer examination of oceanic pollution sources such as industrial discharge, agricultural runoff, or plastic waste (specifically for PFAs) that could be affecting these species.Further, pelagic fish tend to be predators, which indicates the potential consequences of biomagnification, where contaminants ncrease in concentration as they move up the food chain [8].
+Lastly, we found that, in most cases sampled, Pelagic fish had significantly higher means of contamination. Pelagic fish primarily reside and hunt in open waters; recognizing that these fish have higher levels of contaminants may point researchers towards further investigations into environmental factors that contribute to this contamination. Specifically, it may suggest a closer examination of aquatic pollution sources such as industrial discharge, agricultural runoff, or plastic waste (specifically for PFAs) that could be affecting these species.Further, pelagic fish tend to be predators, which indicates the potential consequences of biomagnification, where contaminants increase in concentration as they move up the food chain [8].
 <br>
 <br> 
 Processing this data revealed a lot about data collected in the field, and the importance of formatting consistency for long-term data sets. While some trends and relationships were found to be significant in our analysis, more data points are required for more confidence. This should be motivation to the EPA to continue the NCCA program, as the current sample size is very small. However, if the trends we found are any indication, the contamination of fish should absolutely continue to be monitored over time, especially given the potential long-term impacts on aquatic ecosystems and human health. 
