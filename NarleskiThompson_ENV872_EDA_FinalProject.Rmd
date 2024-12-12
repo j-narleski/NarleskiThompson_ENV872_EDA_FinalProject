@@ -1339,7 +1339,7 @@ summary(yellow_perch_PFA_lm)
 From these regressions, we can conclude that there are no species for which year and Mercury level have a significant relationship; there is a significant relationship between year and PCB level only for White Perch; and there is a significant relationship between year and PFA level for Brown Trout and Walleye.
 
 
-## Question 3: Are different species significantly more vulnerable than others to different contaminants? *I THINK WE SHOULD CHANGE OR DELETE THIS QUESTION*
+## Question 3: How do contaminants vary depending on if fish is a predator or bottom dweller (niche)?
 
 ```{r}
 #Mercury 2010
