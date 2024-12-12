@@ -1341,6 +1341,62 @@ From these regressions, we can conclude that there are no species for which year
 
 ## Question 3: Are different species significantly more vulnerable than others to different contaminants? *I THINK WE SHOULD CHANGE OR DELETE THIS QUESTION*
 
+```{r}
+#Mercury 2010
+mercury_2010_processed$Niche <- as.factor(mercury_2010_processed$Lake)
+mercury_byniche_2010_AOV <- aov(Amount ~ Niche, data = mercury_2010_processed)
+summary(mercury_byniche_2010_AOV)
+  #p = 8.74e-05 (SIG)
+
+#Mercury 2015
+mercury_2015_processed$Niche <- as.factor(mercury_2015_processed$Niche)
+mercury_byniche_2015_AOV <- aov(Amount ~ Niche, data = mercury_2015_processed)
+summary(mercury_byniche_2015_AOV)
+  #p = 1.03e-06
+
+#Mercury 2020
+mercury_2020_processed$Niche <- as.factor(mercury_2020_processed$Niche)
+mercury_byniche_2020_AOV <- aov(Amount ~ Niche, data = mercury_2020_processed)
+summary(mercury_byniche_2020_AOV)
+  #p =  0.000249 (SIG)
+
+#PCB 2010
+PCB_2010_processed$Niche <- as.factor(PCB_2010_processed$Niche)
+PCB_byniche_2010_AOV <- aov(Amount ~ Niche, data = PCB_2010_processed)
+summary(PCB_byniche_2010_AOV)
+  #p = 0.169 (NOT SIG)
+
+#PCB 2015
+PCB_2015_processed$Niche <- as.factor(PCB_2015_processed$Niche)
+PCB_byniche_2015_AOV <- aov(Amount ~ Niche, data = PCB_2015_processed)
+summary(PCB_byniche_2015_AOV)
+  #p = 0.00111 (SIG)
+
+#PCB 2020
+PCB_2020_processed$Niche <- as.factor(PCB_2020_processed$Niche)
+PCB_byniche_2020_AOV <- aov(Amount ~ Niche, data = PCB_2020_processed)
+summary(PCB_byniche_2020_AOV)
+  #p = 0.0138 (SIG)
+
+#PFA 2010
+PFA_2010_processed$Niche <- as.factor(PFA_2010_processed$Niche )
+PFA_byniche_2010_AOV <- aov(Amount ~ Niche, data = PFA_2010_processed)
+summary(PFA_byniche_2010_AOV)
+  #p = 0.0799 (NOT SIG)
+
+#PFA 2015
+PFA_2015_processed$Niche <- as.factor(PFA_2015_processed$Niche )
+PFA_byniche_2015_AOV <- aov(Amount ~ Niche, data = PFA_2015_processed)
+summary(PFA_byniche_2015_AOV)
+  #p = 0.00496 (SIG)
+
+#PFA 2020
+PFA_2020_processed$Niche <- as.factor(PFA_2020_processed$Niche)
+PFA_byniche_2020_AOV <- aov(Amount ~ Niche, data = PFA_2020_processed)
+summary(PFA_byniche_2020_AOV)
+  #p = 0.176 (NOT SIG)
+
+```
 
 
 
