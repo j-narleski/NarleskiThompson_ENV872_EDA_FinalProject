@@ -84,12 +84,7 @@ PFA_2020_raw <- read.csv(here("Data", "RawData", "2020_PFAs_Raw.csv"))
 
 ```
 
-
-
-```{r, out.width="70%", out.height="70%", fig.align='center', echo = FALSE, message = FALSE}
-knitr::opts_knit$set(root.dir = getwd())
-knitr::include_graphics("./Data/ProcessedData/fishimage_PaulVecsei.jpg")
-```
+![test](https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/l/a/LakeHerring_PaulVecsei_AllRights_4000x2200.jpg?crop=0%2C0%2C4000%2C2200&wid=2000&hei=1100&scl=2.0)
 
 <div style="text-align: center; color: darkgray;">
   Herring in the Great Lakes. All Rights to Paul Vecsei (9)
