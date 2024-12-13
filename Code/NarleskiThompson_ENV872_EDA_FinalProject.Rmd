@@ -87,7 +87,8 @@ PFA_2020_raw <- read.csv(here("Data", "RawData", "2020_PFAs_Raw.csv"))
 
 
 ```{r, out.width="70%", out.height="70%", fig.align='center', echo = FALSE, message = FALSE}
-knitr::include_graphics("~/FinalProject/NarleskiThompson_ENV872_EDA_FinalProject/Data/ProcessedData/fishimage_PaulVecsei.jpg")
+knitr::opts_knit$set(root.dir = getwd())
+knitr::include_graphics("./Data/ProcessedData/fishimage_PaulVecsei.jpg")
 ```
 
 <div style="text-align: center; color: darkgray;">
