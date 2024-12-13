@@ -1,6 +1,6 @@
 ---
 title: "Fish Tissue Contamination Trends in the Great Lakes"
-subtitle: "GitHub Repsitory: https://github.com/j-narleski/NarleskiThompson_ENV872_EDA_FinalProject"
+subtitle: "GitHub Repsitory:https://github.com/j-narleski/NarleskiThompson_ENV872_EDA_FinalProject"
 author: "Jaclyn Narleski and Victoria Thompson"
 date: "December 12, 2024"
 output:
@@ -84,7 +84,7 @@ PFA_2020_raw <- read.csv(here("Data", "RawData", "2020_PFAs_Raw.csv"))
 
 ```
 
-![test](https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/l/a/LakeHerring_PaulVecsei_AllRights_4000x2200.jpg?crop=0%2C0%2C4000%2C2200&wid=2000&hei=1100&scl=2.0)
+![ ](https://natureconservancy-h.assetsadobe.com/is/image/content/dam/tnc/nature/en/photos/l/a/LakeHerring_PaulVecsei_AllRights_4000x2200.jpg?crop=0%2C0%2C4000%2C2200&wid=2000&hei=1100&scl=2.0)
 
 <div style="text-align: center; color: darkgray;">
   Herring in the Great Lakes. All Rights to Paul Vecsei (9)
